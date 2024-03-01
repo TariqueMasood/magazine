@@ -1,0 +1,45 @@
+.card {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1 {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  background: #1f2024;
+  border-radius: 12px;
+}
+
+.card1Heading {
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card1Titles {
+  padding-top: 18px;
+  padding-bottom: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card1Content {
+  font-weight: 400;
+  color: #fff;
+}
+
+.heroMagazine {
+  max-width: 665px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.heroMagazine Image {
+  border-top-left-radius: 12px;
+}

@@ -1,0 +1,39 @@
+.header {
+  background-color: var(--black);
+}
+
+.wrapper {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 35px;
+}
+
+.searcBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.searcBar form:hover {
+  cursor: pointer;
+}
+
+.border {
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+}
