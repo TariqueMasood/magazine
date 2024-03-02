@@ -1,3 +1,6 @@
+/* styles/globals.css */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
 :root {
   --black: #1f2024;
   --BgGradient: linear-gradient(104.94deg, #38b6ff -0.05%, #00d8b1 99.95%);
