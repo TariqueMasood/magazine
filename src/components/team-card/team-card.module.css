@@ -3,6 +3,11 @@
   width: 100%;
   text-align: center;
   color: #1f2024;
+  margin: auto;
+}
+
+.imgCss {
+  margin: 0 auto 1.25em;
 }
 
 .card img {
