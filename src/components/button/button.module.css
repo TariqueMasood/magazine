@@ -1,3 +1,7 @@
 .btnPrimary {
-  background-color: red;
+  background-color: var(--mgYellow);
+  border: 1px solid var(--mgYellow);
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: #fff;
 }

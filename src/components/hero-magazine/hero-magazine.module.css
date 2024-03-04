@@ -1,0 +1,55 @@
+.heroMagazine {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.heroMagazineImage img {
+  display: inline-block;
+  max-width: 330px;
+  width: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.magazine {
+  padding: 20px 20px 20px 0;
+  position: relative;
+}
+
+.magazineHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.magazineHeading:first-child {
+  color: #5e707b;
+  font-style: italic;
+  font-weight: 600 !important;
+}
+
+.magazineHeading button {
+  background: #38b6ff;
+  border: 1px solid #38b6ff;
+  color: #fff;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.magazineContent {
+  font-weight: 400;
+  margin-top: 1.25em;
+}
+
+.magzineContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.magazineReadBtn:hover {
+  background-color: #ea9d17;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid #ea9d17;
+}
