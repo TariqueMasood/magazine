@@ -38,15 +38,26 @@ const MgNavbar = () => {
             <Nav className="justify-content-center align-items-center  flex-grow-1">
               <NavList />
             </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+            <div className={styles.actions}>
+              <Form className="d-flex align-items-center">
+                <Form.Control
+                  type="search"
+                  placeholder="Search"
+                  className={styles.searchBox}
+                  aria-label="Search"
+                />
+                <div className={styles.searchLabel}>Find</div>
+                <Image
+                  src={searchIcon}
+                  alt="search-icon"
+                  className={styles.searchIcon}
+                />
+              </Form>
+              <div className={styles.divider}>|</div>
+              <Link href="#" className={styles.actionLink}>
+                Advertise
+              </Link>
+            </div>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

@@ -1,3 +1,33 @@
 .navbar {
   background-color: var(--mgBlack);
 }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.searchBox {
+  display: none;
+}
+
+.searchIcon {
+  cursor: pointer;
+}
+
+.searchLabel {
+  color: #fff;
+  font-size: 14px;
+  padding-right: 0.5em;
+}
+
+.actionLink {
+  color: #fff;
+  font-size: 14px;
+}
+
+.divider {
+  color: #fff;
+  font-size: 12px;
+}

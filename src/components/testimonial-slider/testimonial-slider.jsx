@@ -6,7 +6,12 @@ const TestimonialSlider = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <TestimonialCard />
+        <div className={styles.sliderWrapper}>
+          <TestimonialCard />
+          <TestimonialCard />
+          <TestimonialCard />
+          <TestimonialCard />
+        </div>
       </Container>
     </div>
   );

@@ -10,17 +10,11 @@ const Hero = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <Row>
-          <Col sm={12} md={6} lg={3}>
-            <TrendingSlider />
-          </Col>
-          <Col sm={12} md={6} lg={6}>
-            <HeroMagazine />
-          </Col>
-          <Col sm={12} md={6} lg={3}>
-            <HeroSidebar />
-          </Col>
-        </Row>
+        <div className={styles.heroContentWrapper}>
+          <TrendingSlider />
+          <HeroMagazine />
+          <HeroSidebar />
+        </div>
       </Container>
     </div>
   );

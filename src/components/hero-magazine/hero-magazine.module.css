@@ -2,6 +2,12 @@
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex: 2;
+}
+
+.heroMagazineImage {
+  flex: 1;
 }
 
 .heroMagazineImage img {
@@ -12,8 +18,13 @@
 }
 
 .magazine {
-  padding: 20px 20px 20px 0;
+  padding: 20px;
   position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .magazineHeading {
@@ -42,9 +53,9 @@
 }
 
 .magzineContentWrapper {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-items: flex-start; */
 }
 
 .magazineReadBtn:hover {

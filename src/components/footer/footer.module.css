@@ -5,11 +5,9 @@
 
 .footerLogo {
   display: flex;
-  flex-basis: 45%;
+  flex: 1;
   align-items: center;
   gap: 2rem;
-  border-right: 1px solid #ffffff;
-  margin-right: 40px;
 }
 
 .footerLogoDescription {
@@ -18,11 +16,10 @@
 
 .containerWrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .footerLinks {
-  flex-basis: 55%;
+  flex: 1;
 }
 
 .footerLinkTitle {
@@ -76,4 +73,12 @@
   color: #dadada;
   transform: scale(1.2);
   transition: all 0.3s ease-in-out;
+}
+
+.footerCopyright {
+  background: var(--BgGradient);
+  padding: 1.5em 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
 }

@@ -2,3 +2,8 @@
   padding: 50px 0;
   background-color: #fff;
 }
+
+.heroContentWrapper {
+  display: flex;
+  gap: 2.5em;
+}

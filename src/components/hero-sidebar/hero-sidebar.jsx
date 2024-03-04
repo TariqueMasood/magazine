@@ -18,14 +18,14 @@ const HeroSidebar = () => {
           <span>Page 30</span>
         </div>
       </div>
-      <Image src={sidebarImage1} alt="image"></Image>
+      <Image src={sidebarImage1} alt="image" />
       <hr />
       <span className={styles.sidebarCardHeading}>September Prime Focus</span>
       <div className={styles.sidebarCard}>
         <span>SEPTEMBER</span>
         <span>Page 30</span>
       </div>
-      <Image src={sidebarImage2} alt="image"></Image>
+      <Image src={sidebarImage2} alt="image" />
       <hr />
       <span className={styles.sidebarCardHeading}>
         California Highspeed Railway
@@ -34,14 +34,7 @@ const HeroSidebar = () => {
         <span>SEPTEMBER</span>
         <span>Page 30</span>
       </div>
-      <Image src={sidebarImage3} alt="image"></Image>
-      <hr />
-      <span className={styles.sidebarCardHeading}>GERD - Ethiopia</span>
-      <div className={styles.sidebarCard}>
-        <span>SEPTEMBER</span>
-        <span>Page 30</span>
-      </div>
-      <Image src={sidebarImage4} alt="image"></Image>
+      <Image src={sidebarImage3} alt="image" />
     </div>
   );
 };
