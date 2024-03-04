@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import SpotLightSlider from "@/components/spotlight-slider/spotlight-slider";
 import TestimonialSlider from "@/components/testimonial-slider/testimonial-slider";
 import TeamSlider from "@/components/team-slider/team-slider";
+import GallerySlider from "@/components/gallery-slider/gallery-slider";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <SpotLightSlider />
       <TestimonialSlider />
       <TeamSlider />
+      <GallerySlider />
     </main>
   );
 }
