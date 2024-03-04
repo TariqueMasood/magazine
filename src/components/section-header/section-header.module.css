@@ -2,3 +2,18 @@
   text-align: center;
   color: #1f2024;
 }
+
+.wrapper h4 {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.wrapper h1 {
+  font-size: 2.813rem;
+  font-weight: 700;
+}
+
+.wrapper p {
+  font-size: 1.375rem;
+  font-weight: 400;
+}

@@ -5,6 +5,7 @@ import handIcon from "../../../public/images/news-letter-handIcon.png";
 import Image from "next/image";
 import SocialIcon from "../social-icon/social-icon";
 import SectionHeader from "../section-header/section-header";
+import SectionBorder from "../section-border/section-border";
 
 const NewsLetter = () => {
   return (
@@ -15,6 +16,7 @@ const NewsLetter = () => {
           subTitle="Subscribe to monthly creative magazine"
           desc="Get notified to our exclusive releases & events."
         />
+        <SectionBorder />
         <div className={styles.newsLetter}>
           <InputGroup className="mb-3">
             <Form.Control
