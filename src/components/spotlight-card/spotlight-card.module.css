@@ -1,0 +1,50 @@
+.card {
+  max-width: 328px;
+  width: 100%;
+  border-right: 1px solid #8585854d;
+  padding-right: 40px;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.btnContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.contentContainer {
+  margin-top: 20px;
+}
+
+.name,
+.date,
+.file {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 400;
+  size: 14px;
+}
+
+.contentContainer h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.contentContainer p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+}

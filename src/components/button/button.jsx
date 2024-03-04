@@ -2,8 +2,8 @@
 
 import styles from "./button.module.css";
 
-function MyButton() {
-  return <button className={styles.btnPrimary}>Submit</button>;
+function MgButton({ children }) {
+  return <button className={styles.btnPrimary}>{children}</button>;
 }
 
-export default MyButton;
+export default MgButton;

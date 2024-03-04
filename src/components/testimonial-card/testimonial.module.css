@@ -1,0 +1,35 @@
+.card {
+  max-width: 450px;
+  width: 100%;
+  background-color: #e9e9e9;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.card > p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 1.875em;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user h4 {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #222f3e;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+}
+
+.user p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222f3eb2;
+  text-transform: uppercase;
+  margin: 0;
+}
