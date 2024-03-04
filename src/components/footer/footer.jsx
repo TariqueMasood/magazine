@@ -22,53 +22,50 @@ const Footer = () => {
                 porttitor malesuada volutpat.
               </div>
             </div>
+            <div className={styles.divider}></div>
             <div className={styles.footerLinks}>
               <div>
                 <div className={styles.footerLinkTitle}>EXPLORE</div>
-                <nav>
-                  <ul>
-                    <li>
-                      <Link href="/news-article">News & Articles</Link>
-                    </li>
-                    <li>
-                      <Link href="/magazine">Magazine</Link>
-                    </li>
-                    <li>
-                      <Link href="/webinar">Webinars</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Sectors</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Events</Link>
-                    </li>
-                  </ul>
-                </nav>
+                <ul className={styles.navLists}>
+                  <li>
+                    <Link href="/news-article">News & Articles</Link>
+                  </li>
+                  <li>
+                    <Link href="/magazine">Magazine</Link>
+                  </li>
+                  <li>
+                    <Link href="/webinar">Webinars</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Sectors</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Events</Link>
+                  </li>
+                </ul>
               </div>
               <div>
                 <div className={styles.footerLinkTitle}>COMPPANY</div>
-                <nav>
-                  <ul>
-                    <li>
-                      <Link href="/about-us">About us</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Terms & Conditions</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Feedback</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Report a problem</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Testimonials</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Privacy Policy</Link>
-                    </li>
-                  </ul>
-                </nav>
+                <ul className={styles.navLists}>
+                  <li>
+                    <Link href="/about-us">About us</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Terms & Conditions</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Feedback</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Report a problem</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Testimonials</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Privacy Policy</Link>
+                  </li>
+                </ul>
               </div>
               <div className={styles.socialContainer}>
                 <div className={styles.contact}>
@@ -76,23 +73,6 @@ const Footer = () => {
                   <div className={styles.tollFree}>Toll Free - 0123456789</div>
                   <div className={styles.tollFree}>
                     Email : feedback@nestnotify.com
-                  </div>
-                </div>
-                <div className={styles.social}>
-                  <div className={styles.footerLinkTitle}>CONNECT WITH US</div>
-                  <div className={styles.socialIcon}>
-                    <Link href="#">
-                      <FaFacebookF />
-                    </Link>
-                    <Link href="#">
-                      <FaTwitter />
-                    </Link>
-                    <Link href="#">
-                      <FaYoutube />
-                    </Link>
-                    <Link href="#">
-                      <FaInstagram />
-                    </Link>
                   </div>
                 </div>
                 <div className={styles.social}>
