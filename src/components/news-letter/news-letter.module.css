@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.newsLetter {
+  display: inline-block;
+  max-width: 550px;
+  width: 100%;
+}
+
+.newsLetter MgButton {
+  border-radius: 12px;
+}

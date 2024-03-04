@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./footer.module.css";
 import footerLogo from "../../../public/images/footer-logo.svg";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import SocialIcon from "../social-icon/social-icon";
 
 const Footer = () => {
   return (
@@ -75,20 +75,7 @@ const Footer = () => {
               </div>
               <div className={styles.social}>
                 <div className={styles.footerLinkTitle}>CONNECT WITH US</div>
-                <div className={styles.socialIcon}>
-                  <Link href="#">
-                    <FaFacebookF />
-                  </Link>
-                  <Link href="#">
-                    <FaTwitter />
-                  </Link>
-                  <Link href="#">
-                    <FaYoutube />
-                  </Link>
-                  <Link href="#">
-                    <FaInstagram />
-                  </Link>
-                </div>
+                <SocialIcon />
               </div>
             </div>
           </div>
