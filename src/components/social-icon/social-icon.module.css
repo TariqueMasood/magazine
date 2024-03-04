@@ -1,0 +1,16 @@
+.socialIcon {
+  margin-top: 0.75rem;
+}
+
+.socialIcon a {
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 27px;
+  font-size: 25px;
+}
+
+.socialIcon svg:hover {
+  color: #dadada;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}

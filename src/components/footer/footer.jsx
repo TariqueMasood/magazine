@@ -4,6 +4,7 @@ import footerLogo from "../../../public/images/footer-logo.svg";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Container } from "react-bootstrap";
+import SocialIcon from "../social-icon/social-icon";
 
 const Footer = () => {
   return (
@@ -93,6 +94,10 @@ const Footer = () => {
                       <FaInstagram />
                     </Link>
                   </div>
+                </div>
+                <div className={styles.social}>
+                  <div className={styles.footerLinkTitle}>CONNECT WITH US</div>
+                  <SocialIcon />
                 </div>
               </div>
             </div>

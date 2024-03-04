@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.border {
+  width: 30px;
+  height: 2px;
+  background: var(--BgGradient);
+}
