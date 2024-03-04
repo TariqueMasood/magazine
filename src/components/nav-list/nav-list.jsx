@@ -26,15 +26,11 @@ const NavList = () => {
   ];
 
   return (
-    <ul>
+    <>
       {links.map((link) => {
-        return (
-          <li className={styles.navItem}>
-            <NavLink label={link.label} path={link.path} />
-          </li>
-        );
+        return <NavLink key={link.label} label={link.label} path={link.path} />;
       })}
-    </ul>
+    </>
   );
 };
 
