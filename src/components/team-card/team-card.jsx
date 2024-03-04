@@ -5,7 +5,7 @@ import teamImg1 from "../../../public/images/team-img1.png";
 const TeamCard = () => {
   return (
     <div className={styles.card}>
-      <Image src={teamImg1} alt="team-img" />
+      <Image src={teamImg1} alt="team-img" className={styles.imgCss} />
       <h3>ant eksiler</h3>
       <h4>Assistant Fashion Editor</h4>
       <p>

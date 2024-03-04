@@ -10,7 +10,7 @@ const SpotLightCard = () => {
   return (
     <div className={styles.card}>
       <div className={styles.imgContainer}>
-        <Image src={image} alt="card" />
+        <Image src={image} alt="card" width={328} />
         <div className={styles.btnContainer}>
           <MgButton>AI & Machine Learning</MgButton>
         </div>
