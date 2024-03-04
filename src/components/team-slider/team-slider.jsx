@@ -3,6 +3,7 @@ import TeamCard from "../team-card/team-card";
 import styles from "./team-slider.module.css";
 import SectionHeader from "../section-header/section-header";
 import SectionBorder from "../section-border/section-border";
+import MgSlider from "../slider/slider";
 
 const TeamSlider = () => {
   const settings = {
@@ -20,7 +21,12 @@ const TeamSlider = () => {
           desc="Ready variety of layouts for blog posts and other pages."
         />
         <SectionBorder />
-        <TeamCard />
+        <MgSlider settings={settings}>
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+        </MgSlider>
       </Container>
     </div>
   );

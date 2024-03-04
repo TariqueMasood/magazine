@@ -8,19 +8,18 @@ const TestimonialSlider = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <div className={styles.sliderWrapper}>
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
-        </div>
         <SectionHeader
           title="TESTIMONIAL"
           subTitle="What our readers say."
           desc="Hear from Those Who Read It."
         />
         <SectionBorder />
-        <TestimonialCard />
+        <div className={styles.sliderWrapper}>
+          <TestimonialCard />
+          <TestimonialCard />
+          <TestimonialCard />
+          <TestimonialCard />
+        </div>
       </Container>
     </div>
   );
