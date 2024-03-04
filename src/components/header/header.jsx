@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container">
         <div className={styles.wrapper}>
           {links.map((link) => (
-            <NavLink label={link.label} path={link.path} />
+            <NavLink key={link.label} label={link.label} path={link.path} />
           ))}
         </div>
       </div>
