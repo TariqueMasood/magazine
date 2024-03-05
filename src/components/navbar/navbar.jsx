@@ -18,7 +18,14 @@ import {
 
 const MgNavbar = () => {
   return (
-    <Navbar expand="md" className={`bg-body-dark ${styles.navbar}`}>
+    <Navbar
+      collapseOnSelect
+      expand="md"
+      bg="dark"
+      className="bg-body-tertiary"
+      data-bs-theme="dark"
+      variant="dark"
+    >
       <Container>
         <Link href="/">
           <Image src={logo} alt="logo" />
