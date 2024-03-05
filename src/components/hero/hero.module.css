@@ -4,5 +4,12 @@
 
 .heroContentWrapper {
   display: flex;
+  flex-direction: column;
   gap: 2.5em;
+}
+
+@media(min-width: 768px) {
+  .heroContentWrapper {
+    flex-direction: row;
+  }
 }
