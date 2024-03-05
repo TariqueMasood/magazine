@@ -1,19 +1,16 @@
 import Image from "next/image";
 import styles from "./testimonial.module.css";
-import useImg1 from "../../../public/images/testimonial-img1.png";
 
-const TestimonialCard = () => {
+const TestimonialCard = (props) => {
+  const { title, userImg, userName, userPost } = props;
   return (
     <div className={styles.card}>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        non lectus rutrum, congue nisl id, iaculis lorem.
-      </p>
+      <p>{title}</p>
       <div className={styles.imgContainer}>
-        <Image src={useImg1} alt="user" />
+        <Image src={userImg} alt="user" />
         <div className={styles.user}>
-          <h4>rob zuber</h4>
-          <p>ceo</p>
+          <h4>{userName}</h4>
+          <p>{userPost}</p>
         </div>
       </div>
     </div>

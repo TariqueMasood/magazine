@@ -1,11 +1,10 @@
 import Image from "next/image";
 import styles from "./gallery-card.module.css";
-import galleryImg3 from "../../../public/images/gallery-img-3.png";
 
-const GalleryCard = () => {
+const GalleryCard = (props) => {
   return (
     <div className={styles.card}>
-      <Image src={galleryImg3} alt="card" className={styles.galleryImg} />
+      <Image src={props.galleryImg} alt="card" className={styles.galleryImg} />
     </div>
   );
 };

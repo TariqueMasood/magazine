@@ -2,8 +2,12 @@
 
 import styles from "./button.module.css";
 
-function MgButton({ children }) {
-  return <button className={styles.btnPrimary}>{children}</button>;
+function MgButton({ style, children }) {
+  return (
+    <button className={styles.btnPrimary} style={style}>
+      {children}
+    </button>
+  );
 }
 
 export default MgButton;

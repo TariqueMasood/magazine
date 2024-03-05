@@ -24,11 +24,16 @@ const NewsLetter = () => {
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
             />
-            <MgButton>
+            <MgButton
+              style={{
+                backgroundColor: "#000",
+                border: "1px solid #000",
+              }}
+            >
               <Image src={handIcon} alt="hand" /> Subscribe Now!
             </MgButton>
           </InputGroup>
-          <SocialIcon />
+          <SocialIcon style={{ color: "#000" }} />
         </div>
       </Container>
     </div>
