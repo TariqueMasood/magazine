@@ -49,10 +49,6 @@ const GallerySlider = () => {
           {data.map((data, index) => {
             return <GalleryCard key={index} galleryImg={data.galleryImg} />;
           })}
-          <GalleryCard />
-          <GalleryCard />
-          <GalleryCard />
-          <GalleryCard />
         </MgSlider>
       </Container>
     </div>

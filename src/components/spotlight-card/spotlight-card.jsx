@@ -6,7 +6,7 @@ import calendarIcon from "../../../public/images/calendar-icon.png";
 import fileIcon from "../../../public/images/file-icon.png";
 
 const SpotLightCard = (props) => {
-  const { blogImg, title, desc } = props;
+  const { blogImg, title, desc, profileImg, name } = props;
   return (
     <div className={styles.card}>
       <div className={styles.imgContainer}>
@@ -18,8 +18,8 @@ const SpotLightCard = (props) => {
       <div className={styles.contentContainer}>
         <div className={styles.info}>
           <div className={styles.name}>
-            <Image src={writerImg} alt="name" />
-            <span>Marcus Law</span>
+            <Image src={profileImg} alt="name" />
+            <span>{name}</span>
           </div>
           <div className={styles.date}>
             <Image src={calendarIcon} alt="calendar" />
