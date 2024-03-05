@@ -3,6 +3,7 @@ import SpotLightCard from "../spotlight-card/spotlight-card";
 import styles from "./spotlight-slider.module.css";
 import MgSlider from "../slider/slider";
 import { blogData } from "@/data/blog-data";
+import SectionBorder from "../section-border/section-border";
 
 const SpotLightSlider = () => {
   const settings = {
@@ -15,6 +16,10 @@ const SpotLightSlider = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
+        <div className={styles.sliderTitle}>
+          <h2 className={styles.sliderHeading}>spotlight</h2>
+          <SectionBorder />
+        </div>
         <div className={styles.sliderWrapper}>
           <MgSlider settings={settings}>
             {blogData.map((data, index) => {
@@ -22,6 +27,8 @@ const SpotLightSlider = () => {
                 <SpotLightCard
                   key={index}
                   blogImg={data.blogImg}
+                  profileImg={data.profileImg}
+                  name={data.name}
                   title={data.title}
                   desc={data.desc}
                 />

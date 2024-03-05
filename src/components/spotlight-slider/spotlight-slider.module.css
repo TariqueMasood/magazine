@@ -3,5 +3,18 @@
 }
 
 .sliderWrapper {
- text-align: center;
+  text-align: center;
+}
+
+.sliderTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+.sliderHeading {
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
