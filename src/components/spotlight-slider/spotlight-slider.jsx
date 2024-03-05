@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import SpotLightCard from "../spotlight-card/spotlight-card";
 import styles from "./spotlight-slider.module.css";
 import MgSlider from "../slider/slider";
+import { blogData } from "@/data/blog-data";
 
 const SpotLightSlider = () => {
   const settings = {
@@ -16,10 +17,16 @@ const SpotLightSlider = () => {
       <Container>
         <div className={styles.sliderWrapper}>
           <MgSlider settings={settings}>
-            <SpotLightCard />
-            <SpotLightCard />
-            <SpotLightCard />
-            <SpotLightCard />
+            {blogData.map((data, index) => {
+              return (
+                <SpotLightCard
+                  key={index}
+                  blogImg={data.blogImg}
+                  title={data.title}
+                  desc={data.desc}
+                />
+              );
+            })}
           </MgSlider>
         </div>
       </Container>

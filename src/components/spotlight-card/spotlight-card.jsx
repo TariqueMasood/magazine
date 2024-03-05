@@ -1,16 +1,16 @@
 import Image from "next/image";
 import styles from "./spotlight-card.module.css";
-import image from "../../../public/images/spotlight-img-1.png";
 import MgButton from "../button/button";
 import writerImg from "../../../public/images/writer-1.png";
 import calendarIcon from "../../../public/images/calendar-icon.png";
 import fileIcon from "../../../public/images/file-icon.png";
 
-const SpotLightCard = () => {
+const SpotLightCard = (props) => {
+  const { blogImg, title, desc } = props;
   return (
     <div className={styles.card}>
       <div className={styles.imgContainer}>
-        <Image src={image} alt="card" width={328} />
+        <Image src={blogImg} alt="card" width={328} />
         <div className={styles.btnContainer}>
           <MgButton>AI & Machine Learning</MgButton>
         </div>
@@ -30,11 +30,8 @@ const SpotLightCard = () => {
             <span>20</span>
           </div>
         </div>
-        <h4>Alibaba Cloud Helping Enterprises Harness Gen AI</h4>
-        <p>
-          One of the World’s Largest Cloud Companies, Alibaba Cloud is Helping
-          Enterprise Customers Harness the Power of Generative AI
-        </p>
+        <h4>{title}</h4>
+        <p>{desc}</p>
       </div>
     </div>
   );
