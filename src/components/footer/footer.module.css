@@ -16,11 +16,8 @@
 
 .containerWrapper {
   display: flex;
+  flex-direction: column;
   gap: 40px;
-}
-
-.footerLinks {
-  flex: 1;
 }
 
 .footerLinkTitle {
@@ -33,7 +30,9 @@
 
 .footerLinks {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  flex: 1;
 }
 
 .navLists {
@@ -86,4 +85,10 @@
 .divider {
   width: 1px;
   background-color: #8585854d;
+}
+
+@media(min-width: 992px) {
+  .containerWrapper {
+    flex-direction: row;
+  }
 }

@@ -5,7 +5,7 @@ import asideImg from "../../../public/images/card1-img1.svg";
 const TrendingSlider = () => {
   return (
     <div className={styles.aside}>
-      <div className={styles.asideHeading}>TREANDING</div>
+      <div className={styles.asideHeading}>TRENDING</div>
       <Image src={asideImg} alt="card" />
       <div className={styles.asideTitles}>
         EY CEO Outlook: AI Being Adopted as a Driver of Efficiency
