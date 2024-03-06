@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 30px 0;
+}
+
+.subscribe {
+  display: inline-block;
+  max-width: 550px;
+  width: 100%;
+}
+
+.subscribe MgButton {
+  border-radius: 12px;
+}

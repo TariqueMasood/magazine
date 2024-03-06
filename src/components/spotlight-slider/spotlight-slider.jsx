@@ -4,6 +4,7 @@ import styles from "./spotlight-slider.module.css";
 import MgSlider from "../slider/slider";
 import { blogData } from "@/data/blog-data";
 import SectionBorder from "../section-border/section-border";
+import SectionTitle from "../section-title/section-title";
 
 const SpotLightSlider = () => {
   const settings = {
@@ -16,10 +17,7 @@ const SpotLightSlider = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <div className={styles.sliderTitle}>
-          <h2 className={styles.sliderHeading}>spotlight</h2>
-          <SectionBorder />
-        </div>
+        <SectionTitle />
         <div className={styles.sliderWrapper}>
           <MgSlider settings={settings}>
             {blogData.map((data, index) => {

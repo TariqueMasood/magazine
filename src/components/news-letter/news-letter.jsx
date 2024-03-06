@@ -1,11 +1,9 @@
-import { Container, Form, InputGroup } from "react-bootstrap";
 import styles from "./news-letter.module.css";
-import MgButton from "../button/button";
-import handIcon from "../../../public/images/news-letter-handIcon.png";
-import Image from "next/image";
-import SocialIcon from "../social-icon/social-icon";
 import SectionHeader from "../section-header/section-header";
 import SectionBorder from "../section-border/section-border";
+import Subscribe from "../subscribe/subscribe";
+import { Container } from "react-bootstrap";
+import SocialIcon from "../social-icon/social-icon";
 
 const NewsLetter = () => {
   return (
@@ -17,24 +15,8 @@ const NewsLetter = () => {
           desc="Get notified to our exclusive releases & events."
         />
         <SectionBorder />
-        <div className={styles.newsLetter}>
-          <InputGroup className="mb-3">
-            <Form.Control
-              placeholder="Email Adderess"
-              aria-label="Recipient's username"
-              aria-describedby="basic-addon2"
-            />
-            <MgButton
-              style={{
-                backgroundColor: "#000",
-                border: "1px solid #000",
-              }}
-            >
-              <Image src={handIcon} alt="hand" /> Subscribe Now!
-            </MgButton>
-          </InputGroup>
-          <SocialIcon style={{ color: "#000" }} />
-        </div>
+        <Subscribe />
+        <SocialIcon style={{ color: "#000" }} />
       </Container>
     </div>
   );

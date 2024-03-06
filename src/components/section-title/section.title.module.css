@@ -1,0 +1,11 @@
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sectionHeading {
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}

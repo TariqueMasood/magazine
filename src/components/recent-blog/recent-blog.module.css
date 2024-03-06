@@ -1,0 +1,54 @@
+.wrapper {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.cardImg img {
+  max-width: 580px;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cardName {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+.cardName span:first-child {
+  font-weight: 400;
+  color: var(--MgGrey);
+}
+
+.cardName span:last-child {
+  font-weight: 500;
+  color: var(--mgYellow);
+}
+
+.recentBlogDivider {
+  border: 1px solid #8585854d;
+  margin: 12px 0;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.cardDesc {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.cardDate {
+  font-weight: 400;
+  color: var(--MgGrey);
+}
