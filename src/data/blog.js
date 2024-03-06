@@ -7,8 +7,9 @@ import writerImg2 from "../../public/images/writer-img2.png";
 import writerImg3 from "../../public/images/writer-img3.png";
 import writerImg4 from "../../public/images/writer-img4.png";
 
-export const blogData = [
+ const blogData = [
   {
+    id: 1,
     blogImg: image1,
     profileImg: writerImg1,
     name: "Marcus Law ",
@@ -18,6 +19,7 @@ export const blogData = [
     desc: "Companies Including Microsoft, Amazon, IBM, Intel, Meta, Anthropic, Hugging Face, Nvidia and OpenAI Have Joined a US Programme for Responsible AI",
   },
   {
+    id: 2,
     blogImg: image2,
     profileImg: writerImg2,
     name: "Ronald Richards",
@@ -27,6 +29,7 @@ export const blogData = [
     desc: "One of the World’s Largest Cloud Companies, Alibaba Cloud is Helping Enterprise Customers Harness the Power of Generative AI",
   },
   {
+    id: 3,
     blogImg: image3,
     profileImg: writerImg3,
     name: "Albert Flores",
@@ -36,6 +39,7 @@ export const blogData = [
     desc: "With AI Adoption on the Rise, Organisations Today are Increasingly Concerned About how the Technology Could Affect Their Valuable Data",
   },
   {
+    id: 4,
     blogImg: image4,
     profileImg: writerImg4,
     name: "Theresa Webb",
@@ -45,3 +49,12 @@ export const blogData = [
     desc: "Citrix Report Finds That IT Leaders are Choosing Hybrid Cloud Strategies due to Flexibility, Cost-Effectiveness and Security",
   },
 ];
+
+export const getBlogs = async () => {
+  return blogData;
+}
+
+export const getSingleBlog = async (id) => {
+  const singleBlog = blogData.find((data) => data.id === parseInt(id));
+  return singleBlog; 
+}

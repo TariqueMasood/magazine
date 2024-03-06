@@ -3,7 +3,6 @@ import styles from "./hero-sidebar.module.css";
 import sidebarImage1 from "../../../public/images/sidebar-img1.png";
 import sidebarImage2 from "../../../public/images/sidebar-img2.png";
 import sidebarImage3 from "../../../public/images/sidebar-img3.png";
-import sidebarImage4 from "../../../public/images/sidebar-img4.png";
 
 const HeroSidebar = () => {
   return (

@@ -2,10 +2,6 @@
   padding: 50px 0;
 }
 
-.sliderWrapper {
-  text-align: center;
-}
-
 .sliderTitle {
   display: flex;
   flex-direction: column;
