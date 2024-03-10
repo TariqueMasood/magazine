@@ -9,7 +9,7 @@ const NavList = () => {
     },
     {
       label: "Blogs",
-      path: "/blog",
+      path: "/blogs",
     },
     {
       label: "News & Articles",

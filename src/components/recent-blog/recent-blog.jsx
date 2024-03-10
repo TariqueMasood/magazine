@@ -36,7 +36,7 @@ const RecentBlog = () => {
           </Col>
           <Col sm={12} md={12} lg={6}>
             <div className={styles.cardWrapper}>
-              <div>
+              <div className={styles.cardImage}>
                 <Image src={cardImg2} alt="card" />
               </div>
               <div className={styles.recentBlogContent}>

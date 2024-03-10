@@ -4,16 +4,23 @@
 }
 
 .cardImg img {
-  max-width: 580px;
   width: 100%;
+  height: auto;
   padding-bottom: 12px;
 }
 
 .cardWrapper {
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
+  /* gap: 16px; */
 }
+
+.cardImage img {
+  width: 100%;
+  height: auto;
+}
+
 .cardName {
   display: flex;
   align-items: center;
@@ -51,4 +58,10 @@
 .cardDate {
   font-weight: 400;
   color: var(--MgGrey);
+}
+
+@media (max-width: 480px) {
+  .cardWrapper {
+    flex-direction: column;
+  }
 }

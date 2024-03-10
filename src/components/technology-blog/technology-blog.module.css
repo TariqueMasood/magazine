@@ -7,13 +7,48 @@
   width: 100%;
 }
 
+.cardBorder {
+  border-bottom: 1px solid;
+  margin: 1.5em 0;
+}
+
 .cardImg {
-  max-width: 400px;
+  padding-bottom: 12px;
+}
+
+.cardImg img {
   width: 100%;
+  height: auto;
 }
 
 .writerName {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.writerName span:first-child {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--MgBlue);
+}
+
+.writerName span:last-child {
+  font-weight: 400;
+  color: var(--MgGrey);
+}
+
+.cardTitle {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.cardConten {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: var(--MgGrey);
 }
