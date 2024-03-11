@@ -12,6 +12,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/section-title/section-title";
 import SpotLightCard from "@/components/spotlight-card/spotlight-card";
 import MgSlider from "@/components/slider/slider";
+import { notFound } from "next/navigation";
 
 const settings = {
   dots: true,
@@ -42,6 +43,20 @@ const settings = {
 
 const blogData = await getBlogs();
 
+export async function generateMetadata({ params }) {
+  const { blogSlug } = params;
+  const blog = await getSingleBlog(blogSlug);
+
+  if (!blog) {
+    notFound();
+  }
+
+  return {
+    title: blog.title,
+    desc: blog.desc,
+  };
+}
+
 const SingleBlog = async ({ params }) => {
   const { blogSlug } = params;
   const blog = await getSingleBlog(blogSlug);
@@ -68,18 +83,18 @@ const SingleBlog = async ({ params }) => {
           The tongue is secured to the front of the mouth partly by a band of
           tissue called the lingual frenulum. If the frenulum is short, it can
           restrict the movement of the tongue. This is commonly called a
-          tongue-tie. Children with a tongue-tie can't stick their tongue out
-          past their lower lip, or touch their tongue to the top of their upper
-          teeth when their mouth is open. When they stick out their tongue, it
-          looks notched or heart-shaped. Since babies don't routinely stick out
-          their tongues, a baby's tongue may be tied if you can't get a finger
-          underneath the tongue.
+          tongue-tie. Children with a tongue-tie can&apos;t stick their tongue
+          out past their lower lip, or touch their tongue to the top of their
+          upper teeth when their mouth is open. When they stick out their
+          tongue, it looks notched or heart-shaped. Since babies don&apos;t
+          routinely stick out their tongues, a baby&apos;s tongue may be tied if
+          you can&apos;t get a finger underneath the tongue.
         </p>
         <h3 className={styles.blogSubTitle}>How common are tongue-ties?</h3>
         <p className={styles.blogSubContent}>
-          Tongue-ties are common. It's hard to say exactly how common, as people
-          define this condition differently. About 8% of babies under age one
-          may have at least a mild tongue-tie.
+          Tongue-ties are common. It&apos;s hard to say exactly how common, as
+          people define this condition differently. About 8% of babies under age
+          one may have at least a mild tongue-tie.
         </p>
         <div className={styles.blogBorder}></div>
         <div className={styles.centerCard}>
