@@ -64,32 +64,20 @@ const SingleBlog = async ({ params }) => {
     <div className={styles.SigleBlogWrapper}>
       <Container>
         <h4 className={styles.singleBlogHeading}>child & teen health</h4>
-        <h1 className={styles.singleBlogTitle}>
-          What is a tongue-tie? What parents need to know
-        </h1>
+        <h1 className={styles.singleBlogTitle}>{blog.title}</h1>
         <p className={styles.singleBlogSubTitle}>
           A shorter-than-usual band of tissue may restrict tongue movements yet
           cause no serious problems.
         </p>
         <div className={styles.singlgeBlogImg}>
-          <Image src={blogsImg1} alt="card" />
+          <Image src={blog.blogImg} alt="card" />
         </div>
         <div className={styles.blogWriter}>
           By <span>Claire McCarthy</span>, MD, Senior Faculty Editor, Harvard
           Health Publishing
         </div>
-        <div className={styles.blogDate}>February 7, 2024</div>
-        <p className={styles.blogContent}>
-          The tongue is secured to the front of the mouth partly by a band of
-          tissue called the lingual frenulum. If the frenulum is short, it can
-          restrict the movement of the tongue. This is commonly called a
-          tongue-tie. Children with a tongue-tie can&apos;t stick their tongue
-          out past their lower lip, or touch their tongue to the top of their
-          upper teeth when their mouth is open. When they stick out their
-          tongue, it looks notched or heart-shaped. Since babies don&apos;t
-          routinely stick out their tongues, a baby&apos;s tongue may be tied if
-          you can&apos;t get a finger underneath the tongue.
-        </p>
+        <div className={styles.blogDate}>{blog.date}</div>
+        <p className={styles.blogContent}>{blog.desc}</p>
         <h3 className={styles.blogSubTitle}>How common are tongue-ties?</h3>
         <p className={styles.blogSubContent}>
           Tongue-ties are common. It&apos;s hard to say exactly how common, as
@@ -101,7 +89,7 @@ const SingleBlog = async ({ params }) => {
           <div className={styles.centerCardWrapper}>
             <div>
               <div className={styles.centerCardWriter}>
-                <span>Dr. Arun Puri</span>
+                <span>{blog.name}</span>
                 <span>Anesthesia</span>
               </div>
               <h3 className={styles.centerCardTitle}>
@@ -129,7 +117,7 @@ const SingleBlog = async ({ params }) => {
           <div className={styles.authorBorder}></div>
           <div className={styles.authorCard}>
             <div className={styles.authorCardImg}>
-              <Image src={authorImg} alt="card" />
+              <Image src={blog.profileImg} alt="card" />
             </div>
             <div>
               <div>
