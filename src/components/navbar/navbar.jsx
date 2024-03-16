@@ -25,7 +25,7 @@ const MgNavbar = () => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-              Offcanvas
+              Project Leaders Magazine
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>

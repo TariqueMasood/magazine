@@ -13,7 +13,7 @@ const NavList = () => {
     },
     {
       label: "News & Articles",
-      path: "/news-article",
+      path: "/blogs",
     },
     {
       label: "Webinars",
