@@ -6,26 +6,11 @@ import searchIcon from "../../../public/images/search-icon.svg";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import NavList from "../nav-list/nav-list";
-import NavLink from "../link/link";
-import {
-  Button,
-  Container,
-  Form,
-  Nav,
-  Navbar,
-  Offcanvas,
-} from "react-bootstrap";
+import { Container, Form, Nav, Navbar, Offcanvas } from "react-bootstrap";
 
 const MgNavbar = () => {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="md"
-      bg="dark"
-      className="bg-body-tertiary"
-      data-bs-theme="dark"
-      variant="dark"
-    >
+    <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark">
       <Container>
         <Link href="/">
           <Image src={logo} alt="logo" />
@@ -35,6 +20,8 @@ const MgNavbar = () => {
           id={`offcanvasNavbar-expand-md`}
           aria-labelledby={`offcanvasNavbarLabel-expand-md`}
           placement="end"
+          bg="dark"
+          data-bs-theme="dark"
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
