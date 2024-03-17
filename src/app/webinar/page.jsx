@@ -69,7 +69,9 @@ const FirstRowInterview = () => {
             </div>
             <div className={styles.SecondVideoContent}>
               <h6>Cloud & Cyber Security</h6>
-              <p>Concurrency’s company cloud strategies to help reduce waste</p>
+              <p>
+                Concurrency&apos;s company cloud strategies to help reduce waste
+              </p>
             </div>
           </div>
         </Col>
@@ -252,9 +254,9 @@ const FirstRowCard = () => {
                 Government
               </h2>
               <p>
-                Microsoft Government CTO on the company's expansive role in AI
-                adoption, Cloud migration, ethical governance, and cybersecurity
-                within the public sector
+                Microsoft Government CTO on the company&apos;s expansive role in
+                AI adoption, Cloud migration, ethical governance, and
+                cybersecurity within the public sector
               </p>
               <MgButton
                 style={{
