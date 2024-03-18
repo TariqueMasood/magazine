@@ -20,7 +20,7 @@ const NavList = () => {
       path: "/webinar",
     },
     {
-      label: "About",
+      label: "About Us",
       path: "/about-us",
     },
   ];

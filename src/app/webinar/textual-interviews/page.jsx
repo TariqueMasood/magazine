@@ -12,49 +12,49 @@ import Subscribe from "@/components/subscribe/subscribe";
 
 const data = [
   {
-    id: 1,
+    id: "t1",
     cardImage: cardImg1,
     title: "Avner Papouchado",
     subTitle: "CEO at Serverfarm",
     desc: "With demand only set to grow, Serverfarm continues to pioneer sustainable, innovative and efficient data centre solutions as part ofits long...",
   },
   {
-    id: 2,
+    id: "t2",
     cardImage: cardImg2,
     title: "Chris McDonald",
     subTitle: "Global Head of Technical Operations",
     desc: "Chris McDonald, Global Head of Technical Operations, on his Journey to Lead a Sustainable",
   },
   {
-    id: 1,
+    id: "t3",
     cardImage: cardImg3,
     title: "Khang Pham Ngoc",
     subTitle: "Chief Financial Officer at Home Credit Vietnam",
     desc: "Home Credit Vietnam CFO Khang Pham Ngoc Tells us how he Came into his Role,and how…",
   },
   {
-    id: 1,
+    id: "t4",
     cardImage: cardImg4,
     title: "Avner Papouchado",
     subTitle: "CEO at Serverfarm",
     desc: "With demand only set to grow, Serverfarm continues to pioneer sustainable, innovative and efficient data centre solutions as part ofits long...",
   },
   {
-    id: 1,
+    id: "t5",
     cardImage: cardImg1,
     title: "Avner Papouchado",
     subTitle: "CEO at Serverfarm",
     desc: "With demand only set to grow, Serverfarm continues to pioneer sustainable, innovative and efficient data centre solutions as part ofits long...",
   },
   {
-    id: 1,
+    id: "t6",
     cardImage: cardImg2,
     title: "Avner Papouchado",
     subTitle: "CEO at Serverfarm",
     desc: "With demand only set to grow, Serverfarm continues to pioneer sustainable, innovative and efficient data centre solutions as part ofits long...",
   },
   {
-    id: 1,
+    id: "t7",
     cardImage: cardImg4,
     title: "Avner Papouchado",
     subTitle: "CEO at Serverfarm",
@@ -62,8 +62,17 @@ const data = [
   },
 ];
 
+export const getTextualData = async () => {
+  return data;
+};
+
+export const getSingleTextualData = async (id) => {
+  const singleData = data.find((data) => data.id === id);
+  return singleData;
+};
+
 const TextualInterviewCard = (props) => {
-  const { cardImage, title, subTitle, desc } = props;
+  const { id, cardImage, title, subTitle, desc } = props.data;
   return (
     <div className={styles.cardWrapper}>
       <div>
@@ -73,7 +82,7 @@ const TextualInterviewCard = (props) => {
         <h4>{title}</h4>
         <h6>{subTitle}</h6>
         <p>{desc}</p>
-        <Link href="#">
+        <Link href={`/webinar/textual-interviews/${id}`}>
           Read More <MdKeyboardArrowRight />
         </Link>
       </div>
@@ -99,16 +108,17 @@ const TextualInterviewsPage = () => {
       <div className={styles.card}>
         <Container>
           <Row>
-            {data.map((data, index) => {
+            {data.map((data) => {
               return (
-                <Col lg={3} md={4} sm={6} xm={12} className="mt-4">
-                  <TextualInterviewCard
-                    key={index}
-                    cardImage={data.cardImage}
-                    title={data.title}
-                    subTitl={data.subTitle}
-                    desc={data.desc}
-                  />
+                <Col
+                  key={data.id}
+                  lg={3}
+                  md={4}
+                  sm={6}
+                  xm={12}
+                  className="mt-4"
+                >
+                  <TextualInterviewCard data={data} />
                 </Col>
               );
             })}
