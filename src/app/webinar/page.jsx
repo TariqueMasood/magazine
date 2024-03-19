@@ -17,6 +17,7 @@ import cardImg4 from "../../../public/images/textual-interview-img4.png";
 import cardImg5 from "../../../public/images/textual-interview-img5.png";
 import cardImg6 from "../../../public/images/textual-interview-img6.png";
 import YouTube from "react-youtube";
+import Link from "next/link";
 
 const YouTubePlayer = ({ videoId, width, height }) => {
   const opts = {
@@ -33,7 +34,12 @@ const YouTubePlayer = ({ videoId, width, height }) => {
 const FirstRowInterview = () => {
   return (
     <div className={styles.rowInterview}>
-      <SectionTitle title="interviews" />
+      <div className={styles.videoViewAll}>
+        <SectionTitle title="video interviews" />
+        <Link href="/webinar/video-interviews">
+          View All <MdKeyboardArrowRight />
+        </Link>
+      </div>
       <p>New and archived interviews conducted by our editorial.</p>
       <Row>
         <Col lg={8}>
@@ -235,7 +241,12 @@ const MostViewed = () => {
 const FirstRowCard = () => {
   return (
     <div>
-      <SectionTitle title="Textual interviews" />
+      <div className={styles.textualViewAll}>
+        <SectionTitle title="Textual interviews" />
+        <Link href="/webinar/textual-interviews">
+          View All <MdKeyboardArrowRight />
+        </Link>
+      </div>
       <p>
         Read the latest posts from experts at Knowmed Health Publishing covering
         a variety of health topics and perspectives on medical news.
