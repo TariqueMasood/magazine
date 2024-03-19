@@ -76,11 +76,10 @@ const VideoInterviewsPage = () => {
       <div className={styles.videoCard}>
         <Container>
           <Row>
-            {data.map((data, index) => {
+            {data.map((data) => {
               return (
-                <Col lg={4} md={6} className="mt-4">
+                <Col key={data.id} lg={4} md={6} className="mt-4">
                   <VideoInterviewCard
-                    key={index}
                     cardVideo={data.cardVideo}
                     title={data.title}
                     heading={data.heading}

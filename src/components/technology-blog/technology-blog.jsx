@@ -16,7 +16,7 @@ const TechnologyBlog = () => {
         </p>
         <div>
           <Tabs
-            defaultActiveKey="profile"
+            defaultActiveKey="All"
             id="uncontrolled-tab-example"
             className="mb-3"
           >

@@ -55,7 +55,7 @@
 }
 
 .storyContent {
-  flex: 1;
+  flex: 2;
 }
 
 .storyImg {
@@ -90,7 +90,7 @@
 }
 
 .mottoContent {
-  flex: 1;
+  flex: 2;
 }
 
 .mottoImage {

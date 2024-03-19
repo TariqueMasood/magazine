@@ -56,9 +56,9 @@ const AboutPage = () => {
         <h2>This is our story.</h2>
         <p>
           In the 1990s, in a small apartment located in the suburbs of Chennai
-          in southern India, a simple, yet revolutionary idea was born: "Build
-          smart technology to help businesses work better." This idea evolved to
-          become the world-class technology company we're known as today.
+          in southern India, a simple, yet revolutionary idea was born: Build
+          smart technology to help businesses work better. This idea evolved to
+          become the world-class technology company we&quot;re known as today.
         </p>
       </div>
       <div className={styles.ourStory}>
@@ -78,9 +78,9 @@ const AboutPage = () => {
               </p>
               <p>
                 We believe that everyone has the potential to lead, to innovate,
-                and to inspire. Whether you’re an individual leading a small
-                team or an organization driving industry-wide change, your story
-                matters. And we’re here to tell it.
+                and to inspire. Whether you&quot;re an individual leading a
+                small team or an organization driving industry-wide change, your
+                story matters. And we&quot;re here to tell it.
               </p>
               <p>
                 Our journey into project leadership and industry excellence
@@ -99,10 +99,11 @@ const AboutPage = () => {
             <div className={styles.storyContent}>
               <p>
                 Over the years, we have worked in various industries, from
-                construction to technology to banking to healthcare, and we’ve
-                led projects of all sizes delivering success. Each project was a
-                learning experience, and each success (and failure) taught us
-                valuable lessons about leadership, teamwork, and perseverance.
+                construction to technology to banking to healthcare, and
+                we&quot;ve led projects of all sizes delivering success. Each
+                project was a learning experience, and each success (and
+                failure) taught us valuable lessons about leadership, teamwork,
+                and perseverance.
               </p>
               <p>
                 But throughout our career, we noticed something. There were
@@ -112,7 +113,7 @@ const AboutPage = () => {
                 in their industries. But their stories were not being told.
               </p>
               <p>
-                That’s when we had the idea for this magazine. We wanted to
+                That&quot;s when we had the idea for this magazine. We wanted to
                 create a platform where these stories could be shared. A place
                 where project leaders could be recognized for their hard work
                 and dedication. A place where others could learn from their
