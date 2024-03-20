@@ -59,7 +59,7 @@ const GallerySlider = () => {
           style={{ color: "#fff" }}
           title="100% READY TO US"
           subTitle="Huge premade layouts gallery"
-          desc="Ready variety of layouts for  blog posts and other pages."
+          desc="Ready variety of layouts for blog posts and other pages."
         />
         <SectionBorder />
         <MgSlider settings={settings}>

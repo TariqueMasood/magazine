@@ -39,9 +39,9 @@
 }
 
 :root {
-  --mgBlack: #1f2024;
+  --mgBlack: #000;
   --BgGradient: linear-gradient(104.94deg, #38b6ff -0.05%, #38ffdb 99.95%);
-  --bgBody: #f0f6f8;
+  --bgBody: #fff;
   --mgYellow: #ffb434;
   --MgGrey: #5e707b;
   --MgBlue: #38b6ff;

@@ -178,7 +178,7 @@ const MostViewed = () => {
                 <div>
                   <h6>Non-Communicable Diseases</h6>
                   <p>
-                    A‘Tsunami’of Chronic Disease Challenges Confronts Health
+                    A'Tsunami'of Chronic Disease Challenges Confronts Health
                     Sector Response to Humanitarian Crises
                   </p>
                 </div>
@@ -225,7 +225,7 @@ const MostViewed = () => {
                 <div>
                   <h6>Non-Communicable Diseases</h6>
                   <p>
-                    A ‘Tsunami’ of Chronic Disease Challenges Confronts Health
+                    A 'Tsunami' of Chronic Disease Challenges Confronts Health
                     Sector Response to Humanitarian Crises
                   </p>
                 </div>
@@ -261,7 +261,7 @@ const FirstRowCard = () => {
               <h4>Pandemic Agreement</h4>
               <h1>Greg Wilson</h1>
               <h2>
-                Microsoft worldwide Public Sector’s Chief Technology Officer for
+                Microsoft worldwide Public Sector's Chief Technology Officer for
                 Government
               </h2>
               <p>
@@ -269,13 +269,7 @@ const FirstRowCard = () => {
                 AI adoption, Cloud migration, ethical governance, and
                 cybersecurity within the public sector
               </p>
-              <MgButton
-                style={{
-                  background: "#1F2024",
-                  color: "#fff",
-                  border: "1px solid #fff",
-                }}
-              >
+              <MgButton>
                 Read More <MdKeyboardArrowRight />
               </MgButton>
             </div>
@@ -310,13 +304,7 @@ const SecondRowCard = () => {
                     is Implementing a Cloud Transformation, Moving its Epic
                     Systems off-prem for key Benefits
                   </h2>
-                  <MgButton
-                    style={{
-                      background: "#fff",
-                      color: "#1F2024",
-                      border: "1px solid #1F2024",
-                    }}
-                  >
+                  <MgButton>
                     Read More <MdKeyboardArrowRight />
                   </MgButton>
                 </div>
@@ -341,13 +329,7 @@ const SecondRowCard = () => {
                     Services Reflects on a 25 Year Career in Logistics
                   </h2>
 
-                  <MgButton
-                    style={{
-                      background: "#fff",
-                      color: "#1F2024",
-                      border: "1px solid #1F2024",
-                    }}
-                  >
+                  <MgButton>
                     Read More <MdKeyboardArrowRight />
                   </MgButton>
                 </div>
@@ -380,13 +362,7 @@ const ThirdRowCard = () => {
                     Bringing Business and Global Health, Cindy Perettie,
                     Executive VP of Kite, Shares a Journey of...
                   </h5>
-                  <MgButton
-                    style={{
-                      background: "#fff",
-                      color: "#1F2024",
-                      border: "1px solid #1F2024",
-                    }}
-                  >
+                  <MgButton>
                     Read More <MdKeyboardArrowRight />
                   </MgButton>
                 </div>
@@ -410,13 +386,7 @@ const ThirdRowCard = () => {
                     Chris McDonald, Global Head of Technical Operations, on his
                     Journey to Lead a Sustainable ...
                   </h5>
-                  <MgButton
-                    style={{
-                      background: "#fff",
-                      color: "#1F2024",
-                      border: "1px solid #1F2024",
-                    }}
-                  >
+                  <MgButton>
                     Read More <MdKeyboardArrowRight />
                   </MgButton>
                 </div>
@@ -440,13 +410,7 @@ const ThirdRowCard = () => {
                     Home Credit Vietnam CFO Khang Pham Ngoc Tells us how he Came
                     into his Role, and how…
                   </h5>
-                  <MgButton
-                    style={{
-                      background: "#fff",
-                      color: "#1F2024",
-                      border: "1px solid #1F2024",
-                    }}
-                  >
+                  <MgButton>
                     Read More <MdKeyboardArrowRight />
                   </MgButton>
                 </div>

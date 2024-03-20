@@ -14,6 +14,10 @@ import enevtImg3 from "../../../public/images/about-event-img3.png";
 import enevtImg4 from "../../../public/images/about-event-img4.png";
 import enevtImg5 from "../../../public/images/about-event-img5.png";
 import enevtImg6 from "../../../public/images/about-event-img6.png";
+import mapImg from "../../../public/images/map.png";
+import SectionHeader from "@/components/section-header/section-header";
+import TeamSlider from "@/components/team-slider/team-slider";
+import SectionBorder from "@/components/section-border/section-border";
 
 const TitleBorder = () => {
   return <div className={styles.titleBorder}></div>;
@@ -23,6 +27,17 @@ const TopicCard = (props) => {
   const { title, desc } = props;
   return (
     <div className={`my-3 ${styles.topicCard}`}>
+      <h4>{title}</h4>
+      <TitleBorder />
+      <p>{desc}</p>
+    </div>
+  );
+};
+const Card = (props) => {
+  const { title, desc, heading } = props;
+  return (
+    <div className={styles.card}>
+      <h2>{heading}</h2>
       <h4>{title}</h4>
       <TitleBorder />
       <p>{desc}</p>
@@ -131,15 +146,15 @@ const AboutPage = () => {
           <p>
             Our motto, “Shining a Light on Project Leaders”, reflects this
             vision. We believe that everyone has the potential to lead, to
-            innovate, and to inspire. And we’re here to shine a light on those
+            innovate, and to inspire. And we're here to shine a light on those
             who are doing just that.
           </p>
           <p>
-            So, whether you’re a project leader with a story to tell, an
+            So, whether you're a project leader with a story to tell, an
             aspiring leader looking for inspiration, or simply someone
             interested in learning about project leadership and industry trends,
-            we welcome you. Let’s learn, grow, and lead together. This is our
-            story. What’s yours?
+            we welcome you. Let's learn, grow, and lead together. This is our
+            story. What's yours?
           </p>
         </Container>
       </section>
@@ -279,7 +294,7 @@ const AboutPage = () => {
         <Container>
           <div className={styles.topicWrapper}>
             <Row>
-              <Col lg={6} className="my-3">
+              <Col lg={6} md={6} sm={4} className="my-3">
                 <div className={styles.topicContent}>
                   <h2>What are some of the topics you cover?</h2>
                   <div>
@@ -292,7 +307,7 @@ const AboutPage = () => {
                   </p>
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={4}>
                 <div>
                   <TopicCard
                     title="Leadership Insights"
@@ -300,7 +315,7 @@ const AboutPage = () => {
                   />
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={4}>
                 <TopicCard
                   title="Project Management"
                   desc="We explore the best practices in project magt., from planning and execution to monitoring and closure."
@@ -308,7 +323,7 @@ const AboutPage = () => {
               </Col>
             </Row>
             <Row>
-              <Col lg={3}>
+              <Col lg={3} mmd={3} sm={4}>
                 <div>
                   <TopicCard
                     title="Industry Trends"
@@ -316,7 +331,7 @@ const AboutPage = () => {
                   />
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={4}>
                 <div>
                   <TopicCard
                     title="Case Studies"
@@ -324,7 +339,7 @@ const AboutPage = () => {
                   />
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={4}>
                 <div>
                   <TopicCard
                     title="Interviews"
@@ -332,7 +347,7 @@ const AboutPage = () => {
                   />
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={4}>
                 <div>
                   <TopicCard
                     title="Innovation"
@@ -408,8 +423,65 @@ const AboutPage = () => {
             Please note that the dates, times, and specifics of these events are
             subject to change. We recommend checking our website regularly or
             subscribing to our newsletter for the latest updates. We look
-            forward to your participation! Ready to position for success? Let’s
+            forward to your participation! Ready to position for success? Let's
             do it!
+          </div>
+        </Container>
+      </section>
+      <section className={styles.ourTeam}>
+        <Container>
+          <TeamSlider />
+        </Container>
+      </section>
+      <section className={styles.map}>
+        <Container>
+          <div>
+            <SectionHeader
+              style={{ color: "#fff" }}
+              title="We are globally"
+              subTitle="We’re a distributed team"
+              desc="We have offices and teams all around the world."
+            />
+            <SectionBorder />
+            <div className={styles.mapImage}>
+              <Image src={mapImg} alt="map" />
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className={styles.aboutCard}>
+        <Container>
+          <div>
+            <Row>
+              <Col lg={3}>
+                <Card
+                  heading="400+"
+                  subTitle="Project stories"
+                  desc="We've helped build over 400 amazing projects."
+                />
+              </Col>
+              <Col lg={3}>
+                <Card
+                  heading="600%"
+                  subTitle="Return on investment"
+                  desc="We've helped build over 400 amazing projects."
+                />
+              </Col>
+              <Col lg={3}>
+                <Card
+                  heading="10k"
+                  subTitle="Global download"
+                  desc="Our free UI kit has been downloaded over 100k times."
+                />
+              </Col>
+              <Col lg={3}>
+                <Card
+                  heading="200+"
+                  subTitle="5-star reviews"
+                  desc="We're proud of our 5-star rating with over 200 reviews."
+                />
+              </Col>
+            </Row>
           </div>
         </Container>
       </section>

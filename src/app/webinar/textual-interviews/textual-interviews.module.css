@@ -21,6 +21,10 @@
     font-weight: 700;
   }
 
+  .title {
+    text-align: center;
+  }
+
   .title p {
     font-size: 1.125rem;
     font-weight: 500;
@@ -33,9 +37,17 @@
 }
 
 .cardWrapper {
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
   height: 100%;
-  border-bottom: 1px solid #1f2024;
-  padding-bottom: 24px;
+  border-radius: 10px;
+}
+
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .cardContent h4 {
@@ -47,7 +59,7 @@
 .cardContent h6 {
   font-size: 14px;
   font-weight: 500;
-  color: #3aafa9;
+  color: var(--MgGrey);
 }
 
 .cardContent p {
@@ -57,7 +69,13 @@
 }
 
 .cardContent a {
-  padding: 14px;
+  padding: 10px;
   border-radius: 8px;
   border: 1.5px solid #8585854d;
+}
+
+.cardContent a:hover {
+  color: var(--bgBody);
+  background-color: var(--mgBlack);
+  transition: ease-in-out 0.3s;
 }

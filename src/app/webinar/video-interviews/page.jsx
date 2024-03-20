@@ -70,8 +70,8 @@ const VideoInterviewsPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             bibendum pellentesque rutrum.
           </p>
+          <Subscribe />
         </div>
-        <Subscribe />
       </Container>
       <div className={styles.videoCard}>
         <Container>
