@@ -14,7 +14,7 @@ import enevtImg3 from "../../../public/images/about-event-img3.png";
 import enevtImg4 from "../../../public/images/about-event-img4.png";
 import enevtImg5 from "../../../public/images/about-event-img5.png";
 import enevtImg6 from "../../../public/images/about-event-img6.png";
-import mapImg from "../../../public/images/map.png";
+import mapImg from "../../../public/images/map-img.png";
 import SectionHeader from "@/components/section-header/section-header";
 import TeamSlider from "@/components/team-slider/team-slider";
 import SectionBorder from "@/components/section-border/section-border";
