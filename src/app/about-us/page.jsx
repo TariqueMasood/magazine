@@ -146,15 +146,15 @@ const AboutPage = () => {
           <p>
             Our motto, “Shining a Light on Project Leaders”, reflects this
             vision. We believe that everyone has the potential to lead, to
-            innovate, and to inspire. And we're here to shine a light on those
-            who are doing just that.
+            innovate, and to inspire. And we&quot;re here to shine a light on
+            those who are doing just that.
           </p>
           <p>
-            So, whether you're a project leader with a story to tell, an
+            So, whether you&quot;re a project leader with a story to tell, an
             aspiring leader looking for inspiration, or simply someone
             interested in learning about project leadership and industry trends,
-            we welcome you. Let's learn, grow, and lead together. This is our
-            story. What's yours?
+            we welcome you. Let&quot;s learn, grow, and lead together. This is
+            our story. What&quot;s yours?
           </p>
         </Container>
       </section>
@@ -423,8 +423,8 @@ const AboutPage = () => {
             Please note that the dates, times, and specifics of these events are
             subject to change. We recommend checking our website regularly or
             subscribing to our newsletter for the latest updates. We look
-            forward to your participation! Ready to position for success? Let's
-            do it!
+            forward to your participation! Ready to position for success?
+            Let&quot;s do it!
           </div>
         </Container>
       </section>

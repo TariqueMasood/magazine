@@ -178,8 +178,8 @@ const MostViewed = () => {
                 <div>
                   <h6>Non-Communicable Diseases</h6>
                   <p>
-                    A'Tsunami'of Chronic Disease Challenges Confronts Health
-                    Sector Response to Humanitarian Crises
+                    A&quot;Tsunami&quot;of Chronic Disease Challenges Confronts
+                    Health Sector Response to Humanitarian Crises
                   </p>
                 </div>
               </Col>
@@ -225,8 +225,8 @@ const MostViewed = () => {
                 <div>
                   <h6>Non-Communicable Diseases</h6>
                   <p>
-                    A 'Tsunami' of Chronic Disease Challenges Confronts Health
-                    Sector Response to Humanitarian Crises
+                    A &quot;Tsunami&quot; of Chronic Disease Challenges
+                    Confronts Health Sector Response to Humanitarian Crises
                   </p>
                 </div>
               </Col>
@@ -261,8 +261,8 @@ const FirstRowCard = () => {
               <h4>Pandemic Agreement</h4>
               <h1>Greg Wilson</h1>
               <h2>
-                Microsoft worldwide Public Sector's Chief Technology Officer for
-                Government
+                Microsoft worldwide Public Sector&quot;s Chief Technology
+                Officer for Government
               </h2>
               <p>
                 Microsoft Government CTO on the company&apos;s expansive role in
