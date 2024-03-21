@@ -439,7 +439,7 @@ const AboutPage = () => {
             <SectionHeader
               style={{ color: "#fff" }}
               title="We are globally"
-              subTitle="We’re a distributed team"
+              subTitle="We're a distributed team"
               desc="We have offices and teams all around the world."
             />
             <SectionBorder />
