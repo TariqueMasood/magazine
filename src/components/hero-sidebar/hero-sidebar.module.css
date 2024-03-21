@@ -6,10 +6,25 @@
   order: 1;
 }
 
+.featuredCardContainer {
+  display: flex;
+  gap: 1em;
+  border-bottom: 1px solid #8585854D;
+  padding: 1em 0;
+}
+
+.featuredCardContainer:last-of-type {
+  border-bottom: none;
+}
+
 .sidebarHeading {
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   color: #1f2024;
+}
+
+.sidebarHeader {
+  margin-bottom: 16px;
 }
 
 .sidebarImage img {
@@ -27,8 +42,7 @@
 .sidebarCardWrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  /* align-content: space-between; */
+  justify-content: space-between;
 }
 
 .sidebarCard span:first-child {
@@ -42,9 +56,8 @@
 }
 
 .sidebarCardHeading {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 600;
-  color: #1f2024;
 }
 
 .sidebarCard span {

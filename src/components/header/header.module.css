@@ -1,5 +1,5 @@
 .header {
-  background: var(--BgGradient);
+  background: var(--MgGrey2);
 }
 
 .wrapper {
@@ -11,4 +11,5 @@
 .wrapper a {
   color: #fff;
   padding: 10px 0;
+  font-size: 14px;
 }

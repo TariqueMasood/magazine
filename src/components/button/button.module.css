@@ -1,7 +1,14 @@
 .btnPrimary {
-  background-color: var(--mgYellow);
-  border: 1px solid var(--mgYellow);
-  border-radius: 10px;
+  background-color: var(--MgBlue);
+  border: 1px solid var(--MgBlue);
+  border-radius: 8px;
   padding: 8px 16px;
   color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btnPrimary:hover {
+  transform: translateX(5px);
 }

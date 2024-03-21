@@ -15,7 +15,7 @@
 .heroMagazineImage img {
   display: inline-block;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 12px 0 0 12px;
 }
 
@@ -35,23 +35,21 @@
   align-items: center;
 }
 
-.magazineHeading:first-child {
+.date {
   color: #5e707b;
   font-style: italic;
-  font-weight: 600 !important;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .magazineHeading button {
-  background: #38b6ff;
-  border: 1px solid #38b6ff;
-  color: #fff;
-  padding: 8px;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 .magazineContent {
-  font-weight: 400;
   margin-top: 1.25em;
+  font-size: 14px;
 }
 
 .magazineReadBtn:hover {
@@ -61,7 +59,7 @@
   border: 1px solid #ea9d17;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .heroMagazine {
     flex-direction: row;
     order: 2;

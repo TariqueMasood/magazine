@@ -26,7 +26,6 @@
 .hero h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  font-family: "Playfair Display";
 }
 
 .imageContainer {
@@ -65,7 +64,6 @@
   .hero h1 {
     font-size: 3.25rem;
     font-weight: 600;
-    font-family: "Playfair Display";
   }
   .hero h1:nth-child(2) {
     text-align-last: center;

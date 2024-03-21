@@ -1,52 +1,17 @@
 /* styles/globals.css */
 @import "bootstrap/dist/css/bootstrap.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
-@font-face {
-  font-family: "ArticulatCFLight";
-  src: url("../fonts/ArticulatCF-Light.otf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "ArticulatCFNormal";
-  src: url("../fonts/ArticulatCF-Normal.otf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "ArticulatCFRegular";
-  src: url("../fonts/ArticulatCF-Regular.otf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "ArticulatCFMedium";
-  src: url("../fonts/ArticulatCF-Medium.otf");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "ArticulatCFBold";
-  src: url("../fonts/ArticulatCF-Bold.otf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "ArticulatCFExtraBold";
-  src: url("../fonts/ArticulatCF-ExtraBold.otf");
-  font-weight: 800;
-}
+/* @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"); */
 
 :root {
   --mgBlack: #1f2024;
   --BgGradient: linear-gradient(104.94deg, #38b6ff -0.05%, #38ffdb 99.95%);
-  --bgBody: #f0f6f8;
+  --bgBody: #fff;
   --mgYellow: #ffb434;
   --MgGrey: #5e707b;
   --MgBlue: #38b6ff;
   --tablet: 768px;
   --desktop: 1024px;
+  --MgGrey2: #3E3E3E;
 }
 
 * {
@@ -58,10 +23,15 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: "ArticulatCFNormal", Arial, Helvetica, sans-serif;
 }
 
 body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+  line-height: 1.4;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-color: var(--bgBody);
   color: var(--mgBlack);
 }

@@ -7,7 +7,6 @@
     font-size: 24px;
     line-height: 46px;
     margin-bottom: 24px;
-    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -18,7 +17,6 @@
     font-size: 18px;
     text-align: left;
     line-height: 33.8px;
-    font-family: "ArticulatCFMedium";
 }
 
 .imgCss {
@@ -47,7 +45,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: "ArticulatCFMedium";
 }
 
 .count {

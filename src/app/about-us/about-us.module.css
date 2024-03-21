@@ -13,7 +13,6 @@
 .content h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: "Playfair Display";
   color: #fff;
 }
 
@@ -31,7 +30,6 @@
 .ourStory h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: "Playfair Display";
   text-align: center;
 }
 
@@ -105,7 +103,6 @@
 .mottoContent h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: "Playfair Display";
 }
 .ourMissionWrapper {
   display: flex;
@@ -129,7 +126,6 @@
 .missionContent h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: "Playfair Display";
 }
 
 .ourMission {
@@ -166,7 +162,6 @@
 .faqImage h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: "Playfair Display";
 }
 
 .faqImage p {

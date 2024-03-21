@@ -13,17 +13,17 @@ const HeroMagazine = () => {
       <div className={styles.magazine}>
         <div>
           <div className={styles.magazineHeading}>
-            <div>September 2022</div>
+            <div className={styles.date}>September 2022</div>
             <MgButton>LATEST EDITION</MgButton>
           </div>
-          <div className={styles.magazineContent}>
+          <p className={styles.magazineContent}>
             We are thrilled to release the latest issue of Project Leaders
             magazine. Projects like never before are driving change across
             organizations. More and more business leaders are seeking to deliver
             value to their organizations through initiatives that make an
             impact. This becomes one of the core reasons to keep you aware of
             the latest news from projects around the globe.
-          </div>
+          </p>
         </div>
         <MgButton>
           Read Now <MdKeyboardArrowRight />

@@ -3,11 +3,9 @@ import styles from "./section.title.module.css";
 
 const SectionTitle = (props) => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.sectionTitle}>
-        <h2 className={styles.sectionHeading}>{props.title}</h2>
-        <SectionBorder />
-      </div>
+    <div className={styles.sectionContainer}>
+      <h2 className={styles.sectionHeading}>{props.title}</h2>
+      <SectionBorder />
     </div>
   );
 };

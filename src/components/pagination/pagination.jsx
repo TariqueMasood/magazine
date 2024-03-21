@@ -1,14 +1,17 @@
 import { Pagination } from "react-bootstrap";
 import "./pagination.module.css";
 
-const MgPagination = () => {
+const MgPagination = (props) => {
   return (
     <Pagination>
-      <Pagination.Prev disabled={true} />
+      <Pagination.Prev
+        onClick={props.prevButton}
+        disabled={props.pageCount <= 1}
+      />
       <Pagination.Item active={true}>{1}</Pagination.Item>
       <Pagination.Item>{2}</Pagination.Item>
       <Pagination.Item>{3}</Pagination.Item>
-      <Pagination.Next />
+      <Pagination.Next onClick={props.nextButton} disabled={props.isDisabled} />
     </Pagination>
   );
 };

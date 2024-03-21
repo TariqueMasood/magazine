@@ -8,7 +8,7 @@ import Link from "next/link";
 const SpotLightCard = (props) => {
   const { id, blogImg, title, desc, profileImg, name } = props.data;
   return (
-    <Link href={`/blogs/${id}`}>
+    <Link href={`/blogs/${id}`} className={styles.cardContainer}>
       <div className={styles.card}>
         <div className={styles.imgContainer}>
           <Image src={blogImg} alt="card" className={styles.blogImage} />
