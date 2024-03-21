@@ -8,6 +8,57 @@ import mottoImg1 from "../../../public/images/about-motto-img1.png";
 import missionImg1 from "../../../public/images/about-mission-img1.png";
 import faqImg1 from "../../../public/images/faq-img1.png";
 import faqImg2 from "../../../public/images/faq-img2.png";
+import enevtImg1 from "../../../public/images/about-event-img1.png";
+import enevtImg2 from "../../../public/images/about-event-img2.png";
+import enevtImg3 from "../../../public/images/about-event-img3.png";
+import enevtImg4 from "../../../public/images/about-event-img4.png";
+import enevtImg5 from "../../../public/images/about-event-img5.png";
+import enevtImg6 from "../../../public/images/about-event-img6.png";
+import mapImg from "../../../public/images/map.png";
+import SectionHeader from "@/components/section-header/section-header";
+import TeamSlider from "@/components/team-slider/team-slider";
+import SectionBorder from "@/components/section-border/section-border";
+
+const TitleBorder = () => {
+  return <div className={styles.titleBorder}></div>;
+};
+
+const TopicCard = (props) => {
+  const { title, desc } = props;
+  return (
+    <div className={`my-3 ${styles.topicCard}`}>
+      <h4>{title}</h4>
+      <TitleBorder />
+      <p>{desc}</p>
+    </div>
+  );
+};
+const Card = (props) => {
+  const { title, desc, heading } = props;
+  return (
+    <div className={styles.card}>
+      <h2>{heading}</h2>
+      <h4>{title}</h4>
+      <TitleBorder />
+      <p>{desc}</p>
+    </div>
+  );
+};
+
+const EventContent = (props) => {
+  const { eventImg, title, desc } = props;
+  return (
+    <div className={styles.eventContent}>
+      <div>
+        <Image src={eventImg} alt="pic" />
+      </div>
+      <div>
+        <h6>{title}</h6>
+        <p>{desc}</p>
+      </div>
+    </div>
+  );
+};
 
 const AboutPage = () => {
   return (
@@ -20,9 +71,9 @@ const AboutPage = () => {
         <h2>This is our story.</h2>
         <p>
           In the 1990s, in a small apartment located in the suburbs of Chennai
-          in southern India, a simple, yet revolutionary idea was born: "Build
-          smart technology to help businesses work better." This idea evolved to
-          become the world-class technology company we're known as today.
+          in southern India, a simple, yet revolutionary idea was born: Build
+          smart technology to help businesses work better. This idea evolved to
+          become the world-class technology company we&quot;re known as today.
         </p>
       </div>
       <div className={styles.ourStory}>
@@ -42,9 +93,9 @@ const AboutPage = () => {
               </p>
               <p>
                 We believe that everyone has the potential to lead, to innovate,
-                and to inspire. Whether you’re an individual leading a small
-                team or an organization driving industry-wide change, your story
-                matters. And we’re here to tell it.
+                and to inspire. Whether you&quot;re an individual leading a
+                small team or an organization driving industry-wide change, your
+                story matters. And we&quot;re here to tell it.
               </p>
               <p>
                 Our journey into project leadership and industry excellence
@@ -63,10 +114,11 @@ const AboutPage = () => {
             <div className={styles.storyContent}>
               <p>
                 Over the years, we have worked in various industries, from
-                construction to technology to banking to healthcare, and we’ve
-                led projects of all sizes delivering success. Each project was a
-                learning experience, and each success (and failure) taught us
-                valuable lessons about leadership, teamwork, and perseverance.
+                construction to technology to banking to healthcare, and
+                we&quot;ve led projects of all sizes delivering success. Each
+                project was a learning experience, and each success (and
+                failure) taught us valuable lessons about leadership, teamwork,
+                and perseverance.
               </p>
               <p>
                 But throughout our career, we noticed something. There were
@@ -76,7 +128,7 @@ const AboutPage = () => {
                 in their industries. But their stories were not being told.
               </p>
               <p>
-                That’s when we had the idea for this magazine. We wanted to
+                That&quot;s when we had the idea for this magazine. We wanted to
                 create a platform where these stories could be shared. A place
                 where project leaders could be recognized for their hard work
                 and dedication. A place where others could learn from their
@@ -94,15 +146,15 @@ const AboutPage = () => {
           <p>
             Our motto, “Shining a Light on Project Leaders”, reflects this
             vision. We believe that everyone has the potential to lead, to
-            innovate, and to inspire. And we’re here to shine a light on those
+            innovate, and to inspire. And we're here to shine a light on those
             who are doing just that.
           </p>
           <p>
-            So, whether you’re a project leader with a story to tell, an
+            So, whether you're a project leader with a story to tell, an
             aspiring leader looking for inspiration, or simply someone
             interested in learning about project leadership and industry trends,
-            we welcome you. Let’s learn, grow, and lead together. This is our
-            story. What’s yours?
+            we welcome you. Let's learn, grow, and lead together. This is our
+            story. What's yours?
           </p>
         </Container>
       </section>
@@ -111,7 +163,9 @@ const AboutPage = () => {
           <div className={styles.ourMottoWrapper}>
             <div className={styles.mottoContent}>
               <h2>Our Motto</h2>
-              <div className={styles.mottoBorder}></div>
+              <div>
+                <TitleBorder />
+              </div>
               <p>
                 Our motto, “Shining a Light on Project Leaders”, reflects our
                 commitment to recognizing and promoting leadership in all its
@@ -135,7 +189,9 @@ const AboutPage = () => {
             </div>
             <div className={styles.mottoContent}>
               <h2>Our Mission</h2>
-              <div className={styles.mottoBorder}></div>
+              <div>
+                <TitleBorder />
+              </div>
               <p>
                 Our motto, “Shining a Light on Project Leaders”, reflects our
                 commitment to recognizing and promoting leadership in all its
@@ -153,7 +209,9 @@ const AboutPage = () => {
           <div className={styles.faqWrapper}>
             <div className={styles.faqImage}>
               <h6>FAQS</h6>
-              <div className={styles.faqBorder}></div>
+              <div>
+                <TitleBorder />
+              </div>
               <h2>Who is your target audience?</h2>
               <div className="my-4 text-center">
                 <Image src={faqImg1} alt="img" />
@@ -229,6 +287,202 @@ const AboutPage = () => {
             with a keen interest in project leadership, our magazine is for you.
             Ready to position for success? Let’s do it!
           </p>
+        </Container>
+      </section>
+
+      <section className={styles.topic}>
+        <Container>
+          <div className={styles.topicWrapper}>
+            <Row>
+              <Col lg={6} md={6} sm={4} className="my-3">
+                <div className={styles.topicContent}>
+                  <h2>What are some of the topics you cover?</h2>
+                  <div>
+                    <TitleBorder />
+                  </div>
+                  <p>
+                    Our magazine covers a wide range of topics related to
+                    project leadership and industry trends. Here are some of the
+                    key areas we focus on:
+                  </p>
+                </div>
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+                <div>
+                  <TopicCard
+                    title="Leadership Insights"
+                    desc="We share insights and advice from successful project leaders across various industries."
+                  />
+                </div>
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+                <TopicCard
+                  title="Project Management"
+                  desc="We explore the best practices in project magt., from planning and execution to monitoring and closure."
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={3} mmd={3} sm={4}>
+                <div>
+                  <TopicCard
+                    title="Industry Trends"
+                    desc="We keep our readers updated on the latest trends and developments in their respective industries."
+                  />
+                </div>
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+                <div>
+                  <TopicCard
+                    title="Case Studies"
+                    desc="We present case studies of successful projects, highlighting the strategies used and the lessons learned."
+                  />
+                </div>
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+                <div>
+                  <TopicCard
+                    title="Interviews"
+                    desc="We conduct interviews with project leaders, providing our readers with firsthand insights into their journey and experiences"
+                  />
+                </div>
+              </Col>
+              <Col lg={3} md={3} sm={4}>
+                <div>
+                  <TopicCard
+                    title="Innovation"
+                    desc="We discuss how innovation is shaping project management and the industries at large."
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+          <div className={styles.topicDesc}>
+            <p>
+              Our aim is to provide a comprehensive view of project leadership,
+              offering our readers valuable information that they can apply in
+              their own projects and careers. Ready to position for success?
+              Let’s do it!
+            </p>
+          </div>
+        </Container>
+      </section>
+      <section className={styles.event}>
+        <Container>
+          <div className={styles.eventWrapper}>
+            <div className={styles.eventContentWrapper}>
+              <h2>Do you have any upcoming events or webinars?</h2>
+              <div className={styles.eventContent}>
+                <EventContent
+                  eventImg={enevtImg1}
+                  title="Leadership Webinars"
+                  desc="These webinars feature experienced project leaders who share their insights and experiences. They’re a great opportunity to learn from the best in the field."
+                />
+              </div>
+              <div className={styles.eventContent}>
+                <EventContent
+                  eventImg={enevtImg2}
+                  title="Industry Trends Discussions"
+                  desc="In these sessions, we discuss the latest trends in various industries, providing our readers with up-to-date information."
+                />
+              </div>
+              <div className={styles.eventContent}>
+                <EventContent
+                  eventImg={enevtImg3}
+                  title="Case Study Reviews"
+                  desc="These events involve a detailed review and discussion of various project case studies, offering practical lessons and insights."
+                />
+              </div>
+              <div className={styles.eventContent}>
+                <EventContent
+                  eventImg={enevtImg4}
+                  title="Interactive Q&A Sessions"
+                  desc="These are interactive sessions where our readers can ask questions and engage in discussions with project leaders and industry experts."
+                />
+              </div>
+              <div className={styles.eventContent}>
+                <EventContent
+                  eventImg={enevtImg5}
+                  title="Networking Events"
+                  desc="These events provide an opportunity for our readers to network with project leaders, industry professionals, and fellow readers."
+                />
+              </div>
+            </div>
+            <div className={styles.eventImage}>
+              <p>
+                Yes, we do have a variety of upcoming events and webinars. While
+                the specific details are regularly updated, here are some
+                general categories of events we host
+              </p>
+              <div>
+                <Image src={enevtImg6} alt="pic" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.eventDesc}>
+            Please note that the dates, times, and specifics of these events are
+            subject to change. We recommend checking our website regularly or
+            subscribing to our newsletter for the latest updates. We look
+            forward to your participation! Ready to position for success? Let's
+            do it!
+          </div>
+        </Container>
+      </section>
+      <section className={styles.ourTeam}>
+        <Container>
+          <TeamSlider />
+        </Container>
+      </section>
+      <section className={styles.map}>
+        <Container>
+          <div>
+            <SectionHeader
+              style={{ color: "#fff" }}
+              title="We are globally"
+              subTitle="We’re a distributed team"
+              desc="We have offices and teams all around the world."
+            />
+            <SectionBorder />
+            <div className={styles.mapImage}>
+              <Image src={mapImg} alt="map" />
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className={styles.aboutCard}>
+        <Container>
+          <div>
+            <Row>
+              <Col lg={3}>
+                <Card
+                  heading="400+"
+                  subTitle="Project stories"
+                  desc="We've helped build over 400 amazing projects."
+                />
+              </Col>
+              <Col lg={3}>
+                <Card
+                  heading="600%"
+                  subTitle="Return on investment"
+                  desc="We've helped build over 400 amazing projects."
+                />
+              </Col>
+              <Col lg={3}>
+                <Card
+                  heading="10k"
+                  subTitle="Global download"
+                  desc="Our free UI kit has been downloaded over 100k times."
+                />
+              </Col>
+              <Col lg={3}>
+                <Card
+                  heading="200+"
+                  subTitle="5-star reviews"
+                  desc="We're proud of our 5-star rating with over 200 reviews."
+                />
+              </Col>
+            </Row>
+          </div>
         </Container>
       </section>
     </div>

@@ -2,4 +2,5 @@
   width: 30px;
   height: 2px;
   background: var(--BgGradient);
+  margin: 1em 0;
 }

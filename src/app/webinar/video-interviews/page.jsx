@@ -70,17 +70,16 @@ const VideoInterviewsPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             bibendum pellentesque rutrum.
           </p>
+          <Subscribe />
         </div>
-        <Subscribe />
       </Container>
       <div className={styles.videoCard}>
         <Container>
           <Row>
-            {data.map((data, index) => {
+            {data.map((data) => {
               return (
-                <Col lg={4} md={6} className="mt-4">
+                <Col key={data.id} lg={4} md={6} className="mt-4">
                   <VideoInterviewCard
-                    key={index}
                     cardVideo={data.cardVideo}
                     title={data.title}
                     heading={data.heading}

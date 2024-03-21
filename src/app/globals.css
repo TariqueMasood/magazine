@@ -3,7 +3,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"); */
 
 :root {
-  --mgBlack: #1f2024;
+  --mgBlack: #000;
   --BgGradient: linear-gradient(104.94deg, #38b6ff -0.05%, #38ffdb 99.95%);
   --bgBody: #fff;
   --mgYellow: #ffb434;

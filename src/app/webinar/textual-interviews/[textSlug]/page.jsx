@@ -6,6 +6,41 @@ import HeroSidebar from "@/components/hero-sidebar/hero-sidebar";
 import authorImg from "../../../../../public/images/textual-author-img1.png";
 import Link from "next/link";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { MdKeyboardArrowRight } from "react-icons/md";
+
+const AuthorCard = (props) => {
+  const { heading, authorImg, title, desc, linkText, viewPost } = props;
+  return (
+    <div className={styles.authorCard}>
+      <h4>{heading}</h4>
+      <div className={styles.nameBorder}></div>
+      <Row>
+        <Col lg={3}>
+          <div className={styles.cardImg}>
+            <Image src={authorImg} alt="img" />
+          </div>
+        </Col>
+        <Col lg={9}>
+          <div className={styles.authorContent}>
+            <div>
+              <h6>{title}</h6>
+              <p>
+                {desc}
+                <span>
+                  <Link href="#">{linkText}</Link>
+                </span>
+              </p>
+            </div>
+            <div className={styles.authorAllPost}>
+              {viewPost}
+              <HiArrowNarrowRight />
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </div>
+  );
+};
 
 const TextualInterviewsDetails = async ({ params }) => {
   const { textSlug } = params;
@@ -92,41 +127,22 @@ const TextualInterviewsDetails = async ({ params }) => {
           <div className={`my-4 ${styles.border}`}></div>
           <div className={styles.containerAd}>Ad</div>
           <div className={styles.author}>
-            <h4>Know Your Host</h4>
-            <div className={styles.nameBorder}></div>
-            <div className={styles.authorCard}>
-              <Row>
-                <Col lg={4}>
-                  <div>
-                    <Image src={authorImg} alt="img" />
-                  </div>
-                </Col>
-                <Col lg={8}>
-                  <div className={styles.authorContent}>
-                    <div>
-                      <h6>
-                        Claire McCarthy, MD, Senior Faculty Editor, Harvard
-                        Health Publishing
-                      </h6>
-                      <p>
-                        Claire McCarthy, MD, is a primary care pediatrician at
-                        Boston Children’s Hospital, and an assistant professor
-                        of pediatrics at Harvard Medical School. In addition to
-                        being a senior faculty editor for Harvard Health
-                        Publishing, Dr. McCarthy…
-                        <span>
-                          <Link href="#">See Full Bio</Link>
-                        </span>
-                      </p>
-                    </div>
-                    <div className={styles.authorAllPost}>
-                      View all posts by Claire McCarthy, MD{" "}
-                      <HiArrowNarrowRight />
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </div>
+            <AuthorCard
+              heading="Know Your Host"
+              authorImg={authorImg}
+              title="Claire McCarthy, MD, Senior Faculty Editor, Harvard Health Publishing"
+              desc="Claire McCarthy, MD, is a primary care pediatrician at Boston Children's Hospital, and an assistant professor of pediatrics at Harvard Medical School. In addition to being a senior faculty editor for Harvard Health Publishing, Dr. McCarthy…"
+              linkText="See Full Bio"
+              viewPost="View all posts by Claire McCarthy, MD"
+            />
+          </div>
+        </div>
+        <div className={styles.related}>
+          <div>
+            <div>Related Interviews</div>
+            <Link href="#">
+              View All <MdKeyboardArrowRight />
+            </Link>
           </div>
         </div>
       </Container>

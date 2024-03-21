@@ -79,9 +79,11 @@ const TextualInterviewCard = (props) => {
         <Image src={cardImage} alt="card" />
       </div>
       <div className={styles.cardContent}>
-        <h4>{title}</h4>
-        <h6>{subTitle}</h6>
-        <p>{desc}</p>
+        <div>
+          <h4>{title}</h4>
+          <h6>{subTitle}</h6>
+          <p>{desc}</p>
+        </div>
         <Link href={`/webinar/textual-interviews/${id}`}>
           Read More <MdKeyboardArrowRight />
         </Link>
@@ -102,8 +104,8 @@ const TextualInterviewsPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             bibendum pellentesque rutrum.
           </p>
+          <Subscribe />
         </div>
-        <Subscribe />
       </Container>
       <div className={styles.card}>
         <Container>
