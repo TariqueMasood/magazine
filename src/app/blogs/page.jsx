@@ -4,10 +4,9 @@ import RecentBlog from "@/components/recent-blog/recent-blog";
 import TechnologyBlog from "@/components/technology-blog/technology-blog";
 
 async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("https://projectleadersmagazine.com/api/blogs");
 
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
   }
 
@@ -18,14 +17,9 @@ const BlogPage = async () => {
   const data = await getData();
   return (
     <div className={styles.wrapper}>
-      <BlogHero />
+      <TechnologyBlog data={data} />
       <RecentBlog />
-      <TechnologyBlog
-        data={data}
-        pageSize={30}
-        country="in"
-        category="sports"
-      />
+      <BlogHero />
     </div>
   );
 };

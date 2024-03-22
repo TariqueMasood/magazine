@@ -1,10 +1,10 @@
-import Image from "next/image";
+const { default: Image } = require("next/image");
+const { Col, Badge } = require("react-bootstrap");
 import cardImg1 from "../../../public/images/technology-blog-img1.png";
 import styles from "./blog-card.module.css";
-import { Col } from "react-bootstrap";
 
 const BlogCard = (props) => {
-  const { title, subtitle, content, published_date } = props.data;
+  const { title, content, publishDate, author, source } = props;
   return (
     <Col lg={4} md={6} sm={6}>
       <div className={styles.cardWrapper}>
@@ -13,12 +13,13 @@ const BlogCard = (props) => {
         </div>
         <div className={styles.writerName}>
           <span>Child & Teen Health</span>
+          <span>{!author ? "Unknow" : author}</span>
         </div>
         <h4 className={styles.cardTitle}>{title}...</h4>
-        <p className={styles.cardConten}>{subtitle}...</p>
-        <p className={styles.cardConten}>{content.slice(0, 150)}...</p>
-        <div className={styles.date}>
-          {new Date(published_date).toGMTString()}
+        <p className={styles.cardConten}>{content}...</p>
+        <div className={styles.date}>{publishDate}</div>
+        <div className={styles.badge}>
+          <Badge bg="info">{source}</Badge>
         </div>
       </div>
       <div className={styles.cardBorder}></div>
