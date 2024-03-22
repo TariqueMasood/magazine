@@ -1,7 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import styles from "./technology-blog.module.css";
 import SectionTitle from "../section-title/section-title";
-import BlogTabs from "../blog-tabs/blog-tabs";
 import BlogCard from "../blog-card/blog-card";
 
 const TechnologyBlog = (props) => {
