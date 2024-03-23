@@ -37,7 +37,7 @@
 }
 
 .date {
-  color: #5e707b;
+  color: var(--bgBody);
   font-style: italic;
   font-weight: 600;
   font-size: 14px;
@@ -51,7 +51,7 @@
 .edition {
   background-color: var(--mgBlack);
   border: 1px solid var(--bgBody);
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 9px;
   padding: 7px 9px;
 }
@@ -60,6 +60,7 @@
   background-color: var(--mgBlack);
   color: var(--bgBody);
   border: 1px solid var(--bgBody);
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
