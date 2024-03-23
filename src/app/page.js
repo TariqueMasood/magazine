@@ -7,7 +7,23 @@ import TeamSlider from "@/components/team-slider/team-slider";
 import GallerySlider from "@/components/gallery-slider/gallery-slider";
 import NewsLetter from "@/components/news-letter/news-letter";
 
-export default function Home() {
+export async function getData() {
+  const res = await fetch("https://projectleadersmagazine.com/api/blogs");
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+export const getSingleData = async (id) => {
+  const data = await getData();
+  const singleBlog = data.results.find((data) => data.id === parseInt(id));
+  return singleBlog;
+};
+
+const Home = async () => {
   return (
     <main className={styles.main}>
       <Hero />
@@ -20,3 +36,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home;

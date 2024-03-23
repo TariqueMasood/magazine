@@ -1,7 +1,12 @@
+import { Container } from "react-bootstrap";
 import styles from "./magazine.module.css";
 
 const Magazine = () => {
-  return <h1>Magazine</h1>;
+  return (
+    <div className={styles.wrapper}>
+      <Container>Magazine</Container>
+    </div>
+  );
 };
 
 export default Magazine;

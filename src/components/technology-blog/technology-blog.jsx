@@ -1,9 +1,11 @@
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import styles from "./technology-blog.module.css";
 import SectionTitle from "../section-title/section-title";
 import BlogCard from "../blog-card/blog-card";
+import { getData } from "@/app/page";
 
-const TechnologyBlog = (props) => {
+const TechnologyBlog = async () => {
+  const data = await getData();
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -12,11 +14,11 @@ const TechnologyBlog = (props) => {
           Read the latest posts from experts at Knowmed Health Publishing
           covering a variety of health topics and perspectives on medical news.
         </p>
-        <Row>
-          {props.data.results.map((item) => (
+        <div class={styles.blogCardContainer}>
+          {data.results.map((item) => (
             <BlogCard key={item.id} data={item} />
           ))}
-        </Row>
+        </div>
       </Container>
     </div>
   );
