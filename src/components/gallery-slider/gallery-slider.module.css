@@ -4,3 +4,9 @@
   border-bottom: 1px solid #fff;
   color: #fff;
 }
+
+.borderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

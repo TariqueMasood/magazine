@@ -1,0 +1,420 @@
+.AdvertiseHeroWrapper {
+  position: relative;
+  height: 580px;
+  z-index: 1;
+  background-image: url("../../../public//images/advertise-img.webp");
+}
+
+.AdvertiseHeroWrapper::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(32, 33, 33, 0.5);
+}
+
+.AdvertiseHeroWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--bgBody);
+  z-index: 2;
+}
+
+.heroTitle h1:nth-of-type(1) {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--bgBody);
+}
+
+.heroTitleImg img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.heroTitle a {
+  background-color: var(--MgBlue);
+  padding: 9px;
+  margin-top: 2em;
+  display: inline-block;
+  font-size: 10px;
+}
+
+.about {
+  background-color: #000;
+  color: #fff;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.aboutContentWrapper {
+  max-width: 650px;
+  width: 100%;
+  padding: 30px;
+}
+
+.aboutContentWrapper p {
+  font-size: 14px;
+}
+
+.arrowIcon {
+  display: flex;
+}
+
+.arrow svg {
+  width: 32px;
+  height: 32px;
+  color: var(--MgBlue);
+}
+
+.arrowIcon h1 {
+  font-weight: 500;
+}
+
+.aboutImg {
+  position: relative;
+}
+
+.quoteContainer {
+  position: absolute;
+  background-color: hsla(0, 0%, 9%, 0.7);
+  padding: 15px 0 27px;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+.quoteWrapper {
+  padding: 0 30px;
+  max-width: 650px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+}
+
+.quoteIcon svg {
+  width: 32px;
+  height: 32px;
+  color: var(--MgBlue);
+}
+
+.quoteWrapper p {
+  font-size: 14px;
+}
+
+.aboutImg img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: bottom;
+  border: 0;
+}
+
+.aboutImgContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutImgContent img {
+  max-width: 70px;
+  width: 100%;
+  height: auto;
+}
+
+.authorDetail span:nth-of-type(1) {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.authorDetail span:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--MgBlue);
+}
+
+.feature {
+  padding: 60px 0;
+  background-color: var(--MgGrey2);
+  color: var(--bgBody);
+}
+
+.featureWrapper {
+  padding: 20px;
+}
+
+.featureHeading {
+  padding-bottom: 24px;
+}
+
+.featureHeading span svg {
+  margin-right: 12px;
+  width: 30px;
+  height: 30px;
+  color: var(--MgBlue);
+  font-weight: 700;
+  display: inline-block;
+}
+
+.featureHeading span:nth-of-type(2) {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.featureTitle p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.live {
+  background-color: var(--mgBlack);
+  color: var(--bgBody);
+}
+
+.liveImg {
+  position: relative;
+}
+
+.liveImg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 33, 33, 0.6);
+}
+
+.liveImgContent img {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.liveImgTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding: 35px 0;
+}
+
+.liveImgTitle div {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.liveImg1 {
+  width: 100%;
+  height: 100%;
+}
+
+.liveContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.arrowIcon {
+  margin-bottom: 1.5em;
+}
+
+.arrow {
+  margin-right: 12px;
+}
+
+.arrowIcon h1 {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.liveContentWrapper {
+  max-width: 650px;
+  width: 100%;
+  padding: 20px;
+}
+
+.liveContentWrapper p {
+  font-size: 1rem;
+}
+
+.liveContentWrapper p a {
+  color: var(--MgBlue);
+}
+
+.liveContentWrapper p a:hover {
+  text-decoration: underline;
+}
+
+.stack {
+  padding: 50px 0;
+  background-color: var(--mgBlack);
+  color: var(--bgBody);
+}
+
+.stack h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+.stackTitle {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.stackDevider {
+  max-width: 230px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffff;
+  margin-bottom: 0.7em;
+}
+
+/* --------
+Responsive ...
+....------ */
+
+@media (min-width: 768px) {
+  .heroTitle h1:nth-of-type(1) {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: var(--bgBody);
+  }
+
+  .heroTitle a {
+    background-color: var(--MgBlue);
+    padding: 16px 48px;
+    margin-top: 2em;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .aboutContentWrapper {
+    padding: 0px 30px;
+  }
+  .arrow svg {
+    width: 50px;
+    height: 50px;
+    color: var(--MgBlue);
+  }
+
+  .arrowIcon h1 {
+    font-weight: 700;
+  }
+
+  .aboutContentWrapper p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .quoteWrapper {
+    padding: 0 30px;
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .quoteWrapper p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .quoteIcon svg {
+    width: 50px;
+    height: 50px;
+    color: var(--MgBlue);
+  }
+
+  .aboutImgContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .aboutImgContent img {
+    max-width: 105px;
+    width: 100%;
+    height: auto;
+  }
+
+  .authorDetail span:nth-of-type(1) {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .authorDetail span:nth-of-type(2) {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--MgBlue);
+    line-height: 1.7;
+  }
+
+  .quoteContainer {
+    position: absolute;
+    background-color: hsla(0, 0%, 9%, 0.7);
+    padding: 32px 0 27px;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+  }
+
+  .liveImgTitle div {
+    font-size: 1.25rem;
+    letter-spacing: 5px;
+  }
+
+  .liveImgContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .liveContentWrapper p {
+    font-size: 1.25rem;
+    letter-spacing: 1.7;
+  }
+
+  .stack h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1.5em 0;
+  }
+}

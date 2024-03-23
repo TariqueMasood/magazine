@@ -3,4 +3,8 @@
   text-align: center;
 }
 
-
+.borderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

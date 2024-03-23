@@ -55,13 +55,15 @@ const GallerySlider = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <SectionHeader
-          style={{ color: "#fff" }}
-          title="100% READY TO US"
-          subTitle="Huge premade layouts gallery"
-          desc="Ready variety of layouts for blog posts and other pages."
-        />
-        <SectionBorder />
+        <div className={styles.borderContainer}>
+          <SectionHeader
+            style={{ color: "#fff" }}
+            title="100% READY TO US"
+            subTitle="Huge premade layouts gallery"
+            desc="Ready variety of layouts for blog posts and other pages."
+          />
+          <SectionBorder />
+        </div>
         <MgSlider settings={settings}>
           {data.map((data, index) => {
             return <GalleryCard key={index} galleryImg={data.galleryImg} />;

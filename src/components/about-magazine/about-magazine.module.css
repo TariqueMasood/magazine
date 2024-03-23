@@ -1,139 +1,139 @@
 .wrapper {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .aboutHeader {
-    font-size: 24px;
-    line-height: 46px;
-    margin-bottom: 24px;
-    font-weight: 700;
-    font-style: normal;
+  font-size: 24px;
+  line-height: 46px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .aboutText {
-    margin-bottom: 50px;
-    margin-top: 1.5em;
-    font-size: 18px;
-    text-align: left;
-    line-height: 33.8px;
+  margin-bottom: 50px;
+  margin-top: 1.5em;
+  font-size: 18px;
+  text-align: left;
+  line-height: 33.8px;
 }
 
 .imgCss {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .imgContainer {
-    position: relative;
+  position: relative;
 }
 
 .services {
-    position: absolute;
-    background: var(--BgGradient);
-    width: 90%;
-    top: -34px;
-    left: 5%;
-    display: flex;
-    gap: 1em;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 1em;
+  position: absolute;
+  background: var(--BgGradient);
+  width: 90%;
+  top: -34px;
+  left: 5%;
+  display: flex;
+  gap: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1em;
 }
 
 .serviceContainer {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .count {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .serviceText {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .divider {
-    width: 2px;
-    background: #fff;
+  width: 2px;
+  background: #fff;
 }
 
 .serviceIcon {
-    min-width: 70px;
-    min-height: 70px;
-    background: #fff;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-width: 70px;
+  min-height: 70px;
+  background: #fff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgBody2);
 }
 
 .serviceStepWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 50px;
 }
 
 .serviceStepContainer {
-    position: relative;
-    display: flex;
-    max-width: 250px;
-    align-items: center;
-    gap: 1em;
+  position: relative;
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+  gap: 1em;
 }
 
 .dottedConnector {
-    position: absolute;
-    border-right: 2px dotted #222F3E4D;
-    height: 60px;
-    top: 100%;
-    left: 33px;
+  position: absolute;
+  border-right: 2px dotted #222f3e4d;
+  height: 60px;
+  top: 100%;
+  left: 33px;
 }
 
 .stepHeader {
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #222F3E;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #222f3e;
 }
 
 .stepText {
-    font-size: 12px;
-    color: #222F3E; 
-    font-weight: 400;
-    margin-bottom: 0;
+  font-size: 12px;
+  color: #222f3e;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .aboutHeader {
+    font-size: 35px;
+    margin-bottom: 124px;
+  }
 
-@media(min-width: 768px) {
-    .aboutHeader {
-        font-size: 35px;
-        margin-bottom: 124px;
-    }
+  .serviceStepWrapper {
+    justify-content: flex-start;
+  }
 
-    .serviceStepWrapper {
-        justify-content: flex-start;
-    }
+  .aboutText {
+    margin-top: 0;
+    text-align: right;
+    margin-bottom: 80px;
+    font-size: 20px;
+  }
 
-    .aboutText {
-        margin-top: 0;
-        text-align: right;
-        margin-bottom: 80px;
-        font-size: 20px;
-    }
+  .count {
+    font-size: 35px;
+  }
 
-    .count {
-        font-size: 35px;
-    }
-    
-    .serviceText {
-        font-size: 16px;
-    }
+  .serviceText {
+    font-size: 16px;
+  }
 
-    .services {
-        top: -42px;
-    }
+  .services {
+    top: -42px;
+  }
 }

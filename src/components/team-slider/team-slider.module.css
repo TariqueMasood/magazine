@@ -4,4 +4,10 @@
 
 .sliderWrapper {
   text-align: center;
- }
+}
+
+.borderCotainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
