@@ -8,8 +8,8 @@ const BlogCard = (props) => {
   return (
     <Col lg={4} md={6} sm={6}>
       <div className={styles.cardWrapper}>
-        <div className={styles.cardImg}>
-          <Image src={blogImage} alt="card" />
+        <div className={styles.imgContainer}>
+          <Image src={blogImage} alt="card" className={styles.cardImg} />
         </div>
         <div className={styles.writerName}>
           <span>Child & Teen Health</span>
