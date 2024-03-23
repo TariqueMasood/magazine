@@ -61,11 +61,13 @@ const TeamSlider = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <SectionHeader
-          subTitle="Our Team"
-          desc="Ready variety of layouts for blog posts and other pages."
-        />
-        <SectionBorder />
+        <div className={styles.borderCotainer}>
+          <SectionHeader
+            subTitle="Our Team"
+            desc="Ready variety of layouts for blog posts and other pages."
+          />
+          <SectionBorder />
+        </div>
         <MgSlider settings={settings}>
           {data.map((data, index) => {
             return (

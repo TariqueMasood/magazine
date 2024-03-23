@@ -9,12 +9,14 @@ const NewsLetter = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <SectionHeader
-          title="News Letter"
-          subTitle="Subscribe to monthly creative magazine"
-          desc="Get notified to our exclusive releases & events."
-        />
-        <SectionBorder />
+        <div className={styles.borderContainer}>
+          <SectionHeader
+            title="News Letter"
+            subTitle="Subscribe to monthly creative magazine"
+            desc="Get notified to our exclusive releases & events."
+          />
+          <SectionBorder />
+        </div>
         <Subscribe />
         <SocialIcon style={{ color: "#000" }} />
       </Container>

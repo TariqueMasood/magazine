@@ -46,12 +46,15 @@ const TestimonialSlider = () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <SectionHeader
-          title="TESTIMONIAL"
-          subTitle="What our readers say."
-          desc="Hear from Those Who Read It."
-        />
-        <SectionBorder />
+        <div className={styles.borderContainer}>
+          <SectionHeader
+            title="TESTIMONIAL"
+            subTitle="What our readers say."
+            desc="Hear from Those Who Read It."
+          />
+          <SectionBorder />
+        </div>
+
         <div className={styles.sliderWrapper}>
           {data.map((data, index) => {
             return (

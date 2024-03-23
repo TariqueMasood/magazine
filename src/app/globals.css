@@ -6,12 +6,13 @@
   --mgBlack: #000;
   --BgGradient: linear-gradient(104.94deg, #38b6ff -0.05%, #38ffdb 99.95%);
   --bgBody: #fff;
+  --bgBody2: #f0f6f8;
   --mgYellow: #ffb434;
   --MgGrey: #5e707b;
   --MgBlue: #38b6ff;
   --tablet: 768px;
   --desktop: 1024px;
-  --MgGrey2: #3E3E3E;
+  --MgGrey2: #3e3e3e;
 }
 
 * {

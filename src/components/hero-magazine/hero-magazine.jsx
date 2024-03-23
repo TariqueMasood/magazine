@@ -14,7 +14,7 @@ const HeroMagazine = () => {
         <div>
           <div className={styles.magazineHeading}>
             <div className={styles.date}>September 2022</div>
-            <MgButton>LATEST EDITION</MgButton>
+            <div className={styles.edition}>LATEST EDITION</div>
           </div>
           <p className={styles.magazineContent}>
             We are thrilled to release the latest issue of Project Leaders
