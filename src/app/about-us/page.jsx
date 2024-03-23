@@ -362,7 +362,7 @@ const AboutPage = () => {
               Our aim is to provide a comprehensive view of project leadership,
               offering our readers valuable information that they can apply in
               their own projects and careers. Ready to position for success?
-              Let’s do it!
+              Let's do it!
             </p>
           </div>
         </Container>

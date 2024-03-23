@@ -185,6 +185,124 @@
   line-height: 1.7;
 }
 
+.live {
+  background-color: var(--mgBlack);
+  color: var(--bgBody);
+}
+
+.liveImg {
+  position: relative;
+}
+
+.liveImg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 33, 33, 0.6);
+}
+
+.liveImgContent img {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.liveImgTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding: 35px 0;
+}
+
+.liveImgTitle div {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.liveImg1 {
+  width: 100%;
+  height: 100%;
+}
+
+.liveContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.arrowIcon {
+  margin-bottom: 1.5em;
+}
+
+.arrow {
+  margin-right: 12px;
+}
+
+.arrowIcon h1 {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.liveContentWrapper {
+  max-width: 650px;
+  width: 100%;
+  padding: 20px;
+}
+
+.liveContentWrapper p {
+  font-size: 1rem;
+}
+
+.liveContentWrapper p a {
+  color: var(--MgBlue);
+}
+
+.liveContentWrapper p a:hover {
+  text-decoration: underline;
+}
+
+.stack {
+  padding: 50px 0;
+  background-color: var(--mgBlack);
+  color: var(--bgBody);
+}
+
+.stack h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+.stackTitle {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.stackDevider {
+  max-width: 230px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffff;
+  margin-bottom: 0.7em;
+}
+
 /* --------
 Responsive ...
 ....------ */
@@ -273,5 +391,30 @@ Responsive ...
     width: 100%;
     bottom: 0;
     margin: 0;
+  }
+
+  .liveImgTitle div {
+    font-size: 1.25rem;
+    letter-spacing: 5px;
+  }
+
+  .liveImgContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .liveContentWrapper p {
+    font-size: 1.25rem;
+    letter-spacing: 1.7;
+  }
+
+  .stack h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1.5em 0;
   }
 }
