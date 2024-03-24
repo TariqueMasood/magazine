@@ -7,8 +7,8 @@
   order: 2;
 }
 
-.aside img {
-  max-width: 250px;
+.imgCss {
+  max-width: 100%;
   width: 100%;
   height: auto;
 }
@@ -36,5 +36,9 @@
 @media(min-width: 768px) {
   .aside {
     order: 1;
+  }
+
+  .imgCss {
+    max-width: 250px;
   }
 }
