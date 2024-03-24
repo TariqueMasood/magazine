@@ -1,9 +1,9 @@
 import { Container } from "react-bootstrap";
-import SpotLightCard from "../spotlight-card/spotlight-card";
 import styles from "./spotlight-slider.module.css";
 import MgSlider from "../slider/slider";
 import SectionTitle from "../section-title/section-title";
-import { getBlogs } from "@/data/blog";
+import BlogCard from "../blog-card/blog-card";
+import { getData } from "@/app/page";
 
 const settings = {
   dots: true,
@@ -11,8 +11,8 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  centerPadding: "100px",
+  autoplay: false,
+  centerPadding: "40px",
   responsive: [
     {
       breakpoint: 1024,
@@ -33,16 +33,15 @@ const settings = {
 };
 
 const SpotLightSlider = async () => {
-  const blogData = await getBlogs();
-
+  const data = await getData();
   return (
     <div className={styles.wrapper}>
       <Container>
         <SectionTitle title="SPOTLIGHT" />
         <div className={styles.sliderWrapper}>
           <MgSlider settings={settings}>
-            {blogData.map((data) => {
-              return <SpotLightCard key={data.id} data={data} />;
+            {data.results.map((data) => {
+              return <BlogCard key={data.id} data={data} />;
             })}
           </MgSlider>
         </div>
