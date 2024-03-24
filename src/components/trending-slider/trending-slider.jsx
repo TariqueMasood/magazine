@@ -6,7 +6,7 @@ const TrendingSlider = () => {
   return (
     <div className={styles.aside}>
       <div className={styles.asideHeading}>TRENDING</div>
-      <Image src={asideImg} alt="card" />
+      <Image src={asideImg} alt="card" className={styles.imgCss} />
       <div className={styles.asideTitles}>
         EY CEO Outlook: AI Being Adopted as a Driver of Efficiency
       </div>

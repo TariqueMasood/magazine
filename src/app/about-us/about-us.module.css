@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.imgCss {
+  width: 100%;
+  height: auto;
+}
+
 .titleBorder {
   width: 30px;
   height: 2px;

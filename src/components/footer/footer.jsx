@@ -45,7 +45,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <div className={styles.footerLinkTitle}>COMPPANY</div>
+                <div className={styles.footerLinkTitle}>COMPANY</div>
                 <ul className={styles.navLists}>
                   <li>
                     <Link href="/about-us">About us</Link>

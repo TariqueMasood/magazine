@@ -7,3 +7,9 @@
   height: auto;
   display: inline-block;
 }
+
+@media(min-width: 768px) {
+  .card {
+    max-width: 360px;
+  }
+}

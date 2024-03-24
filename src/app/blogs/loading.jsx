@@ -1,3 +1,5 @@
+import MgLoader from "@/components/loader/loader";
+
 const Loading = () => {
   return (
     <div
@@ -9,7 +11,7 @@ const Loading = () => {
         marginTop: "100px",
       }}
     >
-      loading the data from the server
+      <MgLoader />
     </div>
   );
 };
