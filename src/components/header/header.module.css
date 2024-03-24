@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3em;
 }
 
 .wrapper a {
@@ -13,3 +14,4 @@
   padding: 10px 0;
   font-size: 14px;
 }
+
