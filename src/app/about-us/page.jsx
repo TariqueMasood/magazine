@@ -64,7 +64,7 @@ const AboutPage = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.hero}>
-        <Image src={heroImg} alt="img" />
+        <Image src={heroImg} alt="img" className={styles.imgCss} />
       </div>
       <div className={styles.content}>
         <h2>We are Project Leader.</h2>

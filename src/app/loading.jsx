@@ -5,10 +5,9 @@ const Loading = () => {
     <div
       style={{
         textAlign: "center",
-        fontSize: "28px",
         width: "100vw",
         height: "100vh",
-        marginTop: "100px",
+        marginTop: "200px",
       }}
     >
       <MgLoader />

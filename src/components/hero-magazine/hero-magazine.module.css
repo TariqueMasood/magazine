@@ -49,8 +49,8 @@
 }
 
 .edition {
-  background-color: var(--mgBlack);
-  border: 1px solid var(--bgBody);
+  background-color: var(--MgBlue);
+  border: 1px solid var(--MgBlue);
   border-radius: 5px;
   font-size: 9px;
   padding: 7px 9px;
