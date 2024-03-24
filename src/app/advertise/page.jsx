@@ -8,6 +8,7 @@ import liveImg from "../../../public/images/advertise-img4.webp";
 import liveImg2 from "../../../public/images/advertise-img3.png";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import logoImg from "../../../public/images/logo.svg";
+import mapImg from "../../../public/images/map-img.png";
 import { BsCheck2Circle } from "react-icons/bs";
 import Image from "next/image";
 
@@ -166,9 +167,8 @@ const FeatureSection = (props) => {
 const StackSection = (props) => {
   const { title, desc } = props;
   return (
-    <div>
+    <div className={styles.stackCard}>
       <div className={styles.stackTitle}>{title}</div>
-      <div className={styles.stackDevider}></div>
       <div className={styles.stackDesc}>{desc}</div>
     </div>
   );
@@ -230,11 +230,37 @@ const Advertise = () => {
           <Row>
             {stackData.map((data) => {
               return (
-                <Col key={data.id} lg={4} md={4} sm={12}>
+                <Col
+                  className="text-center"
+                  key={data.id}
+                  lg={4}
+                  md={4}
+                  sm={6}
+                  xm={12}
+                >
                   <StackSection {...data} />
                 </Col>
               );
             })}
+          </Row>
+        </Container>
+      </div>
+      <div className={styles.map}>
+        <Container>
+          <Row>
+            <Col lg={4}>
+              <div className={styles.mapContent}>
+                <span>
+                  <MdKeyboardDoubleArrowRight />
+                </span>
+                <span>Where the Technology Community comes from</span>
+              </div>
+            </Col>
+            <Col lg={8}>
+              <div className={styles.mapImage}>
+                <Image src={mapImg} alt="mapPic" />
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>

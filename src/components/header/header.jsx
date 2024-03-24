@@ -27,11 +27,13 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className="container">
-        <div className={styles.wrapper}>
-          {links.map((link) => (
-            <NavLink key={link.label} label={link.label} path={link.path} />
-          ))}
-        </div>
+        <marquee>
+          <div className={styles.wrapper}>
+            {links.map((link) => (
+              <NavLink key={link.label} label={link.label} path={link.path} />
+            ))}
+          </div>
+        </marquee>
       </div>
     </div>
   );
