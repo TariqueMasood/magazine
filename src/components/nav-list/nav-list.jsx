@@ -4,8 +4,8 @@ import styles from "./nav-list.module.css";
 const NavList = () => {
   const links = [
     {
-      label: "Magazine",
-      path: "/magazine",
+      label: "Magazines",
+      path: "/magazines",
     },
     {
       label: "Blogs",
