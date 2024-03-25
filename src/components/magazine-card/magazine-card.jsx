@@ -7,7 +7,11 @@ const MagazineCard = (props) => {
   const { id, name, thumbImage, pdf, published_date } = props.data;
 
   return (
-    <Link href={pdf} className={styles.cardContainer} target="_blank">
+    <Link
+      href={`magazines/${id}`}
+      className={styles.cardContainer}
+      // target="_blank"
+    >
       <div className={styles.imgContainer}>
         <Image
           src={thumbImage !== null ? thumbImage : magazineImg}
