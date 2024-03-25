@@ -8,7 +8,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import blogImage from "../../../../public/images/spotlight-img-3.png";
 import SpotLightSlider from "@/components/spotlight-slider/spotlight-slider";
-import { getData, getSingleData } from "@/app/page";
+import { getSingleData } from "@/app/page";
 
 const LightBlueCard = () => {
   return (
@@ -90,8 +90,6 @@ export async function generateMetadata({ params }) {
 }
 
 const SingleBlog = async (props) => {
-  const data = await getData();
-
   const { blogSlug } = props.params;
   const blog = await getSingleData(blogSlug);
 
@@ -136,7 +134,7 @@ const SingleBlog = async (props) => {
         <div className={styles.blogBorder}></div>
 
         <div className={styles.sliderWrapper}>
-          <SpotLightSlider data={data} />
+          <SpotLightSlider />
         </div>
       </Container>
     </div>
