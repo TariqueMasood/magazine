@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import styles from "../magazines.module.css";
 import { notFound } from "next/navigation";
 import { getSingleMagazine } from "@/components/magazine-list/magazine-list";
@@ -22,10 +21,8 @@ const SingleMagazine = async (props) => {
   const magazine = await getSingleMagazine(magazineId);
 
   return (
-    <div className={styles.container}>
-      <Container>
-        <h2>{magazine.name}</h2>
-      </Container>
+    <div className={styles.iFrameContainer}>
+      <iframe src={magazine.pdf} title={magazine.name}></iframe>
     </div>
   );
 };
