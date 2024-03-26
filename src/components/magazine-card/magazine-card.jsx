@@ -10,7 +10,7 @@ const MagazineCard = (props) => {
     <Link
       href={`magazines/${id}`}
       className={styles.cardContainer}
-      // target="_blank"
+      target="_blank"
     >
       <div className={styles.imgContainer}>
         <Image

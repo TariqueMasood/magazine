@@ -35,6 +35,6 @@ const Home = async () => {
       <NewsLetter />
     </main>
   );
-}
+};
 
 export default Home;
