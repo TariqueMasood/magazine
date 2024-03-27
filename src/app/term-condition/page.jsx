@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import styles from "./Term-condition.module.css";
+import styles from "./term-condition.module.css";
 
 const TermCondition = () => {
   return (
