@@ -1,0 +1,49 @@
+.wrapper {
+  padding: 30px 10px;
+}
+
+.wrapper h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.privacyDiveder {
+  background-color: #d1d1d1;
+  height: 2px;
+  margin: 1.5em 0;
+}
+
+.wrapper h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.wrapper p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 1.25em;
+}
+
+@media (min-width: 768px) {
+  .wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .wrapper h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .wrapper p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 1.25em;
+  }
+
+  .wrapper {
+    padding: 50px 0;
+  }
+}
