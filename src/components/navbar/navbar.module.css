@@ -2,6 +2,12 @@
   background-color: var(--mgBlack);
 }
 
+.logoImage {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
 .actions {
   display: flex;
   align-items: center;

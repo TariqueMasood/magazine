@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../../public/images/logo.svg";
+import logo from "../../../public/images/project-leader-logo-2-w.png";
 import searchIcon from "../../../public/images/search-icon.svg";
 import styles from "./navbar.module.css";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const MgNavbar = () => {
     <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark">
       <Container>
         <Link href="/">
-          <Image src={logo} alt="logo" />
+          <Image className={styles.logoImage} src={logo} alt="logo" />
         </Link>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
         <Navbar.Offcanvas

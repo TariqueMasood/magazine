@@ -2,6 +2,11 @@
   padding: 40px 0;
   background: #1f2024;
 }
+.footerImage {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
 
 .footerLogo {
   display: flex;
@@ -87,7 +92,7 @@
   background-color: #8585854d;
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .containerWrapper {
     flex-direction: row;
   }

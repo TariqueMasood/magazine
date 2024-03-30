@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
-import footerLogo from "../../../public/images/footer-logo.svg";
+import footerLogo from "../../../public/images/bizlink-media-logo.png";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Container } from "react-bootstrap";
@@ -14,7 +14,11 @@ const Footer = () => {
           <div className={styles.containerWrapper}>
             <div className={styles.footerLogo}>
               <Link href="/">
-                <Image src={footerLogo} width={190} height={120} alt="logo" />
+                <Image
+                  className={styles.footerImage}
+                  src={footerLogo}
+                  alt="logo"
+                />
               </Link>
               <div className={styles.footerLogoDescription}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
