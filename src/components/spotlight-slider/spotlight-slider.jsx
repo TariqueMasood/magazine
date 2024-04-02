@@ -3,7 +3,25 @@ import styles from "./spotlight-slider.module.css";
 import MgSlider from "../slider/slider";
 import SectionTitle from "../section-title/section-title";
 import BlogCard from "../blog-card/blog-card";
-import { getData } from "@/app/page";
+
+export async function getData() {
+  const res = await fetch(
+    "https://api.projectleadersmagazine.com:8000/api/blogs"
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+export const getSingleData = async (id) => {
+  const data = await getData();
+  const singleBlog = data.results.find((data) => data.id === parseInt(id));
+
+  return singleBlog;
+};
 
 const settings = {
   dots: true,

@@ -7,8 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import blogImage from "../../../../public/images/spotlight-img-3.png";
-import SpotLightSlider from "@/components/spotlight-slider/spotlight-slider";
-import { getSingleData } from "@/app/page";
+import SpotLightSlider, {
+  getSingleData,
+} from "@/components/spotlight-slider/spotlight-slider";
 
 const LightBlueCard = () => {
   return (
