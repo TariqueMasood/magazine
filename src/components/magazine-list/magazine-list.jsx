@@ -2,7 +2,9 @@ import MagazineCard from "../magazine-card/magazine-card";
 import styles from "./magazine-list.module.css";
 
 export async function getMagazines() {
-  const res = await fetch("https://api.projectleadersmagazine.com/api/pdfs");
+  const res = await fetch(
+    "https://api.projectleadersmagazine.com:8000/api/pdfs"
+  );
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
