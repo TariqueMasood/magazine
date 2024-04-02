@@ -8,7 +8,7 @@ import GallerySlider from "@/components/gallery-slider/gallery-slider";
 import NewsLetter from "@/components/news-letter/news-letter";
 
 export async function getData() {
-  const res = await fetch("https://api.projectleadersmagazine.com:8000/api/blogs");
+  const res = await fetch("https://projectleadersmagazine.com/api/blogs");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -24,7 +24,7 @@ export const getSingleData = async (id) => {
   if(!singleBlog.ok) {
     throw new Error("Failed to fetch data");
   }
-  
+
   return singleBlog;
 };
 
