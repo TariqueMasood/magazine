@@ -1,6 +1,4 @@
 .cardContainer {
-  max-width: 300px;
-  min-width: 230px;
   flex: 1;
   display: inline-block;
   scroll-snap-align: start;
@@ -9,13 +7,14 @@
 .imgContainer {
   position: relative;
   width: 100%;
+  height: auto;
   margin-bottom: 1.5em;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
 .imgCss {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .content {

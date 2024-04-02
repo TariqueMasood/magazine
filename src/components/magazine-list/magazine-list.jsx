@@ -17,10 +17,6 @@ export const getSingleMagazine = async (id) => {
     (magazine) => magazine.id === parseInt(id)
   );
 
-  if (!singleMagazine.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
   return singleMagazine;
 };
 
