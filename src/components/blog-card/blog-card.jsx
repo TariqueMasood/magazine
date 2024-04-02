@@ -29,7 +29,7 @@ const BlogCard = (props) => {
           <div className={styles.info}>
             <div className={styles.date}>
               <Image src={calendarIcon} alt="calendar" />
-              {/* <span>{new Date(published_date).toLocaleDateString()}</span> */}
+              <span>{new Date(published_date).toLocaleDateString()}</span>
             </div>
             <div className={styles.file}>
               <Image src={fileIcon} alt="file" />

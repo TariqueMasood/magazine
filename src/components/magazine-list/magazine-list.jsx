@@ -7,7 +7,7 @@ const MagazineCard = dynamic(() => import("../magazine-card/magazine-card"), {
 
 export async function getMagazines() {
   const res = await fetch(
-    "http://api.projectleadersmagazine.com:8000/api/blogs/"
+    "http://api.projectleadersmagazine.com:8000/api/pdfs/"
   );
 
   if (!res.ok) {

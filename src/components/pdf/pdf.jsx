@@ -1,3 +1,5 @@
+import styles from "./pdf.module.css";
+
 const Pdf = (props) => {
   return (
     <div>

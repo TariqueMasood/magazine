@@ -1,7 +1,11 @@
 import styles from "../magazines.module.css";
 import { notFound } from "next/navigation";
 import { getSingleMagazine } from "@/components/magazine-list/magazine-list";
-import Pdf from "@/components/pdf/pdf";
+import dynamic from "next/dynamic";
+
+const Pdf = dynamic(() => import("@/components/pdf/pdf"), {
+  ssr: false,
+});
 
 export async function generateMetadata({ params }) {
   const { magazineId } = params;
@@ -25,6 +29,7 @@ const SingleMagazine = async (props) => {
     <div className={styles.container}>
       <div className={styles.iFrameContainer}>
         <Pdf pdf={magazine.pdf} name={magazine.name} />
+        {/* <iframe src={magazine.pdf} title={magazine.name}></iframe> */}
       </div>
       <div>
         <h2>Related content</h2>
