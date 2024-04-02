@@ -48,7 +48,7 @@ const MgNavbar = () => {
                 />
               </Form>
               <div className={styles.divider}>|</div>
-              <Link href="advertise" className={styles.actionLink}>
+              <Link href="#" className={styles.actionLink}>
                 Advertise
               </Link>
             </div>

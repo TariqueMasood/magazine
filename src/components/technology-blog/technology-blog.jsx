@@ -14,7 +14,7 @@ const TechnologyBlog = async () => {
           Read the latest posts from experts at Knowmed Health Publishing
           covering a variety of health topics and perspectives on medical news.
         </p>
-        <div class={styles.blogCardContainer}>
+        <div className={styles.blogCardContainer}>
           {data.results.map((item) => (
             <BlogCard key={item.id} data={item} />
           ))}

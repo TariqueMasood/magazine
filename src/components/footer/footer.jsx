@@ -54,9 +54,9 @@ const Footer = () => {
                   <li>
                     <Link href="/about-us">About us</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="term-condition">Terms & Conditions</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="#">Feedback</Link>
                   </li>
@@ -66,14 +66,14 @@ const Footer = () => {
                   <li>
                     <Link href="#">Testimonials</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/privacy-policy">Privacy Policy</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className={styles.socialContainer}>
                 <div className={styles.contact}>
-                  <div className={styles.footerLinkTitle}>FOLLOW US</div>
+                  <div className={styles.footerLinkTitle}>CONTACT US</div>
                   <div className={styles.tollFree}>Toll Free - 0123456789</div>
                   <div className={styles.tollFree}>
                     Email : feedback@nestnotify.com

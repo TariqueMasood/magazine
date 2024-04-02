@@ -8,10 +8,6 @@ const NavList = () => {
       path: "/magazines",
     },
     {
-      label: "Blogs",
-      path: "/blogs",
-    },
-    {
       label: "News & Articles",
       path: "/blogs",
     },
