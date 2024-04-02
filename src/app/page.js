@@ -20,6 +20,11 @@ export async function getData() {
 export const getSingleData = async (id) => {
   const data = await getData();
   const singleBlog = data.results.find((data) => data.id === parseInt(id));
+  
+  if(!singleBlog.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  
   return singleBlog;
 };
 
