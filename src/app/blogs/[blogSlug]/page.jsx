@@ -17,7 +17,7 @@ const LightBlueCard = () => {
       <div className={styles.centerCardWrapper}>
         <div>
           <div className={styles.centerCardWriter}>
-            {/* <span>{blog.name}</span> */}
+            {/* <span>{blog?.name}</span> */}
             <span>Anesthesia</span>
           </div>
           <h3 className={styles.centerCardTitle}>
@@ -85,8 +85,8 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: blog.title,
-    desc: blog.desc,
+    title: blog?.title,
+    desc: blog?.desc,
   };
 }
 
@@ -102,14 +102,14 @@ const SingleBlog = async (props) => {
     <div className={styles.SigleBlogWrapper}>
       <Container>
         <h4 className={styles.singleBlogHeading}>child & teen health</h4>
-        <h1 className={styles.singleBlogTitle}>{blog.title}</h1>
+        <h1 className={styles.singleBlogTitle}>{blog?.title}</h1>
         <p className={styles.singleBlogSubTitle}>
           A shorter-than-usual band of tissue may restrict tongue movements yet
           cause no serious problems.
         </p>
         <div className={styles.singlgeBlogImg}>
           <Image
-            src={blog.image !== null ? blog.image : blogImage}
+            src={blog?.image !== null ? blog?.image : blogImage}
             alt="card"
             width={300}
             height={250}
@@ -120,11 +120,11 @@ const SingleBlog = async (props) => {
           Health Publishing
         </div>
         <div className={styles.blogDate}>
-          {new Date(blog.published_date).toLocaleDateString()}
+          {new Date(blog?.published_date).toLocaleDateString()}
         </div>
         <div
           className={styles.cardContent}
-          dangerouslySetInnerHTML={createMarkup(blog.content)}
+          dangerouslySetInnerHTML={createMarkup(blog?.content)}
         />
         <h3 className={styles.blogSubTitle}>How common are tongue-ties?</h3>
         <p className={styles.blogSubContent}>

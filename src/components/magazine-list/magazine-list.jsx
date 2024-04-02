@@ -1,9 +1,13 @@
-import MagazineCard from "../magazine-card/magazine-card";
+import dynamic from "next/dynamic";
 import styles from "./magazine-list.module.css";
+
+const MagazineCard = dynamic(() => import("../magazine-card/magazine-card"), {
+  ssr: false,
+});
 
 export async function getMagazines() {
   const res = await fetch(
-    "https://api.projectleadersmagazine.com:8000/api/pdfs"
+    "http://api.projectleadersmagazine.com:8000/api/blogs/"
   );
 
   if (!res.ok) {
@@ -27,7 +31,7 @@ const MagazineList = async () => {
 
   return (
     <div className={styles.container}>
-      {magazines.results.map((magazine) => (
+      {magazines?.results?.map((magazine) => (
         <MagazineCard key={magazine.id} data={magazine} />
       ))}
     </div>

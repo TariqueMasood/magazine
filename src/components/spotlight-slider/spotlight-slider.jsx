@@ -2,11 +2,15 @@ import { Container } from "react-bootstrap";
 import styles from "./spotlight-slider.module.css";
 import MgSlider from "../slider/slider";
 import SectionTitle from "../section-title/section-title";
-import BlogCard from "../blog-card/blog-card";
+import dynamic from "next/dynamic";
+
+const BlogCard = dynamic(() => import("../blog-card/blog-card"), {
+  ssr: false,
+});
 
 export async function getData() {
   const res = await fetch(
-    "https://api.projectleadersmagazine.com:8000/api/blogs"
+    "http://api.projectleadersmagazine.com:8000/api/blogs/"
   );
 
   if (!res.ok) {
@@ -58,8 +62,8 @@ const SpotLightSlider = async () => {
         <SectionTitle title="SPOTLIGHT" />
         <div className={styles.sliderWrapper}>
           <MgSlider settings={settings}>
-            {data.results.map((data) => {
-              return <BlogCard key={data.id} data={data} />;
+            {data?.results?.map((data) => {
+              return <BlogCard key={data?.id} data={data} />;
             })}
           </MgSlider>
         </div>

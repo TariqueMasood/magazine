@@ -6,7 +6,7 @@ import styles from "./blog-card.module.css";
 import Link from "next/link";
 
 const BlogCard = (props) => {
-  const { id, title, subtitle, image, content, published_date } = props.data;
+  const { id, title, subtitle, image, content, published_date } = props?.data;
 
   function createMarkup(markup) {
     return { __html: markup.slice(0, 100).concat("...") };
@@ -29,7 +29,7 @@ const BlogCard = (props) => {
           <div className={styles.info}>
             <div className={styles.date}>
               <Image src={calendarIcon} alt="calendar" />
-              <span>{new Date(published_date).toLocaleDateString()}</span>
+              {/* <span>{new Date(published_date).toLocaleDateString()}</span> */}
             </div>
             <div className={styles.file}>
               <Image src={fileIcon} alt="file" />
