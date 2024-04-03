@@ -5,7 +5,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: capitalize;
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .singleBlogTitle {
@@ -33,12 +33,12 @@
 }
 
 .blogWriter span {
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .blogDate {
   font-size: 1.125rem;
-  color: var(--MgGrey);
+  color: var(--greyDark);
   padding: 1em 0;
 }
 
@@ -57,7 +57,7 @@
 
 .blogBorder {
   height: 1px;
-  background-color: var(--mgBlack);
+  background-color: var(--black);
   margin: 30px 0;
 }
 
@@ -89,7 +89,7 @@
 
 .centerCardWriter span:last-child {
   font-weight: 500;
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .centerCardTitle {
@@ -114,13 +114,13 @@
 .authorTitle {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .authorBorder {
   width: 30px;
   height: 4px;
-  background-color: var(--MgBlue);
+  background-color: var(--themeColor);
   margin-bottom: 20px;
 }
 
@@ -146,7 +146,7 @@
 }
 
 .authorDetail a {
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .authorAllPost span {
@@ -155,7 +155,7 @@
 }
 
 .authorAllPost span svg {
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .reletedBlog {

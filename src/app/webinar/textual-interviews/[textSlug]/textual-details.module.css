@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--MgGrey);
+  background-color: var(--greyDark);
   height: 100%;
 }
 
@@ -58,7 +58,7 @@
 .containerAd {
   width: 100%;
   height: 200px;
-  background-color: var(--MgGrey);
+  background-color: var(--greyDark);
   margin-bottom: 2em;
 }
 

@@ -30,7 +30,7 @@
 
 .cardName span:first-child {
   font-weight: 400;
-  color: var(--MgGrey);
+  color: var(--greyDark);
 }
 
 .cardName span:last-child {
@@ -57,7 +57,7 @@
 
 .cardDate {
   font-weight: 400;
-  color: var(--MgGrey);
+  color: var(--greyDark);
 }
 
 @media (max-width: 480px) {

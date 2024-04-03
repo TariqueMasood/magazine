@@ -1,5 +1,5 @@
 .cardContainer {
-  border: 1px solid var(--lightGrey);
+  border: 1px solid var(--greyExtraLight);
   border-radius: 20px;
   flex: 1;
   min-width: 250px;
@@ -7,7 +7,7 @@
 }
 
 .cardContainer:hover h4 {
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .cardContainer:hover .blogImage {

@@ -80,7 +80,7 @@
 }
 
 .footerCopyright {
-  background: var(--BgGradient);
+  background: var(--themeColor);
   padding: 1.5em 0;
   color: #fff;
   font-size: 14px;

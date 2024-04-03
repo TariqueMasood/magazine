@@ -1,11 +1,11 @@
 .cardContainer {
-  border: 1px solid var(--lightGrey);
+  border: 1px solid var(--greyExtraLight);
   max-width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
 .cardContainer:hover h4 {
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .imgContainer {
@@ -59,11 +59,11 @@
   border-radius: 50px;
   padding: 8px;
   font-size: 10px;
-  background-color: var(--MgBlue);
+  background-color: var(--themeColor);
   color: #fff;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .cardContainer {
     max-width: 340px;
   }

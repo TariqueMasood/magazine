@@ -29,14 +29,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: var(--bgBody);
+  color: var(--white);
   z-index: 2;
 }
 
 .heroTitle h1:nth-of-type(1) {
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--bgBody);
+  color: var(--white);
 }
 
 .heroTitleImg img {
@@ -46,7 +46,7 @@
 }
 
 .heroTitle a {
-  background-color: var(--MgBlue);
+  background-color: var(--themeColor);
   padding: 9px;
   margin-top: 2em;
   display: inline-block;
@@ -83,7 +83,7 @@
 .arrow svg {
   width: 32px;
   height: 32px;
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .arrowIcon h1 {
@@ -115,7 +115,7 @@
 .quoteIcon svg {
   width: 32px;
   height: 32px;
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .quoteWrapper p {
@@ -149,13 +149,13 @@
 .authorDetail span:nth-of-type(2) {
   font-size: 14px;
   font-weight: 400;
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .feature {
   padding: 60px 0;
-  background-color: var(--MgGrey2);
-  color: var(--bgBody);
+  background-color: var(--greyExtraDark);
+  color: var(--white);
 }
 
 .featureWrapper {
@@ -170,7 +170,7 @@
   margin-right: 12px;
   width: 30px;
   height: 30px;
-  color: var(--MgBlue);
+  color: var(--themeColor);
   font-weight: 700;
   display: inline-block;
 }
@@ -186,8 +186,8 @@
 }
 
 .live {
-  background-color: var(--mgBlack);
-  color: var(--bgBody);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .liveImg {
@@ -270,7 +270,7 @@
 }
 
 .liveContentWrapper p a {
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .liveContentWrapper p a:hover {
@@ -279,8 +279,8 @@
 
 .stack {
   padding: 50px 0;
-  background-color: var(--mgBlack);
-  color: var(--bgBody);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .stack h1 {
@@ -310,7 +310,7 @@
 .mapContent span:nth-of-type(1) svg {
   width: 30px;
   height: 30px;
-  color: var(--MgBlue);
+  color: var(--themeColor);
 }
 
 .mapContent span:nth-of-type(2) {
@@ -336,11 +336,11 @@ Responsive ...
   .heroTitle h1:nth-of-type(1) {
     font-size: 3.25rem;
     font-weight: 700;
-    color: var(--bgBody);
+    color: var(--white);
   }
 
   .heroTitle a {
-    background-color: var(--MgBlue);
+    background-color: var(--themeColor);
     padding: 16px 48px;
     margin-top: 2em;
     display: inline-block;
@@ -354,7 +354,7 @@ Responsive ...
   .arrow svg {
     width: 50px;
     height: 50px;
-    color: var(--MgBlue);
+    color: var(--themeColor);
   }
 
   .arrowIcon h1 {
@@ -380,7 +380,7 @@ Responsive ...
   .quoteIcon svg {
     width: 50px;
     height: 50px;
-    color: var(--MgBlue);
+    color: var(--themeColor);
   }
 
   .aboutImgContent {
@@ -404,7 +404,7 @@ Responsive ...
   .authorDetail span:nth-of-type(2) {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--MgBlue);
+    color: var(--themeColor);
     line-height: 1.7;
   }
 
@@ -451,7 +451,7 @@ Responsive ...
   .mapContent span:nth-of-type(1) svg {
     width: 50px;
     height: 50px;
-    color: var(--MgBlue);
+    color: var(--themeColor);
   }
 
   .mapContent {
