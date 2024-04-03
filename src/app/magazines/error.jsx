@@ -1,15 +1,27 @@
 "use client";
 
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 
-const Error = () => {
-  return (
-    <Container>
-      <h2 className="text-center my-5">
-        Something went wrong while fetching magazines
-      </h2>
-    </Container>
-  );
-};
+export default function Error({ error, reset }) {
+  useEffect(() => {
+    // Log the error to an error reporting service
+    console.error(error);
+  }, [error]);
 
-export default Error;
+  return (
+    <div>
+      <Container>
+        <h2>Something went wrong!</h2>
+        <button
+          onClick={
+            // Attempt to recover by trying to re-render the segment
+            () => reset()
+          }
+        >
+          Try again
+        </button>
+      </Container>
+    </div>
+  );
+}

@@ -1,11 +1,27 @@
 "use client";
 
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 
-const Error = () => {
-  return (
-    <Container className="text-center">Failed to fetch the data</Container>
-  );
-};
+export default function Error({ error, reset }) {
+  useEffect(() => {
+    // Log the error to an error reporting service
+    console.error(error);
+  }, [error]);
 
-export default Error;
+  return (
+    <div>
+      <Container>
+        <h2>Failed to fetch the blogs!!</h2>
+        <button
+          onClick={
+            // Attempt to recover by trying to re-render the segment
+            () => reset()
+          }
+        >
+          Try again
+        </button>
+      </Container>
+    </div>
+  );
+}

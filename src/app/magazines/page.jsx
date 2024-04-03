@@ -2,6 +2,12 @@ import { Container } from "react-bootstrap";
 import styles from "./magazines.module.css";
 import MagazineList from "@/components/magazine-list/magazine-list";
 import SectionTitle from "@/components/section-title/section-title";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const MgLoader = dynamic(() => import("@/components/loader/loader"), {
+  ssr: false,
+});
 
 const Magazines = () => {
   return (
@@ -10,7 +16,9 @@ const Magazines = () => {
         <div className={styles.header}>
           <SectionTitle title="Magazines" />
         </div>
-        <MagazineList />
+        <Suspense fallback={<MgLoader />}>
+          <MagazineList />
+        </Suspense>
       </Container>
     </div>
   );
