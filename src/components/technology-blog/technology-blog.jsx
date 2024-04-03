@@ -9,7 +9,7 @@ const TechnologyBlog = async () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <SectionTitle title="TECHNOLOGY BLOGS" />
+        <SectionTitle title="TECHNOLOGY" />
         <p>
           Read the latest posts from experts at Knowmed Health Publishing
           covering a variety of health topics and perspectives on medical news.

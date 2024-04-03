@@ -1,5 +1,6 @@
 .header {
-  background: var(--greyDark);
+  background: var(--themeColor);
+  color: var(--black);
 }
 
 .wrapper {
@@ -10,8 +11,7 @@
 }
 
 .wrapper a {
-  color: #fff;
-  padding: 10px 0;
-  font-size: 14px;
+  color: var(--black);
+  padding: 7px 0;
+  font-size: 12px;
 }
-

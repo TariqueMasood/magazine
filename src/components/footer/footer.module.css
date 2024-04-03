@@ -56,6 +56,14 @@
   color: #fff;
 }
 
+.tollFree a {
+  transition: 0.3s;
+}
+
+.tollFree a:hover {
+  color: var(--themeColor);
+}
+
 .socialContainer {
   display: flex;
   flex-direction: column;

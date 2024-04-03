@@ -6,8 +6,8 @@ import TechnologyBlog from "@/components/technology-blog/technology-blog";
 const BlogPage = async () => {
   return (
     <div className={styles.wrapper}>
-      <TechnologyBlog />
       <RecentBlog />
+      <TechnologyBlog />
       <BlogHero />
     </div>
   );
