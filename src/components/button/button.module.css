@@ -1,6 +1,6 @@
 .btnPrimary {
-  background-color: var(--MgBlue);
-  border: 1px solid var(--MgBlue);
+  background-color: var(--themeColor);
+  border: 1px solid var(--themeColor);
   border-radius: 8px;
   padding: 8px 16px;
   color: #fff;

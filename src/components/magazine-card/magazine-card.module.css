@@ -18,16 +18,16 @@
 }
 
 .content {
-    text-align: center;
+  text-align: center;
 }
 
 .dateCss {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: var(--mgBlack2);
-    font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 700;
 }
 
 .yearCss {
-    color: var(--lightGrey2);
+  color: var(--greyExtraLight);
 }
