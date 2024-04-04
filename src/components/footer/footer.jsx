@@ -4,6 +4,11 @@ import footerLogo from "../../../public/images/bizlink-media-logo.png";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
 import SocialIcon from "../social-icon/social-icon";
+import dynamic from "next/dynamic";
+
+const ScrollButton = dynamic(() => import("../scroll-button/scroll-button"), {
+  ssr: false,
+});
 
 const Footer = () => {
   return (
@@ -94,6 +99,7 @@ const Footer = () => {
           © 2023 Project Leaders Magazine - All Rights Reserved.
         </div>
       </Container>
+      <ScrollButton />
     </footer>
   );
 };

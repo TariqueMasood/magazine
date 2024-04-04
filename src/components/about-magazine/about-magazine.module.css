@@ -15,7 +15,6 @@
   margin-bottom: 50px;
   margin-top: 1.5em;
   font-size: 18px;
-  text-align: left;
   line-height: 33.8px;
 }
 
@@ -120,7 +119,6 @@
 
   .aboutText {
     margin-top: 0;
-    text-align: right;
     margin-bottom: 80px;
     font-size: 20px;
   }

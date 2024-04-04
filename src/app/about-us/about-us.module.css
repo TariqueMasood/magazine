@@ -307,7 +307,6 @@
   .ourStory h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: "Playfair Display";
     text-align: center;
   }
   .storyWrapper {
@@ -357,7 +356,6 @@
   .mottoContent h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: "Playfair Display";
   }
   .mottoContent p {
     font-size: 1rem !important;
@@ -386,7 +384,6 @@
   .faqImage h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: "Playfair Display";
   }
 
   .faqImage p {
@@ -426,7 +423,6 @@
   .topicContent h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: "Playfair Display";
   }
 
   .topicContent p {
@@ -452,7 +448,6 @@
   .eventContentWrapper h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: "Playfair Display";
     margin-bottom: 0.5em;
   }
 
