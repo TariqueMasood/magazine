@@ -21,7 +21,6 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: false,
-  centerPadding: "40px",
   responsive: [
     {
       breakpoint: 1024,

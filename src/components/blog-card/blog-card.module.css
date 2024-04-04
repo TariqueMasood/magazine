@@ -3,6 +3,7 @@
   border-radius: 20px;
   display: block;
   overflow: hidden;
+  flex: 1;
 }
 
 .cardContainer:hover h4 {
