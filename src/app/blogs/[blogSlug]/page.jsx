@@ -7,9 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import blogImage from "../../../../public/images/spotlight-img-3.png";
-import SpotLightSlider, {
-  getSingleData,
-} from "@/components/spotlight-slider/spotlight-slider";
+import SpotLightSlider from "@/components/spotlight-slider/spotlight-slider";
+import { fetchData } from "@/utils/api";
 
 const LightBlueCard = () => {
   return (
@@ -74,6 +73,13 @@ const Author = () => {
       </div>
     </div>
   );
+};
+
+export const getSingleData = async (id) => {
+  const data = await fetchData("blogs");
+  const singleBlog = data.results.find((data) => data.id === parseInt(id));
+
+  return singleBlog;
 };
 
 export async function generateMetadata({ params }) {

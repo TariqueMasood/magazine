@@ -1,9 +1,8 @@
 .cardContainer {
   border: 1px solid var(--greyExtraLight);
   border-radius: 20px;
-  flex: 1;
-  min-width: 250px;
-  /* box-shadow: 0 1rem 2.5rem 0 rgba(165,165,165,0.16); */
+  display: block;
+  overflow: hidden;
 }
 
 .cardContainer:hover h4 {
@@ -75,10 +74,4 @@
   font-size: 10px;
   background-color: #000;
   color: #fff;
-}
-
-@media (min-width: 768px) {
-  .cardContainer {
-    max-width: 340px;
-  }
 }

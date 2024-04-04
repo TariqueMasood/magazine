@@ -14,27 +14,6 @@ const MgLoader = dynamic(() => import("@/components/loader/loader"), {
   ssr: false,
 });
 
-export async function getData() {
-  const res = await fetch(
-    "http://api.projectleadersmagazine.com:8000/api/blogs/"
-  );
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  await new Promise((resolve) => setTimeout(resolve, 3000));
-
-  return res.json();
-}
-
-export const getSingleData = async (id) => {
-  const data = await fetchData("blogs");
-  const singleBlog = data.results.find((data) => data.id === parseInt(id));
-
-  return singleBlog;
-};
-
 const settings = {
   dots: true,
   infinite: true,

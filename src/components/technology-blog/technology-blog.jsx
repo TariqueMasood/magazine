@@ -2,10 +2,10 @@ import { Container } from "react-bootstrap";
 import styles from "./technology-blog.module.css";
 import SectionTitle from "../section-title/section-title";
 import BlogCard from "../blog-card/blog-card";
-import { getData } from "../spotlight-slider/spotlight-slider";
+import { fetchData } from "@/utils/api";
 
 const TechnologyBlog = async () => {
-  const data = await getData();
+  const data = await fetchData("blogs");
   return (
     <div className={styles.wrapper}>
       <Container>
