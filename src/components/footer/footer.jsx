@@ -74,9 +74,15 @@ const Footer = () => {
               <div className={styles.socialContainer}>
                 <div className={styles.contact}>
                   <div className={styles.footerLinkTitle}>CONTACT US</div>
-                  <div className={styles.tollFree}>Toll Free - 0123456789</div>
+                  {/* <div className={styles.tollFree}>Toll Free - 0123456789</div> */}
                   <div className={styles.tollFree}>
-                    Email : feedback@nestnotify.com
+                    Email
+                    <a
+                      href="mailto:media.services@bizlinkmedia.com"
+                      target="--blank"
+                    >
+                      : media.services@bizlinkmedia.com
+                    </a>
                   </div>
                 </div>
                 <div className={styles.social}>

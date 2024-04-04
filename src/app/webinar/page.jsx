@@ -437,15 +437,6 @@ const Webinar = () => {
                 bibendum pellentesque rutrum. Vestibulum at tellus ultrices,
                 sollicitudin
               </p>
-              <MgButton
-                style={{
-                  background:
-                    "linear-gradient(104.94deg, #38B6FF -0.05%, #38FFDB 99.95%)",
-                  border: "1px solid #38B6FF",
-                }}
-              >
-                Explore
-              </MgButton>
             </div>
             <div className={styles.heroImage}>
               <div className={styles.imageContainer}>

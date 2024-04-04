@@ -22,7 +22,6 @@ const Home = () => {
       </Suspense>
       <AboutMagazine />
       <TestimonialSlider />
-      <TeamSlider />
       <GallerySlider />
       <NewsLetter />
     </main>

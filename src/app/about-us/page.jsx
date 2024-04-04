@@ -223,7 +223,6 @@ const AboutPage = () => {
                 Our target audience is a diverse group of individuals and
                 organizations who are interested in project leadership and
                 industry trends. <br />
-                This includes:
               </p>
             </div>
             <div className={styles.faqContent}>
@@ -357,14 +356,6 @@ const AboutPage = () => {
               </Col>
             </Row>
           </div>
-          <div className={styles.topicDesc}>
-            <p>
-              Our aim is to provide a comprehensive view of project leadership,
-              offering our readers valuable information that they can apply in
-              their own projects and careers. Ready to position for success?
-              Let&quot;s do it!
-            </p>
-          </div>
         </Container>
       </section>
       <section className={styles.event}>
@@ -436,13 +427,13 @@ const AboutPage = () => {
       <section className={styles.map}>
         <Container>
           <div>
-            <SectionHeader
-              style={{ color: "#fff" }}
-              title="We are globally"
-              subTitle="We're a distributed team"
-              desc="We have offices and teams all around the world."
-            />
-            <SectionBorder />
+            <div className={styles.mapTitle}>
+              <SectionHeader
+                style={{ color: "#fff" }}
+                title="Global Footprint"
+                subTitle="We're a diverse community"
+              />
+            </div>
             <div className={styles.mapImage}>
               <Image src={mapImg} alt="map" />
             </div>
