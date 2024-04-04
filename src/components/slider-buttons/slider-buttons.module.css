@@ -1,0 +1,16 @@
+.sliderButtons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.chevronCss {
+  background-color: var(--themeColor);
+  border: none;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

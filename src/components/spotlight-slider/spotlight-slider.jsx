@@ -21,6 +21,7 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: false,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1024,
@@ -46,16 +47,18 @@ const SpotLightSlider = async () => {
   return (
     <div className={styles.wrapper}>
       <Container>
-        <SectionTitle title="SPOTLIGHT" />
-        <Suspense fallback={<MgLoader />}>
-          <div className={styles.sliderWrapper}>
-            <MgSlider settings={settings}>
-              {data?.results?.map((data) => {
-                return <BlogCard key={data?.id} data={data} />;
-              })}
-            </MgSlider>
-          </div>
-        </Suspense>
+        <div className={styles.contentWrapper}>
+          <SectionTitle title="SPOTLIGHT" />
+          <Suspense fallback={<MgLoader />}>
+            <div className={styles.sliderWrapper}>
+              <MgSlider settings={settings}>
+                {data?.results?.map((data) => {
+                  return <BlogCard key={data?.id} data={data} />;
+                })}
+              </MgSlider>
+            </div>
+          </Suspense>
+        </div>
       </Container>
     </div>
   );

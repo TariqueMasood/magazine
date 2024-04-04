@@ -1,5 +1,5 @@
 .cardContainer {
-  border: 1px solid var(--greyExtraLight);
+  border: 1px solid var(--greyLight);
   border-radius: 20px;
   display: block;
   overflow: hidden;

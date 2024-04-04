@@ -2,3 +2,7 @@
   color: #fff;
   padding: 12px;
 }
+
+.active {
+  color: var(--themeColor);
+}

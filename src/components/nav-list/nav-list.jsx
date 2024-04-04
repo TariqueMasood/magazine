@@ -1,5 +1,5 @@
+import { usePathname } from "next/navigation";
 import NavLink from "../link/link";
-import styles from "./nav-list.module.css";
 
 const NavList = () => {
   const links = [
@@ -21,10 +21,19 @@ const NavList = () => {
     },
   ];
 
+  const pathName = usePathname();
+
   return (
     <>
       {links.map((link) => {
-        return <NavLink key={link.label} label={link.label} path={link.path} />;
+        return (
+          <NavLink
+            key={link.label}
+            label={link.label}
+            path={link.path}
+            pathName={pathName}
+          />
+        );
       })}
     </>
   );

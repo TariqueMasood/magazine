@@ -17,7 +17,6 @@ import enevtImg6 from "../../../public/images/about-event-img6.png";
 import mapImg from "../../../public/images/map-img.png";
 import SectionHeader from "@/components/section-header/section-header";
 import TeamSlider from "@/components/team-slider/team-slider";
-import SectionBorder from "@/components/section-border/section-border";
 
 const TitleBorder = () => {
   return <div className={styles.titleBorder}></div>;

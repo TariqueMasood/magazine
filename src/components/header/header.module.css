@@ -12,6 +12,6 @@
 
 .wrapper a {
   color: var(--black);
-  padding: 7px 0;
+  padding: 8px 0 2px;
   font-size: 12px;
 }
