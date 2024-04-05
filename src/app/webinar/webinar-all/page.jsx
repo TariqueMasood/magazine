@@ -3,9 +3,7 @@ import styles from "./webinar-all.module.css";
 import SectionTitle from "@/components/section-title/section-title";
 import Link from "next/link";
 import Image from "next/image";
-import webinarImg1 from "../../../../public/images/magazine-1.webp";
-import webinarImg2 from "../../../../public/images/magazine-2.webp";
-import webinarImg3 from "../../../../public/images/magazine-cover.jpg";
+import webinarImg1 from "../../../../public/images/center-card-img1.png";
 import MgButton from "@/components/button/button";
 
 const webinarData = [
@@ -18,42 +16,42 @@ const webinarData = [
   },
   {
     id: 2,
-    cardImage: webinarImg3,
+    cardImage: webinarImg1,
     title: "australian CIO summit 2024",
     date: "mon 22 july, 2024 . 12:30 GMT. queensland, australia",
     desc: "The Australian CIO Summit aims to foster innovative thinking,share inspiring ideas, and promote community connection.",
   },
   {
     id: 3,
-    cardImage: webinarImg3,
+    cardImage: webinarImg1,
     title: "australian CIO summit 2024",
     date: "mon 22 july, 2024 . 12:30 GMT. queensland, australia",
     desc: "The Australian CIO Summit aims to foster innovative thinking,share inspiring ideas, and promote community connection.",
   },
   {
     id: 4,
-    cardImage: webinarImg2,
+    cardImage: webinarImg1,
     title: "australian CIO summit 2024",
     date: "mon 22 july, 2024 . 12:30 GMT. queensland, australia",
     desc: "The Australian CIO Summit aims to foster innovative thinking,share inspiring ideas, and promote community connection.",
   },
   {
     id: 5,
-    cardImage: webinarImg2,
+    cardImage: webinarImg1,
     title: "australian CIO summit 2024",
     date: "mon 22 july, 2024 . 12:30 GMT. queensland, australia",
     desc: "The Australian CIO Summit aims to foster innovative thinking,share inspiring ideas, and promote community connection.",
   },
   {
     id: 6,
-    cardImage: webinarImg2,
+    cardImage: webinarImg1,
     title: "australian CIO summit 2024",
     date: "mon 22 july, 2024 . 12:30 GMT. queensland, australia",
     desc: "The Australian CIO Summit aims to foster innovative thinking,share inspiring ideas, and promote community connection.",
   },
   {
     id: 7,
-    cardImage: webinarImg2,
+    cardImage: webinarImg1,
     title: "australian CIO summit 2024",
     date: "mon 22 july, 2024 . 12:30 GMT. queensland, australia",
     desc: "The Australian CIO Summit aims to foster innovative thinking,share inspiring ideas, and promote community connection.",

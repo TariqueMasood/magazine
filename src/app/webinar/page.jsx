@@ -4,7 +4,7 @@ import SectionTitle from "@/components/section-title/section-title";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
-import webinarImg1 from "../../../public/images/magazine-cover2.jpg";
+import webinarImg1 from "../../../public/images/center-card-img1.png";
 import MgButton from "@/components/button/button";
 
 const FeaturedCard = () => {
