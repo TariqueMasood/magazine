@@ -1,0 +1,75 @@
+.wrapper {
+  padding: 40px 0;
+}
+
+.webinarCardCotainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.webinardCard {
+  border: 1px solid var(--greyLight);
+}
+
+.webinarCardImg img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.webinarCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.webinarCardContent h5 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.webinarCardContent h6 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.webinarCardContent p {
+  font-size: 14px;
+  color: var(--greyDark);
+}
+
+.webinarCardContent button {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.webinarCardWrapper :hover {
+  .webinarCardContent h5 {
+    color: var(--themeColor);
+    transition: all 0.3s;
+  }
+}
+
+.webinarCardWrapper :hover {
+  .webinarCardContent button {
+    background-color: var(--themeColor);
+    border: 1px solid var(--themeColor);
+    transition: all 0.3s;
+  }
+}
+
+.webinarCardContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.webinarCardContainerWrap {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}

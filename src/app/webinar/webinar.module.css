@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .cardWrapper {
@@ -89,6 +89,11 @@
   margin-top: 5px;
 }
 
+.featuredCardContentWrapper button {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
 .FeaturedCardWrapper :hover {
   .featuredCardContent h3 {
     color: var(--themeColor);
@@ -98,9 +103,8 @@
 
 .FeaturedCardWrapper :hover {
   .featuredCardContentWrapper button {
-    /* color: var(--white); */
-    background-color: var(--black);
-    border: 1px solid var(--black);
+    background-color: var(--themeColor);
+    border: 1px solid var(--themeColor);
     transition: all 0.2s;
   }
 }
@@ -148,6 +152,11 @@
   color: var(--greyDark);
 }
 
+.webinarCardContent button {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
 .webinarCardWrapper :hover {
   .webinarCardContent h5 {
     color: var(--themeColor);
@@ -157,8 +166,8 @@
 
 .webinarCardWrapper :hover {
   .webinarCardContent button {
-    background-color: var(--black);
-    border: 1px solid var(--black);
+    background-color: var(--themeColor);
+    border: 1px solid var(--themeColor);
     transition: all 0.3s;
   }
 }

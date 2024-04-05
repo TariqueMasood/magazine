@@ -4,14 +4,14 @@ import SectionTitle from "@/components/section-title/section-title";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
-import webinarImg1 from "../../../public/images/webinar-img-1.webp";
+import webinarImg1 from "../../../public/images/magazine-cover2.jpg";
 import MgButton from "@/components/button/button";
 
 const FeaturedCard = () => {
   return (
     <Link className={styles.FeaturedCardWrapper} href="#">
       <div className={styles.featuredCard}>
-        <div className={styles.featuredCardImgContainer}>
+        <div className={styles.featuredCardImg}>
           <Image
             className={styles.featuredCardImg}
             src={webinarImg1}
