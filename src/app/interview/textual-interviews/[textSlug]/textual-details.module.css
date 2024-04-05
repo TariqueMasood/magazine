@@ -1,0 +1,117 @@
+.wrapper {
+  padding: 50px 0;
+}
+
+.card {
+  padding: 30px 0;
+}
+
+.containerTitle h4 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.cardContainer {
+  width: 100%;
+  height: auto;
+}
+
+.cardContent h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.cardContent h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #38b6ff;
+}
+
+.cardContent p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #5e707b;
+}
+
+.cardContent p span {
+  color: #38b6ff;
+}
+
+.cardDate {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #5e707b;
+}
+
+.cardAd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--greyDark);
+  height: 100%;
+}
+
+.border {
+  border: 1px solid #1f2024;
+}
+
+.containerAd {
+  width: 100%;
+  height: 200px;
+  background-color: var(--greyDark);
+  margin-bottom: 2em;
+}
+
+.authorCard {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.authorCard h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nameBorder {
+  width: 30px;
+  border: 3px solid #000;
+  margin: 1em 0;
+}
+
+.cardImg img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
+.authorContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  max-height: 200px;
+  height: 100%;
+}
+
+.authorContent h6 {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.authorContent p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.authorContent a {
+  color: #5e707b;
+}
+
+.authorContent a:hover {
+  color: #ff0000;
+}
+
+.authorAllPost {
+  font-size: 1.375rem;
+  font-weight: 600;
+}

@@ -16,6 +16,10 @@ const NavList = () => {
       path: "/webinar",
     },
     {
+      label: "Interviews",
+      path: "/interview",
+    },
+    {
       label: "About Us",
       path: "/about-us",
     },
