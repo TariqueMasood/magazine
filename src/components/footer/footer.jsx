@@ -24,9 +24,16 @@ const Footer = () => {
               />
             </Link>
             <div className={styles.footerLogoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              vitae tempor ex, quis vestibulum nibh. Aenean ornare elit
-              porttitor malesuada volutpat.
+              BizLink Media Group, a dynamic arm of the esteemed Indian
+              conglomerate, Denkoit, is a leading force in the realm of digital
+              business publishing. We are dedicated to empowering businesses and
+              industries across the globe to share their stories and forge
+              connections with a discerning audience. At the heart of our
+              offerings lies the Project Leaders Magazine – a digital
+              publication boasting in-depth coverage of projects from a diverse
+              range of sectors. We act as a platform for businesses of all sizes
+              and industries to showcase their brand, story, vision, mission,
+              progress and success.
             </div>
           </div>
           <div className={styles.divider}></div>
@@ -96,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footerCopyright}>
-          © 2023 Project Leaders Magazine - All Rights Reserved.
+          © 2024 Project Leaders Magazine - All Rights Reserved.
         </div>
       </Container>
       <ScrollButton />

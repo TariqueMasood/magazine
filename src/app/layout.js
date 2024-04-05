@@ -1,15 +1,8 @@
-import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import MgNavbar from "@/components/navbar/navbar";
-
-const montserrat = Montserrat({ 
-  weight: ['400', '500', '600', '700', '800'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
- });
+import { montserrat } from "./fonts";
 
 export const metadata = {
   title: "Project Leaders - Project Leaders Magazine",

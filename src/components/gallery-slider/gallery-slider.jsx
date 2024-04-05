@@ -48,6 +48,7 @@ const GallerySlider = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+          arrows: false,
         },
       },
     ],

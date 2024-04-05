@@ -11,34 +11,65 @@ const data = [
   {
     id: 1,
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non lectus rutrum, congue nisl id, iaculis lorem.",
+      "Project Leaders magazine dives deep into the human stories behind innovation. It's refreshing to see leadership challenges explored authentically, making them relatable and offering valuable insights.",
     userImg: userImg1,
-    userName: "Roger Wilson",
-    userPost: "Teacher",
+    userName: "AR",
+    userPost: "CEO",
+    company: "RIntech",
   },
   {
     id: 2,
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non lectus rutrum, congue nisl id, iaculis lorem.",
+      "Thank you for featuring our project! Your storytelling captured the essence of our work and its impact on communities worldwide. It's inspiring to see leader narratives woven into the bigger picture.",
     userImg: userImg2,
-    userName: "Tom",
-    userPost: "Teacher",
+    userName: "MR",
+    userPost: "Project Lead",
+    company: "Edintech",
   },
   {
     id: 3,
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non lectus rutrum, congue nisl id, iaculis lorem.",
+      "We subscribed for the in-depth leader stories, but the magazine has become a well-rounded resource. The blend of business strategy, technological innovation, and social impact resonates strongly with our leadership team.",
     userImg: userImg3,
-    userName: "Rob Zuber",
-    userPost: "CEO",
+    userName: "AP",
+    userPost: "COO",
+    company: "LRS Health",
   },
   {
     id: 4,
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non lectus rutrum, congue nisl id, iaculis lorem.",
+      "The focus on the 'why' behind projects, not just the 'what,' is invaluable. It's helped my team understand the societal impact of our work and approach it with renewed purpose.",
     userImg: userImg1,
-    userName: "Rob Zuber",
-    userPost: "CEO",
+    userName: "MF",
+    userPost: "CTO",
+    company: "RIntech",
+  },
+  {
+    id: 5,
+    title:
+      "We truly appreciate the opportunity to showcase our innovative healthcare projects. Your focus on both human stories and technological advancements has created a powerful and engaging narrative for our audience.",
+    userImg: userImg1,
+    userName: "KC",
+    userPost: "President",
+    company: "SR Medical Group",
+  },
+  {
+    id: 6,
+    title:
+      "The 'Project Leaders Magazine' provides a platform for leaders to share their journeys - the wins, the setbacks, and the lessons learned. It's a masterclass in navigating complex business challenges.",
+    userImg: userImg1,
+    userName: "JK",
+    userPost: "President",
+    company: "NND Tech",
+  },
+  {
+    id: 7,
+    title:
+      "Finding relatable stories of leaders overcoming challenges has been incredibly helpful. Your magazine offers a sense of shared experience and practical takeaways that I can apply to my own entrepreneurial journey.",
+    userImg: userImg1,
+    userName: "AK",
+    userPost: "Founder",
+    company: "KCA",
   },
 ];
 
@@ -64,6 +95,7 @@ const TestimonialSlider = () => {
                 userImg={data.userImg}
                 userName={data.userName}
                 userPost={data.userPost}
+                company={data.company}
               />
             );
           })}

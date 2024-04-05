@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./testimonial.module.css";
 
 const TestimonialCard = (props) => {
-  const { title, userImg, userName, userPost } = props;
+  const { title, userImg, userName, userPost, company } = props;
   return (
     <div className={styles.card}>
       <p>{title}</p>
@@ -10,7 +10,10 @@ const TestimonialCard = (props) => {
         <Image src={userImg} alt="user" />
         <div className={styles.user}>
           <h4>{userName}</h4>
-          <p>{userPost}</p>
+          <p>
+            <span>{userPost}, </span>
+            <span>{company}</span>
+          </p>
         </div>
       </div>
     </div>
