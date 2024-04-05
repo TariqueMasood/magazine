@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import magazineImg from "../../../public/images/magazine-2.webp";
+import magazineImg from "../../../public/images/center-card-img1.png";
 import styles from "./magazine-card.module.css";
 
 const MagazineCard = (props) => {
