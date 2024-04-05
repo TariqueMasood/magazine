@@ -11,8 +11,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={montserrat.className}>
-      <body>
+    <html lang="en">
+      <body className={montserrat.className}>
         <MgNavbar />
         <Header />
         {children}

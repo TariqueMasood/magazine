@@ -6,7 +6,6 @@ import GallerySlider from "@/components/gallery-slider/gallery-slider";
 import NewsLetter from "@/components/news-letter/news-letter";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import { open_Sans, montserrat } from "./fonts";
 
 const MgLoader = dynamic(() => import("@/components/loader/loader"), {
   ssr: false,
@@ -14,7 +13,7 @@ const MgLoader = dynamic(() => import("@/components/loader/loader"), {
 
 const Home = () => {
   return (
-    <main className={montserrat.className}>
+    <main>
       <Hero />
       <Suspense fallback={<MgLoader />}>
         <SpotLightSlider />

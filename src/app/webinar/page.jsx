@@ -69,7 +69,7 @@ const Webinar = () => {
       <Container>
         <div className={styles.viewAll}>
           <SectionTitle title="Webinars" />
-          <Link href="#">
+          <Link href="/webinar/webinar-all">
             View All <MdKeyboardArrowRight />
           </Link>
         </div>

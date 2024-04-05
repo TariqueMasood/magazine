@@ -1,4 +1,3 @@
-import SectionHeader from "@/components/section-header/section-header";
 import styles from "./textual-interviews.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -84,7 +83,7 @@ const TextualInterviewCard = (props) => {
           <h6>{subTitle}</h6>
           <p>{desc}</p>
         </div>
-        <Link href={`/webinar/textual-interviews/${id}`}>
+        <Link href={`/interview/textual-interviews/${id}`}>
           Read More <MdKeyboardArrowRight />
         </Link>
       </div>

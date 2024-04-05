@@ -36,7 +36,7 @@ const FirstRowInterview = () => {
     <div className={styles.rowInterview}>
       <div className={styles.videoViewAll}>
         <SectionTitle title="video interviews" />
-        <Link href="/webinar/video-interviews">
+        <Link href="/interview/video-interviews">
           View All <MdKeyboardArrowRight />
         </Link>
       </div>
@@ -243,7 +243,7 @@ const FirstRowCard = () => {
     <div>
       <div className={styles.textualViewAll}>
         <SectionTitle title="Textual interviews" />
-        <Link href="/webinar/textual-interviews">
+        <Link href="/interview/textual-interviews">
           View All <MdKeyboardArrowRight />
         </Link>
       </div>
