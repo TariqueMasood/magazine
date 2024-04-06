@@ -2,20 +2,6 @@
   padding: 50px 0;
 }
 
-.sliderWrapper {
-  display: flex;
-  gap: 1.5em;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer 10+ */
-  scrollbar-width: none; /* Hides scrollbar for Firefox */
-}
-
-.sliderWrapper::-webkit-scrollbar {
-  display: none; /* Hides scrollbar for Safari and Chrome */
-}
-
 .borderContainer {
   display: flex;
   flex-direction: column;

@@ -34,6 +34,7 @@
   top: -34px;
   left: 5%;
   display: flex;
+  justify-content: center;
   gap: 1em;
   color: #fff;
   text-transform: uppercase;
@@ -48,10 +49,12 @@
 
 .count {
   font-size: 24px;
+  font-weight: 700;
 }
 
 .serviceText {
   font-size: 12px;
+  font-weight: 600;
 }
 
 .divider {
@@ -123,15 +126,18 @@
     font-size: 20px;
   }
 
+  .services {
+    top: -42px;
+  }
+}
+
+@media(min-width: 992px) {
   .count {
-    font-size: 35px;
+    font-size: 24px;
+    font-weight: 800;
   }
 
   .serviceText {
     font-size: 16px;
-  }
-
-  .services {
-    top: -42px;
   }
 }
