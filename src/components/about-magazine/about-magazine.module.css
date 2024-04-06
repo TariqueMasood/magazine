@@ -39,6 +39,7 @@
   color: #fff;
   text-transform: uppercase;
   padding: 1em;
+  border-radius: 4px;
 }
 
 .serviceContainer {
@@ -110,14 +111,13 @@
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-  .aboutHeader {
-    font-size: 35px;
-    margin-bottom: 124px;
-  }
+.serviceWrapper {
+  margin-bottom: 2em;
+}
 
+@media (min-width: 768px) {
   .serviceStepWrapper {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .aboutText {
@@ -131,13 +131,22 @@
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
+  .serviceStepWrapper {
+    justify-content: flex-start;
+  }
+
+  .aboutHeader {
+    font-size: 35px;
+    margin-bottom: 124px;
+  }
+
   .count {
     font-size: 24px;
     font-weight: 800;
   }
 
   .serviceText {
-    font-size: 16px;
+    font-size: 12px;
   }
 }

@@ -8,7 +8,3 @@
   font-weight: 600;
   transition: 0.3s;
 }
-
-.btnPrimary:hover {
-  transform: translateX(5px);
-}

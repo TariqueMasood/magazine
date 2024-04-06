@@ -29,8 +29,8 @@ const AboutMagazine = () => {
     <div className={styles.wrapper}>
       <Container>
         <Row>
-          <Col md={6}>
-            <div>
+          <Col lg={6}>
+            <div className={styles.serviceWrapper}>
               <h1 className={styles.aboutHeader}>
                 Innovative projects, impactful leaders, captivating
                 storytelling.
@@ -73,7 +73,7 @@ const AboutMagazine = () => {
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col lg={6}>
             <div>
               <p className={styles.aboutText}>
                 Our digital magazine is more than just a collection of articles,

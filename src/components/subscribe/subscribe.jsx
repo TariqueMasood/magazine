@@ -1,9 +1,7 @@
 import { Form, InputGroup } from "react-bootstrap";
 import styles from "./subscribe.module.css";
 import MgButton from "../button/button";
-import handIcon from "../../../public/images/news-letter-handIcon.png";
-import SocialIcon from "../social-icon/social-icon";
-import Image from "next/image";
+import { FaHandPointer } from "react-icons/fa6";
 
 const Subscribe = () => {
   return (
@@ -15,16 +13,11 @@ const Subscribe = () => {
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
           />
-          <MgButton
-            style={{
-              backgroundColor: "#000",
-              border: "1px solid #000",
-            }}
-          >
-            <Image src={handIcon} alt="hand" /> Subscribe Now!
+          <MgButton className={styles.buttonContainer}>
+            <FaHandPointer />
+            Subscribe Now!
           </MgButton>
         </InputGroup>
-        
       </div>
     </div>
   );
