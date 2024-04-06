@@ -28,12 +28,7 @@ const Footer = () => {
               conglomerate, Denkoit, is a leading force in the realm of digital
               business publishing. We are dedicated to empowering businesses and
               industries across the globe to share their stories and forge
-              connections with a discerning audience. At the heart of our
-              offerings lies the Project Leaders Magazine – a digital
-              publication boasting in-depth coverage of projects from a diverse
-              range of sectors. We act as a platform for businesses of all sizes
-              and industries to showcase their brand, story, vision, mission,
-              progress and success.
+              connections with a discerning audience.
             </div>
           </div>
           <div className={styles.divider}></div>
@@ -64,20 +59,26 @@ const Footer = () => {
                 <Link href="/about-us">About us</Link>
               </li>
               {/* <li>
-                    <Link href="term-condition">Terms & Conditions</Link>
-                  </li> */}
+                <Link href="term-condition">Terms & Conditions</Link>
+              </li> */}
               <li>
-                <Link href="#">Feedback</Link>
+                <Link href="./user-agreement.pdf" target="_blank">
+                  User Agreement
+                </Link>
               </li>
               <li>
-                <Link href="#">Report a problem</Link>
+                <Link href="./cookie-policy.pdf" target="_blank">
+                  Cookie-Policy
+                </Link>
               </li>
               <li>
                 <Link href="#">Testimonials</Link>
               </li>
-              {/* <li>
-                    <Link href="/privacy-policy">Privacy Policy</Link>
-                  </li> */}
+              <li>
+                <Link href="./privacy-policy.pdf" target="_blank">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
           <div className={styles.footerColumnCss}>
