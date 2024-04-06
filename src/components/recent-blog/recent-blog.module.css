@@ -1,12 +1,12 @@
 .wrapper {
-  padding: 50px 0;
+  padding: 30px 0;
   background-color: #fff;
 }
 
 .cardImg img {
   width: 100%;
   height: auto;
-  padding-bottom: 12px;
+  padding-bottom: 0px;
 }
 
 .cardWrapper {
@@ -16,9 +16,13 @@
   /* gap: 16px; */
 }
 
-.cardImage img {
+.card2Image img {
   width: 100%;
   height: auto;
+}
+
+.cardContent {
+  padding: 7px;
 }
 
 .cardName {
@@ -38,15 +42,19 @@
   color: var(--mgYellow);
 }
 
+.recentBlogContent {
+  padding: 9px;
+}
+
 .recentBlogDivider {
   border: 1px solid #8585854d;
   margin: 12px 0;
 }
 
 .cardTitle {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .cardDesc {
@@ -63,5 +71,27 @@
 @media (max-width: 480px) {
   .cardWrapper {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .recentBlogContent {
+    padding-top: 0;
+  }
+  .cardContent {
+    padding: 0;
+  }
+  .cardImg img {
+    padding-bottom: 12px;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .wrapper {
+    padding: 50px 0;
+    background-color: #fff;
   }
 }

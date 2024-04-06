@@ -4,7 +4,16 @@
 
 .blogCardContainer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .blogCardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+  }
 }

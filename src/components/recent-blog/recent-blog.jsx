@@ -37,7 +37,7 @@ const RecentCard2 = () => {
     <div className={styles.cardWrapper}>
       <Row>
         <Col lg={4}>
-          <div className={styles.cardImage}>
+          <div className={styles.card2Image}>
             <Image src={cardImg2} alt="card" />
           </div>
         </Col>
