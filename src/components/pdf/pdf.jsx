@@ -1,5 +1,7 @@
 "use client";
+import { Container } from "react-bootstrap";
 import { useEffect } from "react";
+import styles from "./pdf.module.css";
 
 const Pdf = (props) => {
   useEffect(() => {
@@ -12,6 +14,9 @@ const Pdf = (props) => {
 
       $(container).flipBook({
         pdfUrl: pdfPath,
+        lightBox: true,
+        // viewMode: "3d",
+        // skin: "dark",
       });
     }
 
@@ -21,15 +26,14 @@ const Pdf = (props) => {
   });
 
   return (
-    <>
-      <div id="pdf-container"></div>
-      {/* <iframe
-        src="http://api.projectleadersmagazine.com:8000/pdfs/view/7/"
-        width="100%"
-        height="500px"
-        title="google"
-      ></iframe> */}
-    </>
+    <div className={styles.wrapper}>
+      <Container>
+        <a id="pdf-container" className={styles.pdf}>
+          {props.name}
+        </a>
+      </Container>
+      {/* <div id="pdf-container" className={styles.pdf}></div> */}
+    </div>
   );
 };
 

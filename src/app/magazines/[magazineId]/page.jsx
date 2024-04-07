@@ -1,11 +1,6 @@
 import styles from "../magazines.module.css";
 import { notFound } from "next/navigation";
 import { getSingleMagazine } from "@/components/magazine-list/magazine-list";
-import dynamic from "next/dynamic";
-
-const Pdf = dynamic(() => import("@/components/pdf/pdf"), {
-  ssr: false,
-});
 
 export async function generateMetadata({ params }) {
   const { magazineId } = params;

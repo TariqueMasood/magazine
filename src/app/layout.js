@@ -4,9 +4,6 @@ import Header from "@/components/header/header";
 import MgNavbar from "@/components/navbar/navbar";
 import { montserrat } from "./fonts";
 import Script from "next/script";
-// import js from "../utils/script.js";
-// import jsss from "../../public/js/flipbook.min.js"
-// import ss from "../../public/script.js"
 
 export const metadata = {
   title: "Project Leaders - Project Leaders Magazine",
