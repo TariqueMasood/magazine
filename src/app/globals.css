@@ -1,5 +1,5 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-@import "./styles/flipbook.css";
+@import "../../public/build/css/flipbook.min.css";
 
 :root {
   --black: #000;

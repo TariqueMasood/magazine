@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Container } from "react-bootstrap";
 import styles from "./magazines.module.css";
 import MagazineList from "@/components/magazine-list/magazine-list";
@@ -10,6 +13,7 @@ const MgLoader = dynamic(() => import("@/components/loader/loader"), {
 });
 
 const Magazines = () => {
+  const router = useRouter();
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -18,6 +22,7 @@ const Magazines = () => {
         </div>
         <Suspense fallback={<MgLoader />}>
           <MagazineList />
+          <button onClick={() => router.push("/pdf")}>magazine</button>
         </Suspense>
       </Container>
     </div>

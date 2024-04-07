@@ -27,13 +27,7 @@ const SingleMagazine = async (props) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.iFrameContainer}>
-        <Pdf pdf={magazine.pdf} name={magazine.name} />
-        {/* <iframe src={magazine.pdf} title={magazine.name}></iframe> */}
-      </div>
-      <div>
-        <h2>Related content</h2>
-      </div>
+      <h2>Related content</h2>
     </div>
   );
 };
