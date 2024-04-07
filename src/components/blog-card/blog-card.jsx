@@ -9,7 +9,7 @@ const BlogCard = (props) => {
   const { id, title, subtitle, image, content, published_date } = props?.data;
 
   function createMarkup(markup) {
-    return { __html: markup.slice(0, 100).concat("...") };
+    return { __html: markup.slice(0, 160).concat("...") };
   }
 
   return (

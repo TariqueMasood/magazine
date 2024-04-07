@@ -117,8 +117,8 @@ const SingleBlog = async (props) => {
           <Image
             src={blog?.image !== null ? blog?.image : blogImage}
             alt="card"
-            width={300}
-            height={250}
+            width={500}
+            height={400}
           />
         </div>
         <div className={styles.blogWriter}>

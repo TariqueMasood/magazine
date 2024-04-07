@@ -22,10 +22,11 @@
 }
 
 .singlgeBlogImg img {
-  width: 60%;
+  max-width: 60%;
+  width: 100%;
   height: auto;
-  object-fit: contain;
   border-radius: 20px;
+  max-height: 400px;
 }
 
 .blogWriter {
@@ -215,5 +216,9 @@
 
   .authorAllPost span {
     font-size: 16px;
+  }
+
+  .singlgeBlogImg img {
+    max-width: 100%;
   }
 }
