@@ -4,12 +4,19 @@ import calendarIcon from "../../../public/images/calendar-icon.png";
 import fileIcon from "../../../public/images/file-icon.png";
 import styles from "./blog-card.module.css";
 import Link from "next/link";
+import DOMPurify from "dompurify";
+import { JSDOM } from "jsdom";
+
+const window = new JSDOM("").window;
+const DOMPurifyServer = DOMPurify(window);
 
 const BlogCard = (props) => {
   const { id, title, subtitle, image, content, published_date } = props?.data;
 
   function createMarkup(markup) {
-    return { __html: markup.slice(0, 160).concat("...") };
+    return {
+      __html: DOMPurifyServer.sanitize(markup).slice(0, 160).concat("..."),
+    };
   }
 
   return (

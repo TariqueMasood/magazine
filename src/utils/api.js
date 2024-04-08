@@ -1,13 +1,15 @@
 export async function fetchData(type) {
   try {
     const response = await fetch(
-      `http://api.projectleadersmagazine.com:8000/api/${type}`
+      `http://api.projectleadersmagazine.com:8000/api/${type}`, {
+        cache: 'no-store'
+      }
     );
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    // await new Promise((resolve) => setTimeout(resolve, 2000));
 
     return await response.json();
   } catch (error) {
