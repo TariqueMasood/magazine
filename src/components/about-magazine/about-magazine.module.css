@@ -1,20 +1,27 @@
 .wrapper {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 
+.magazineBorderWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
 .aboutHeader {
+  text-align: center;
   font-size: 24px;
   line-height: 46px;
-  margin-bottom: 24px;
+  margin-bottom: 0.5em;
   font-weight: 700;
   font-style: normal;
 }
 
 .aboutText {
-  margin-bottom: 50px;
-  margin-top: 1.5em;
-  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 33.8px;
 }
 
@@ -25,6 +32,7 @@
 
 .imgContainer {
   position: relative;
+  padding-top: 30px;
 }
 
 .services {
@@ -63,43 +71,49 @@
   background: #fff;
 }
 
+.serviceIcon img {
+  color: var(--white);
+}
+
 .serviceIcon {
   min-width: 70px;
   min-height: 70px;
-  background: #fff;
   border-radius: 40px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
   background-color: var(--greyExtraLight);
+  transition: all 0.3s;
 }
 
-.serviceStepWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px 50px;
+.serviceIcon:hover {
+  transform: scale(1.1);
 }
 
 .serviceStepContainer {
   position: relative;
   display: flex;
-  max-width: 250px;
+  /* max-width: 250px; */
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
 }
-
+/* 
 .dottedConnector {
   position: absolute;
   border-right: 2px dotted #222f3e4d;
   height: 60px;
   top: 100%;
   left: 33px;
+} */
+
+.serviceStepIcon {
+  margin-bottom: 1.5em;
 }
 
 .stepHeader {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   color: #222f3e;
 }
@@ -116,13 +130,7 @@
 }
 
 @media (min-width: 768px) {
-  .serviceStepWrapper {
-    justify-content: space-between;
-  }
-
   .aboutText {
-    margin-top: 0;
-    margin-bottom: 80px;
     font-size: 20px;
   }
 
@@ -131,22 +139,15 @@
   }
 }
 
-@media (min-width: 992px) {
-  .serviceStepWrapper {
-    justify-content: flex-start;
-  }
+.aboutHeader {
+  font-size: 35px;
+}
 
-  .aboutHeader {
-    font-size: 35px;
-    margin-bottom: 124px;
-  }
+.count {
+  font-size: 24px;
+  font-weight: 800;
+}
 
-  .count {
-    font-size: 24px;
-    font-weight: 800;
-  }
-
-  .serviceText {
-    font-size: 12px;
-  }
+.serviceText {
+  font-size: 12px;
 }
