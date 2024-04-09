@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import magazineImg from "../../../public/images/center-card-img1.png";
 
 const GalleryCard = (props) => {
-  const { id, name, thumbImage, pdf, published_date } = props.data;
+  const { id, name, thumbImage, pdf, published_date, frontBack } = props.data;
 
   useEffect(() => {
     function createFlipBook(containerId, pdfPath) {
@@ -33,7 +33,8 @@ const GalleryCard = (props) => {
   return (
     <div className={styles.card} id={id}>
       <Image
-        src={thumbImage !== null ? thumbImage : magazineImg}
+        // src={thumbImage !== null ? thumbImage : magazineImg}
+        src={frontBack !== null ? frontBack : thumbImage}
         width={300}
         height={390}
         alt="card"

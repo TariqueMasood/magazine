@@ -238,7 +238,7 @@ const MostViewed = () => {
   );
 };
 
-const FirstRowCard = () => {
+export const FirstRowCard = () => {
   return (
     <div>
       <div className={styles.textualViewAll}>
@@ -283,7 +283,7 @@ const FirstRowCard = () => {
   );
 };
 
-const SecondRowCard = () => {
+export const SecondRowCard = () => {
   return (
     <div className={styles.textualCardSecond}>
       <Row>

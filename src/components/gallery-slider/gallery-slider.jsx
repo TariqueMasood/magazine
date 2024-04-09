@@ -5,6 +5,7 @@ import SectionHeader from "../section-header/section-header";
 import SectionBorder from "../section-border/section-border";
 import { fetchData } from "@/utils/api";
 import dynamic from "next/dynamic";
+
 const GalleryCard = dynamic(() => import("../gallery/gallery-card"), {
   ssr: false,
 });

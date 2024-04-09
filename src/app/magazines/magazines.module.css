@@ -2,6 +2,10 @@
     padding: 50px 0;
 }
 
+.header {
+    padding-bottom: 1.5em;
+}
+
 .iFrameContainer iframe {
     display: block;
     border: 0;

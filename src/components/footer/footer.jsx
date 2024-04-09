@@ -87,12 +87,12 @@ const Footer = () => {
                 <div className={styles.footerLinkTitle}>CONTACT US</div>
                 {/* <div className={styles.tollFree}>Toll Free - 0123456789</div> */}
                 <div className={styles.tollFree}>
-                  Email
+                  Email:
                   <a
                     href="mailto:media.services@bizlinkmedia.com"
-                    target="--blank"
+                    target="_blank"
                   >
-                    : media.services@bizlinkmedia.com
+                    media.services@bizlinkmedia.com
                   </a>
                 </div>
               </div>
