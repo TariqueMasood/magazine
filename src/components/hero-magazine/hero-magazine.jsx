@@ -4,7 +4,12 @@ import MgButton from "../button/button";
 import magazine2Img from "../../../public/images/magazine-Image.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-const HeroMagazine = () => {
+const HeroMagazine = async () => {
+  // const magazines = await fetchData("pdfs");
+
+  // function latestMagazine() {
+  //   return magazines?.results?.filter((magazine) => magazine)
+  // }
   return (
     <div className={styles.heroMagazine}>
       <div className={styles.heroMagazineImage}>

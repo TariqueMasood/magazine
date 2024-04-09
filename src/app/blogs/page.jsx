@@ -8,7 +8,6 @@ const BlogPage = async () => {
     <div className={styles.wrapper}>
       <RecentBlog />
       <TechnologyBlog />
-      <BlogHero />
     </div>
   );
 };

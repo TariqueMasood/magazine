@@ -44,10 +44,7 @@ const SingleBlog = async (props) => {
     <div className={styles.SigleBlogWrapper}>
       <Container>
         <h1 className={styles.singleBlogTitle}>{blog?.title}</h1>
-        <p className={styles.singleBlogSubTitle}>
-          A shorter-than-usual band of tissue may restrict tongue movements yet
-          cause no serious problems.
-        </p>
+        <p className={styles.singleBlogSubTitle}>{blog?.subtitle}</p>
         <div className={styles.singlgeBlogImg}>
           <Image
             src={blog?.image !== null ? blog?.image : blogImage}
@@ -56,25 +53,14 @@ const SingleBlog = async (props) => {
             height={400}
           />
         </div>
-        <div className={styles.blogWriter}>
-          By <span>Claire McCarthy</span>, MD, Senior Faculty Editor, Harvard
-          Health Publishing
-        </div>
         <div className={styles.blogDate}>
-          {new Date(blog?.published_date).toLocaleDateString()}
+          {new Date(blog?.published_date).toGMTString()}
         </div>
         <div
           className={styles.cardContent}
           dangerouslySetInnerHTML={createMarkup(blog?.content)}
         />
-        <h3 className={styles.blogSubTitle}>How common are tongue-ties?</h3>
-        <p className={styles.blogSubContent}>
-          Tongue-ties are common. It&apos;s hard to say exactly how common, as
-          people define this condition differently. About 8% of babies under age
-          one may have at least a mild tongue-tie.
-        </p>
         <div className={styles.blogBorder}></div>
-
         <div className={styles.sliderWrapper}>
           <SpotLightSlider />
         </div>

@@ -7,6 +7,33 @@ import SectionBorder from "../section-border/section-border";
 import galleryImg1 from "../../../public/images/gallery-img-1.png";
 import galleryImg2 from "../../../public/images/gallery-img-2.png";
 import galleryImg3 from "../../../public/images/gallery-img-3.png";
+import { fetchData } from "@/utils/api";
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 2,
+        arrows: false,
+      },
+    },
+  ],
+};
 
 const data = [
   {
@@ -27,32 +54,8 @@ const data = [
   },
 ];
 
-const GallerySlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-          arrows: false,
-        },
-      },
-    ],
-  };
+const GallerySlider = async () => {
+  const magazines = await fetchData("pdfs");
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -66,8 +69,8 @@ const GallerySlider = () => {
           <SectionBorder />
         </div>
         <MgSlider settings={settings}>
-          {data.map((data, index) => {
-            return <GalleryCard key={index} galleryImg={data.galleryImg} />;
+          {magazines?.results?.map((magazine) => {
+            return <GalleryCard key={magazine.id} data={magazine} />;
           })}
         </MgSlider>
       </Container>

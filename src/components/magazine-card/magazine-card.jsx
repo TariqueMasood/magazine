@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import magazineImg from "../../../public/images/center-card-img1.png";
 import styles from "./magazine-card.module.css";
 import { useEffect } from "react";
@@ -33,12 +32,7 @@ const MagazineCard = (props) => {
   });
 
   return (
-    <Link
-      //  href={`magazines/${id}/`}
-      href="#"
-      className={styles.cardContainer}
-      id={id}
-    >
+    <div className={styles.cardContainer} id={id}>
       <div className={styles.imgContainer}>
         <Image
           src={thumbImage !== null ? thumbImage : magazineImg}
@@ -54,7 +48,7 @@ const MagazineCard = (props) => {
           <span className={styles.yearCss}> 2024</span>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 

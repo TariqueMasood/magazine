@@ -1,21 +1,63 @@
 import Image from "next/image";
 import styles from "./trending-slider.module.css";
-import asideImg from "../../../public/images/card1-img1.svg";
+import blogImage from "../../../public/images/spotlight-img-3.png";
+import MgSlider from "../slider/slider";
+import Link from "next/link";
+import { fetchData } from "@/utils/api";
 
-const TrendingSlider = () => {
+const settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+};
+
+const TrendingCard = (props) => {
+  const { id, title, subtitle, image, content, published_date } = props?.data;
   return (
-    <div className={styles.aside}>
-      <div className={styles.asideHeading}>TRENDING</div>
-      <Image src={asideImg} alt="card" className={styles.imgCss} />
-      <div className={styles.asideTitles}>
-        EY CEO Outlook: AI Being Adopted as a Driver of Efficiency
-      </div>
-      <div className={styles.asideContent}>
-        EY’s CEO Outlook Pulse Study Shows Business Leaders are Adopting AI
-        Technologies to Drive Efficiencies and Improve Their Organisation’s
-        Performance
-      </div>
-    </div>
+    <Link href={`/blogs/${id}`} className={styles.cardContainer}>
+      <Image
+        alt="card"
+        className={styles.imgCss}
+        src={image !== null ? image : blogImage}
+        width={300}
+        height={250}
+      />
+      <div className={styles.asideTitles}>{title}</div>
+      <div className={styles.asideContent}>{subtitle}</div>
+    </Link>
+  );
+};
+
+const TrendingSlider = async () => {
+  const data = await fetchData("blogs");
+
+  function isTrending() {
+    return data.results?.filter((data) => data.is_trending);
+  }
+
+  return (
+    <>
+      {isTrending().length > 0 && (
+        <div className={styles.aside}>
+          <div className={styles.asideHeading}>TRENDING</div>
+          <MgSlider settings={settings}>
+            {data?.results?.map((data) => {
+              return (
+                <>
+                  {data.is_trending && (
+                    <TrendingCard key={data?.id} data={data} />
+                  )}
+                </>
+              );
+            })}
+          </MgSlider>
+        </div>
+      )}
+    </>
   );
 };
 

@@ -1,23 +1,11 @@
 import Image from "next/image";
 import blogImage from "../../../public/images/spotlight-img-3.png";
 import calendarIcon from "../../../public/images/calendar-icon.png";
-import fileIcon from "../../../public/images/file-icon.png";
 import styles from "./blog-card.module.css";
 import Link from "next/link";
-import DOMPurify from "dompurify";
-import { JSDOM } from "jsdom";
-
-const window = new JSDOM("").window;
-const DOMPurifyServer = DOMPurify(window);
 
 const BlogCard = (props) => {
-  const { id, title, subtitle, image, content, published_date } = props?.data;
-
-  function createMarkup(markup) {
-    return {
-      __html: DOMPurifyServer.sanitize(markup).slice(0, 160).concat("..."),
-    };
-  }
+  const { id, title, subtitle, image, published_date } = props?.data;
 
   return (
     <Link href={`/blogs/${id}`} className={styles.cardContainer}>
@@ -26,7 +14,7 @@ const BlogCard = (props) => {
           <Image
             src={image !== null ? image : blogImage}
             alt="card"
-            className={styles.blogImage}
+            className={styles.imgCss}
             width={300}
             height={250}
           />
@@ -36,19 +24,15 @@ const BlogCard = (props) => {
           <div className={styles.info}>
             <div className={styles.date}>
               <Image src={calendarIcon} alt="calendar" />
-              <span>{new Date(published_date).toLocaleDateString()}</span>
+              <span>{new Date(published_date).toGMTString()}</span>
             </div>
-            <div className={styles.file}>
+            {/* <div className={styles.file}>
               <Image src={fileIcon} alt="file" />
               <span>20</span>
-            </div>
+            </div> */}
           </div>
           <h4>{title}...</h4>
-          {/* <p className={styles.cardConten}>{subtitle}...</p> */}
-          <div
-            className={styles.cardContent}
-            dangerouslySetInnerHTML={createMarkup(content)}
-          />
+          <p className={styles.cardContent}>{subtitle}...</p>
         </div>
       </div>
     </Link>

@@ -5,15 +5,21 @@
 .blogCardContainer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5em;
+}
+
+.blogCardContainer a {
+  max-width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .blogCardContainer {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5em;
-    justify-content: center;
+    flex-direction: row;
+  }
+
+  .blogCardContainer a {
+    max-width: 300px;
   }
 }
