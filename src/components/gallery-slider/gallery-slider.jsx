@@ -1,13 +1,13 @@
 import { Container } from "react-bootstrap";
 import styles from "./gallery-slider.module.css";
-import GalleryCard from "../gallery/gallery-card";
 import MgSlider from "../slider/slider";
 import SectionHeader from "../section-header/section-header";
 import SectionBorder from "../section-border/section-border";
-import galleryImg1 from "../../../public/images/gallery-img-1.png";
-import galleryImg2 from "../../../public/images/gallery-img-2.png";
-import galleryImg3 from "../../../public/images/gallery-img-3.png";
 import { fetchData } from "@/utils/api";
+import dynamic from "next/dynamic";
+const GalleryCard = dynamic(() => import("../gallery/gallery-card"), {
+  ssr: false,
+});
 
 const settings = {
   dots: true,
@@ -34,25 +34,6 @@ const settings = {
     },
   ],
 };
-
-const data = [
-  {
-    id: 1,
-    galleryImg: galleryImg1,
-  },
-  {
-    id: 2,
-    galleryImg: galleryImg2,
-  },
-  {
-    id: 3,
-    galleryImg: galleryImg3,
-  },
-  {
-    id: 4,
-    galleryImg: galleryImg3,
-  },
-];
 
 const GallerySlider = async () => {
   const magazines = await fetchData("pdfs");

@@ -34,8 +34,8 @@ const GalleryCard = (props) => {
     <div className={styles.card} id={id}>
       <Image
         src={thumbImage !== null ? thumbImage : magazineImg}
-        width={400}
-        height={300}
+        width={300}
+        height={390}
         alt="card"
         className={styles.galleryImg}
       />
