@@ -26,10 +26,6 @@ const BlogCard = (props) => {
               <Image src={calendarIcon} alt="calendar" />
               <span>{new Date(published_date).toGMTString()}</span>
             </div>
-            {/* <div className={styles.file}>
-              <Image src={fileIcon} alt="file" />
-              <span>20</span>
-            </div> */}
           </div>
           <h4>{title}...</h4>
           <p className={styles.cardContent}>{subtitle}...</p>
