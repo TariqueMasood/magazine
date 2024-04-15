@@ -31,7 +31,7 @@ const HeroMagazineCard = (props) => {
   });
 
   return (
-    <div className={styles.heroMagazine}>
+    <div className={styles.heroMagazine} id={id}>
       <div className={styles.heroMagazineImage}>
         <Image src={thumbImage} alt={name} width={340} height={500} />
       </div>
@@ -45,7 +45,7 @@ const HeroMagazineCard = (props) => {
           </div>
           <p className={styles.magazineContent}>{shortcontent}</p>
         </div>
-        <MgButton id={id}>
+        <MgButton>
           Read Now <MdKeyboardArrowRight />
         </MgButton>
       </div>
