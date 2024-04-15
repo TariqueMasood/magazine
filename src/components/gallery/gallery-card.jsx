@@ -31,15 +31,39 @@ const GalleryCard = (props) => {
     window.createFlipBook(id, pdf);
   });
   return (
-    <div className={styles.card} id={id}>
-      <Image
-        // src={thumbImage !== null ? thumbImage : magazineImg}
-        src={frontBack !== null ? frontBack : thumbImage}
-        width={300}
-        height={390}
-        alt="card"
-        className={styles.galleryImg}
-      />
+    // <div className={styles.card} id={id}>
+    //   <Image
+    //     // src={thumbImage !== null ? thumbImage : magazineImg}
+    //     src={frontBack !== null ? frontBack : thumbImage}
+    //     width={300}
+    //     height={390}
+    //     alt="card"
+    //     className={styles.galleryImg}
+    //   />
+    // </div>
+    <div className={styles.cardContainer} id={id}>
+      <div className={styles.imgContainer}>
+       
+        <div className={styles.bookCover}>
+          <Image
+            src={frontBack !== null ? frontBack : thumbImage}
+            alt="gallery"
+            className={styles.galleryImg}
+            width={300}
+            height={390}
+          />
+        </div>
+      <div className={styles.bookInside}></div>
+       
+        <div className={styles.effect}></div>
+        <div className={styles.light}></div>
+      </div>
+      <div className={styles.content}>
+        <div className={styles.dateCss}>
+          <span>April </span>
+          <span className={styles.yearCss}> 2024</span>
+        </div>
+      </div>
     </div>
   );
 };

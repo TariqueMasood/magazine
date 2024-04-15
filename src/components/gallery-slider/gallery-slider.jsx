@@ -50,11 +50,14 @@ const GallerySlider = async () => {
           />
           <SectionBorder />
         </div>
+        
+        <div className={styles.MgSliderContainer} style={{ maxWidth: "100%" }}>
         <MgSlider settings={settings}>
           {magazines?.results?.map((magazine) => {
             return <GalleryCard key={magazine.id} data={magazine} />;
           })}
         </MgSlider>
+        </div>
       </Container>
     </div>
   );

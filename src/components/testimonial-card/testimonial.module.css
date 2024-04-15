@@ -5,7 +5,10 @@
   border-radius: 12px;
   cursor: pointer;
   min-height: 280px;
+  width: 300px; 
+  height: 320px; 
 }
+
 
 .cardContent {
   display: flex;
@@ -22,6 +25,9 @@
 }
 
 .imgContainer {
+  position: absolute;
+  bottom: 1.5em;
+  left: 1.5em; 
   display: flex;
   align-items: center;
   gap: 20px;

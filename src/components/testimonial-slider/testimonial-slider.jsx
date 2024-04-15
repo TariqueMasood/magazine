@@ -108,7 +108,7 @@ const TestimonialSlider = () => {
         <div className={styles.borderContainer}>
           <SectionHeader
             title="TESTIMONIAL"
-            subTitle="What our readers say."
+            subTitle=""
             desc="Hear from Those Who Read It."
           />
           <SectionBorder />
