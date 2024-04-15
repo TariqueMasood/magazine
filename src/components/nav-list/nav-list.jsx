@@ -12,12 +12,12 @@ const NavList = () => {
       path: "/blogs",
     },
     {
-      label: "Webinars",
-      path: "/webinar",
-    },
-    {
       label: "Interviews",
       path: "/interview",
+    },
+    {
+      label: "Webinars",
+      path: "/webinar",
     },
     {
       label: "About Us",
