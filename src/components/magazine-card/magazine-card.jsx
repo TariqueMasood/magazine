@@ -19,9 +19,6 @@ const MagazineCard = (props) => {
       $(container).flipBook({
         pdfUrl: pdfPath,
         lightBox: true,
-        // viewMode: "3d",
-        // skin: "dark",
-        // backgroundColor: "#3ab5fd",
         lightboxBackground: "#3e3e3e",
       });
     }
@@ -34,13 +31,20 @@ const MagazineCard = (props) => {
   return (
     <div className={styles.cardContainer} id={id}>
       <div className={styles.imgContainer}>
-        <Image
-          src={thumbImage !== null ? thumbImage : magazineImg}
-          alt="magazine"
-          className={styles.imgCss}
-          width={300}
-          height={390}
-        />
+        {/* Wrapping the Image component with the bookCover div */}
+        <div className={styles.bookCover}>
+          <Image
+            src={thumbImage !== null ? thumbImage : magazineImg}
+            alt="magazine"
+            className={styles.imgCss}
+            width={300}
+            height={390}
+          />
+        </div>
+      <div className={styles.bookInside}></div>
+        {/* Rest of your content */}
+        <div className={styles.effect}></div>
+        <div className={styles.light}></div>
       </div>
       <div className={styles.content}>
         <div className={styles.dateCss}>
