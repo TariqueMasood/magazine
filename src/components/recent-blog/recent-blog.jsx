@@ -18,7 +18,6 @@ const RecentCard = (props) => {
           width={350}
           height={300}
           layout="responsive"
-          // objectFit="cover"
         />
       </div>
       <div className={styles.cardContent}>
@@ -38,7 +37,7 @@ const RecentCard = (props) => {
 };
 
 const RecentBlog = async () => {
-  const magazines = await fetchData("blogs/?limit=3");
+  const magazines = await fetchData("blogs/?limit=4");
   return (
     <div>
       <Container>
