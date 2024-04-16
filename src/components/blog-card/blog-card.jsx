@@ -5,7 +5,7 @@ import Link from "next/link";
 import shareIcon from "../../../public/images/share-icon.png";
 
 const BlogCard = (props) => {
-  const { id, title, subtitle, image, published_date } = props?.data;
+  const { id, title, subtitle, image } = props?.data;
 
   return (
     <Link href={`/blogs/${id}`} className={styles.cardContainer}>

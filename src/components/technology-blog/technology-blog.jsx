@@ -3,9 +3,15 @@ import styles from "./technology-blog.module.css";
 import SectionTitle from "../section-title/section-title";
 import BlogCard from "../blog-card/blog-card";
 import { fetchData } from "@/utils/api";
+import BlogTabs from "../blog-tabs/blog-tabs";
 
 const TechnologyBlog = async () => {
-  const data = await fetchData("blogs");
+  const data = await fetchData("blogs/?limit=12");
+
+  function fetchCategory(category) {
+    return data.results?.filter((data) => data.category.slug === category);
+  }
+
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -14,11 +20,12 @@ const TechnologyBlog = async () => {
           Read the latest posts from experts at Knowmed Health Publishing
           covering a variety of health topics and perspectives on medical news.
         </p>
-        <div className={styles.blogCardContainer}>
+        {/* <div className={styles.blogCardContainer}>
           {data.results.map((item) => (
             <BlogCard key={item.id} data={item} />
           ))}
-        </div>
+        </div> */}
+        <BlogTabs data={data} />
       </Container>
     </div>
   );
