@@ -1,6 +1,5 @@
 .wrapper {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding: 30p 0x;
 }
 
 .magazineBorderWrapper {
@@ -32,7 +31,7 @@
 
 .imgContainer {
   position: relative;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .services {
@@ -84,11 +83,11 @@
   cursor: pointer;
   align-items: center;
   background-color: var(--greyExtraLight);
-  transition: all 0.3s;
 }
 
-.serviceIcon:hover {
-  transform: scale(1.1);
+.serviceIcon :hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
 
 .serviceStepContainer {
@@ -97,15 +96,8 @@
   /* max-width: 250px; */
   align-items: center;
   gap: 1.5em;
+  padding: 16px 0;
 }
-/* 
-.dottedConnector {
-  position: absolute;
-  border-right: 2px dotted #222f3e4d;
-  height: 60px;
-  top: 100%;
-  left: 33px;
-} */
 
 .serviceStepIcon {
   margin-bottom: 1.5em;

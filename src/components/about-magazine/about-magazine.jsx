@@ -3,9 +3,11 @@ import styles from "./about-magazine.module.css";
 import Image from "next/image";
 import aboutImg from "../../../public/images/about-img2.png";
 import icon1 from "../../../public/images/book-open-icon.png";
+import icon2 from "../../../public/images/book-close-icon.png";
 import icon3 from "../../../public/images/man-sitting-icon.png";
 import icon4 from "../../../public/images/hand-open-icon.png";
 import icon5 from "../../../public/images/text-icon.png";
+import icon6 from "../../../public/images/sound-icon.png";
 import SectionBorder from "../section-border/section-border";
 
 function ServiceStep(props) {
@@ -41,58 +43,67 @@ const AboutMagazine = () => {
           <div className={styles.magazineBorderWrapper}>
             <SectionBorder />
           </div>
+          <div className={styles.imgContainer}>
+            <Image
+              src={aboutImg}
+              alt="about-magazine"
+              className={styles.imgCss}
+            />
+          </div>
           <div className={styles.serviceStepWrapper}>
             <Row>
-              <Col lg={6} md={6}>
-                <div className={styles.serviceStepIcon}>
-                  <ServiceStep
-                    icon={icon1}
-                    title="Project stories"
-                    desc="Join the journey of the projects that are transforming the world, with diverse and fascinating stories from across a range of domains."
-                    connector={true}
-                  />
-                </div>
+              <Col lg={6} sm={12}>
+                <ServiceStep
+                  icon={icon1}
+                  title="Project stories"
+                  desc="Join the journey of the projects that are transforming the world, with diverse and fascinating stories from across a range of domains."
+                  connector={true}
+                />
               </Col>
-              <Col lg={6} md={6}>
-                <div className={styles.serviceStepIcon}>
-                  <ServiceStep
-                    icon={icon3}
-                    title="Interview"
-                    desc="Explore challenging and rewarding projects worldwide, learning from experienced leaders who made them happen."
-                    connector={true}
-                  />
-                </div>
+              <Col lg={6} sm={12}>
+                <ServiceStep
+                  icon={icon2}
+                  title="Case studies"
+                  desc="Industries' project success strategies for you."
+                  connector={true}
+                />
               </Col>
             </Row>
             <Row>
-              <Col lg={6} md={6}>
-                <div className={styles.serviceStepIcon}>
-                  <ServiceStep
-                    icon={icon4}
-                    title="Success stories"
-                    desc="Optimized for mobile devices, ensuring seamless access on the go for readers everywhere."
-                    connector={true}
-                  />
-                </div>
+              <Col lg={6} sm={12}>
+                <ServiceStep
+                  icon={icon3}
+                  title="Interviews with project leaders"
+                  desc="Explore challenging and rewarding projects worldwide, learning from experienced leaders who made them happen."
+                  connector={true}
+                />
               </Col>
-              <Col lg={6} md={6}>
-                <div className={styles.serviceStepIcon}>
-                  <ServiceStep
-                    icon={icon5}
-                    title="Expert opinions"
-                    desc="Insights of how experts tackle the different facets and hurdles of delivering successful projects in the real world."
-                  />
-                </div>
+              <Col lg={6} sm={12}>
+                <ServiceStep
+                  icon={icon4}
+                  title="Success stories"
+                  desc="Secrets of victorious project leaders revealed."
+                  connector={true}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={6} sm={12}>
+                <ServiceStep
+                  icon={icon5}
+                  title="Expert opinions"
+                  desc="Insights of how experts tackle the different facets and hurdles of delivering successful projects in the real world."
+                />
+              </Col>
+              <Col lg={6} sm={12}>
+                <ServiceStep
+                  icon={icon6}
+                  title="industry news"
+                  desc="Dynamic news on projects, strategies, industries."
+                />
               </Col>
             </Row>
           </div>
-        </div>
-        <div className={styles.imgContainer}>
-          <Image
-            src={aboutImg}
-            alt="about-magazine"
-            className={styles.imgCss}
-          />
         </div>
       </Container>
     </div>

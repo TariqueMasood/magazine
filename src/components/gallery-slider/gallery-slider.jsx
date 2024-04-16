@@ -37,26 +37,26 @@ const settings = {
 };
 
 const GallerySlider = async () => {
-  const magazines = await fetchData("pdfs");
+  const magazines = await fetchData("pdfs/?limit=6");
   return (
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.borderContainer}>
           <SectionHeader
             style={{ color: "#fff" }}
-            title="100% READY TO US"
-            subTitle="Huge premade layouts gallery"
-            desc="Ready variety of layouts for blog posts and other pages."
+            // title="100% READY TO US"
+            subTitle="Previous Editions Gallery"
+            // desc="Ready variety of layouts for blog posts and other pages."
           />
           <SectionBorder />
         </div>
-        
+
         <div className={styles.MgSliderContainer} style={{ maxWidth: "100%" }}>
-        <MgSlider settings={settings}>
-          {magazines?.results?.map((magazine) => {
-            return <GalleryCard key={magazine.id} data={magazine} />;
-          })}
-        </MgSlider>
+          <MgSlider settings={settings}>
+            {magazines?.results?.map((magazine) => {
+              return <GalleryCard key={magazine.id} data={magazine} />;
+            })}
+          </MgSlider>
         </div>
       </Container>
     </div>
