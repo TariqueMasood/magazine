@@ -4,7 +4,7 @@ import styles from "./recent-blog.module.css";
 import Image from "next/image";
 import cardImg1 from "../../../public/images/recent-blog-img1.png";
 import cardImg2 from "../../../public/images/recent-blog-img2.png";
-import cardImg3 from "../../../public/images/recent-blog-img3.png";
+import shareIcon from "../../../public/images/share-icon.png";
 
 const RecentCard = () => {
   return (
@@ -14,8 +14,10 @@ const RecentCard = () => {
       </div>
       <div className={styles.cardContent}>
         <div className={styles.cardName}>
-          <span>Dr. Arun Puri</span>
-          <span>Anaesthesia</span>
+          <div className={styles.category}>Diseases & Conditions</div>
+          <div className={styles.shareIcon}>
+            <Image src={shareIcon} alt="icon" />
+          </div>
         </div>
         <h4 className={styles.cardTitle}>
           Know your Anesthesiologist, The Doctor Behind Your...
@@ -44,8 +46,10 @@ const RecentCard2 = () => {
         <Col lg={8}>
           <div className={styles.recentBlogContent}>
             <div className={styles.cardName}>
-              <span>Dr. Manish Rai</span>
-              <span>Anesthesia</span>
+              <div className={styles.category}>Diseases & Conditions</div>
+              <div className={styles.shareIcon}>
+                <Image src={shareIcon} alt="icon" />
+              </div>
             </div>
             <h4 className={styles.cardTitle}>
               Consider day care surgery as default for all elective...

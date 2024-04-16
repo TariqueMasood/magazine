@@ -1,6 +1,5 @@
 .cardContainer {
-  border: 1px solid var(--greyLight);
-  border-radius: 12px;
+  border-bottom: 1px solid var(--greyLight);
   display: inline-block;
   overflow: hidden;
   width: 100%;
@@ -20,6 +19,10 @@
   overflow: hidden;
 }
 
+.imgContainer img {
+  border-radius: 12px;
+}
+
 .imgCss {
   transition: 0.3s;
   width: 100%;
@@ -34,11 +37,21 @@
 }
 
 .contentContainer {
-  padding: 1em;
+  padding: 0.5em 0;
+}
+
+.categoryWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  font-weight: 600;
+  color: var(--themeColor);
 }
 
 .name,
-.date,
 .file {
   display: flex;
   align-items: center;
@@ -60,13 +73,13 @@
   margin: 0;
 }
 
-.info {
+/* .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
   font-weight: 400;
-}
+} */
 
 .badge {
   position: absolute;
