@@ -7,7 +7,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 16px; */
+}
+
+.cardContainer {
+  display: grid;
+  gap: 2em;
+}
+
+.recentCard:first-of-type {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.recentCard:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  gap: 1.5em;
+  border-bottom: 1px solid var(--greyLight);
+}
+
+.recentCard:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  gap: 1.5em;
 }
 
 .card2Image {
