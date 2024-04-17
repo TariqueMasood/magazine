@@ -5,7 +5,7 @@
   flex: 1;
   order: 1;
   color: var(--white);
-  background-color: var(--greyExtraDark);
+  background-color: var(--black800);
 }
 
 .featuredCardContainer {
