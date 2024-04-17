@@ -179,33 +179,37 @@
   /* overflow-y: auto; */
 
 }
-.newLabelHeading{
-font-size: 16px;
-font-weight: 600;
-line-height: 19.5px;
-text-align: left;
+
+.newLabelHeading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
 
 }
-.newsDate{
-font-size: 12px;
-font-weight: 400;
-line-height: 14.63px;
-text-align: left;
+
+.newsDate {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  text-align: left;
 
 }
-.recentContentLabel{
-font-size: 16px;
-font-weight: 700;
-line-height: 19.5px;
-text-align: left;
-border-bottom: 2px solid #38B6FF;
+
+.recentContentLabel {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: left;
+
 
 }
-.autherLabel{
-font-size: 16px;
-font-weight: 600;
-line-height: 19.5px;
-text-align: left;
+
+.autherLabel {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
 
 }
 
@@ -227,6 +231,35 @@ text-align: left;
   border-radius: 20px;
 }
 
+.authorTop {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.82px;
+  text-align: left;
+}
+
+.authorMiddle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.authorBottom {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.82px;
+  letter-spacing: 0.04em;
+  text-align: left;
+
+}
+.arrowAuthor{
+  fill: #38B6FF;
+  stroke-width: 600px;
+}
+.bi-arrow-right path {
+  stroke-width: 160px; /* Adjust the thickness of the lines */
+}
 @media (max-width: 768px) {
   .singleBlogTitle {
     font-size: 1.5rem;

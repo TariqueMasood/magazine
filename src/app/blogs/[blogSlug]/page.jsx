@@ -10,6 +10,8 @@ import { JSDOM } from "jsdom";
 import Link from "next/link";
 import SocialIcon from "@/components/social-icon/social-icon";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import SectionTitle from "@/components/section-title/section-title";
+import SectionBorder from "@/components/section-border/section-border";
 
 const window = new JSDOM("").window;
 const DOMPurifyServer = DOMPurify(window);
@@ -56,17 +58,16 @@ const SingleBlog = async (props) => {
 
   return (
     <div className={styles.SigleBlogWrapper}>
-      <div className="ms-5 me-5">
+      <div className="ms-5 me-5 ps-4 pe-4">
 
         <h1 className={styles.singleBlogTitle}>{blog?.title}</h1>
         <p className={styles.singleBlogSubTitle}>{blog?.subtitle}</p>
       </div>
 
-      <div className="row mt-2">
+      <div className="row mt-2 ms-5 me-5 ps-4 pe-4">
         <div className="col-12 col-md-8">
 
-          <Container className="ms-5" >
-
+          <Container className="" >
             <div className={styles.singlgeBlogImg}>
               <Image
                 src={blog?.image !== null ? blog?.image : blogImage}
@@ -82,10 +83,6 @@ const SingleBlog = async (props) => {
               className={styles.cardContent}
               dangerouslySetInnerHTML={{ __html: createMarkup(blog?.content) }}
             />
-            <div className={styles.blogBorder}></div>
-            <div className={styles.sliderWrapper}>
-              <SpotLightSlider />
-            </div>
           </Container>
         </div>
         <div className={`col-12 col-md-4`} >
@@ -145,7 +142,9 @@ const SingleBlog = async (props) => {
                 <div className="d-flex flex-column gap-3">
                   <label className={styles.recentContentLabel}>
                     Related Content
+                    <SectionBorder />
                   </label>
+
 
                   <div className="d-flex flex-row justify-content-between pb-3" style={{ borderBottom: "1px solid #8585854D" }}>
                     <div className="d-flex flex-column gap-4" style={{ width: "180px", }}>
@@ -233,6 +232,44 @@ const SingleBlog = async (props) => {
           </Container>
 
         </div>
+
+        <div className="d-flex flex-column gap-3 mt-4">
+          <label className={styles.shareLabel}>AUTHOR
+            <SectionBorder />
+          </label>
+          <div>
+            <div className="card mb-3" >
+              <div className="row g-0">
+                <div className="col-md-4">
+                  <img className="img-fluid rounded-start" alt="card" style={{ width: "auto", height: "200pautox" }} src={blog?.image !== null ? blog?.image : blogImage} />
+                </div>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <p className={styles.authorTop}> <b >Claire McCarthy, MD</b>, Senior Faculty Editor, Harvard Health Publishing</p>
+                    <p className={styles.authorMiddle}>
+                      Claire McCarthy, MD, is a primary care pediatrician at Boston Children’s Hospital, and an assistant professor of pediatrics at Harvard Medical School. In addition to being a senior faculty editor for Harvard Health Publishing, Dr. McCarthy… 
+                      
+                      <label className={styles.shareLabel}>See Full Bio</label>
+                    </p>
+                    <p className="card-text"><small className={styles.authorBottom}>
+                      View all posts by Claire McCarthy, MD
+                      <label className="ps-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className={`bi bi-arrow-right ${styles.arrowAuthor}`} viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" strokeWidth="5" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg>
+                      </label>
+                    </small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className={styles.sliderWrapper}>
+        <SpotLightSlider />
       </div>
 
     </div>
