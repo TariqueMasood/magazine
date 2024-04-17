@@ -8,12 +8,15 @@ const UserAgreement = () => {
         <h1 className={styles.heading}>User Agreement</h1>
         <div className={styles.wrapperContainer}>
           <p>
-            <strong>This site is operated by 'BizLink Media Group' </strong>
+            <strong>
+              This site is operated by &apos;BizLink Media Group&apos;{" "}
+            </strong>
             which is the arm of Denkoit Softech Pvt. Ltd., a private limited
-            company (referred to as "we," "us," or "our" throughout) registered
-            in India under company number U93030TG2017PTC119844 [Pursuant to
-            sub-section (2) of section 7 of the Companies Act, 2013 (18 of 2013)
-            and rule 18 of the Companies (Incorporation) Rules, 2014]. <br />
+            company (referred to as &quot;we,&quot; &quot;us,&quot; or
+            &quot;our&quot; throughout) registered in India under company number
+            U93030TG2017PTC119844 [Pursuant to sub-section (2) of section 7 of
+            the Companies Act, 2013 (18 of 2013) and rule 18 of the Companies
+            (Incorporation) Rules, 2014]. <br />
             <strong>We publish a variety of content:</strong> news, information,
             interviews, videos, analysis, opinions, and commentary. This
             includes both reported and edited content, as well as unmoderated
@@ -74,7 +77,7 @@ const UserAgreement = () => {
           <p>
             <strong>Transfer of Agreement:</strong> We may transfer our rights
             and obligations under these terms to another organization. We will
-            notify you in writing of such a transfer and ensure it doesn't
+            notify you in writing of such a transfer and ensure it doesn&apos;t
             affect your rights.
           </p>
           <p>
@@ -94,7 +97,7 @@ const UserAgreement = () => {
               the source.
             </li>
             <li>
-              <strong>Modification:</strong> Don't modify the downloaded
+              <strong>Modification:</strong> Don&apos;t modify the downloaded
               content, and avoid using visuals (images, videos) separately from
               the accompanying text.
             </li>
@@ -240,15 +243,15 @@ const UserAgreement = () => {
             </li>
             <li>
               You guarantee your uploads comply and are liable for any breach.
-              This means you're responsible for any damage caused by your
+              This means you&apos;re responsible for any damage caused by your
               uploads not meeting the standards
             </li>
             <li>
               Uploads are considered non-confidential and non-proprietary. You
               retain ownership but grant us and other users a limited license to
               use, store, copy, distribute, and make your content available to
-              others (specific rights detailed in "Rights you are giving us to
-              use material you upload").
+              others (specific rights detailed in &quot;Rights you are giving us
+              to use material you upload&quot;).
             </li>
             <li>
               We may disclose your identity if a third party claims your content
@@ -264,7 +267,7 @@ const UserAgreement = () => {
           <h5>
             <strong>Content Upload:</strong> When you share content on our
             sites, you grant us certain permissions to use it effectively.
-            Here's a breakdown:
+            Here&apos;s a breakdown:
           </h5>
           <ol>
             <li>
@@ -284,12 +287,13 @@ const UserAgreement = () => {
           </ol>
           <h5>
             <strong>Security:</strong> We strive to provide a secure
-            environment, but we cannot guarantee it's entirely free from bugs,
-            viruses, or other threats. Here's how we share the responsibility:
+            environment, but we cannot guarantee it&apos;s entirely free from
+            bugs, viruses, or other threats. Here&apos;s how we share the
+            responsibility:
           </h5>
           <ul>
             <li>
-              <strong>Your Responsibility:</strong> You're responsible for
+              <strong>Your Responsibility:</strong> You&apos;re responsible for
               configuring your devices and software securely to access our
               sites. This includes using your own virus protection software.
             </li>
@@ -326,8 +330,8 @@ const UserAgreement = () => {
             </li>
             <li>
               <strong> Home Page Linking:</strong> Links should direct users to
-              our website's home page only. Framing our content or linking to
-              internal pages is not permitted.
+              our website&apos;s home page only. Framing our content or linking
+              to internal pages is not permitted.
             </li>
             <li>
               <strong>Right to Withdraw Permission:</strong> We reserve the
@@ -366,11 +370,11 @@ const UserAgreement = () => {
             </li>
           </ul>
           <p>
-            <strong>Our Trademarks:</strong> "BIZLINK MEDIA" and "PROJECT
-            LEADERS MAGAZINE" are trademarks of Denkoit Softech Private Limited.
-            Using these trademarks without our permission is prohibited, except
-            for permitted uses outlined in our "How You May Use Material on Our
-            Sites" section.
+            <strong>Our Trademarks:</strong> &quot;BIZLINK MEDIA&quot; and
+            &quot;PROJECT LEADERS MAGAZINE&quot; are trademarks of Denkoit
+            Softech Private Limited. Using these trademarks without our
+            permission is prohibited, except for permitted uses outlined in our
+            &quot;How You May Use Material on Our Sites&quot; section.
           </p>
         </div>
       </Container>
