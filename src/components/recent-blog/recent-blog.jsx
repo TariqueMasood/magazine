@@ -37,7 +37,7 @@ const RecentCard = (props) => {
 };
 
 const RecentBlog = async () => {
-  const magazines = await fetchData("blogs/?limit=3");
+  const magazines = await fetchData("blogs/?limit=4");
   return (
     <div>
       <Container>
