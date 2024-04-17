@@ -62,9 +62,7 @@ const Footer = () => {
                 <Link href="term-condition">Terms & Conditions</Link>
               </li> */}
               <li>
-                <Link href="./user-agreement.pdf" target="_blank">
-                  User Agreement
-                </Link>
+                <Link href="/user-agreement">User Agreement</Link>
               </li>
               <li>
                 <Link href="./cookie-policy.pdf" target="_blank">

@@ -18,7 +18,6 @@ const RecentCard = (props) => {
           width={350}
           height={300}
           layout="responsive"
-          // objectFit="cover"
         />
       </div>
       <div className={styles.cardContent}>

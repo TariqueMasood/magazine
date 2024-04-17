@@ -9,8 +9,9 @@
 }
 
 .webinarAds {
-  width: 300px;
-  height: 600px;
+  max-width: 300px;
+  width: 100%;
+  max-height: 600px;
   background-color: var(--themeColor);
 }
 
@@ -102,14 +103,6 @@
   }
 }
 
-.FeaturedCardWrapper :hover {
-  .featuredCardContentWrapper button {
-    background-color: var(--themeColor);
-    border: 1px solid var(--themeColor);
-    transition: all 0.2s;
-  }
-}
-
 .webinarCardCotainer {
   display: flex;
   flex-direction: column;
@@ -161,14 +154,6 @@
 .webinarCardWrapper :hover {
   .webinarCardContent h5 {
     color: var(--themeColor);
-    transition: all 0.3s;
-  }
-}
-
-.webinarCardWrapper :hover {
-  .webinarCardContent button {
-    background-color: var(--themeColor);
-    border: 1px solid var(--themeColor);
     transition: all 0.3s;
   }
 }

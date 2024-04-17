@@ -21,7 +21,9 @@ const FeaturedCard = () => {
         <div className={styles.featuredCardContentWrapper}>
           <div className={styles.featuredCardContent}>
             <span className={styles.featuredCardTitle}>featured</span>
-            <h3>tech & AI live london 2024</h3>
+            <h3 className={styles.featuredCardContentHeading}>
+              tech & AI live london 2024
+            </h3>
             <div className={styles.featuredCardDate}>
               Tue 21 May, 2024. 14:00 GMT. Online (virtual)
             </div>
