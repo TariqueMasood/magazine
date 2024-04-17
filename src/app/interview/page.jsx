@@ -4,7 +4,7 @@ import MgButton from "@/components/button/button";
 import heroImg1 from "../../../public/images/wb-img1.png";
 import heroImg2 from "../../../public/images/wb-img2.png";
 import heroImg3 from "../../../public/images/wb-img3.png";
-import ellipseImg from "../../../public/images/wb-ellipse.png";
+import ellipseImg from "../../../public/images/interview-circle-img.png";
 import styles from "./interview.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
@@ -27,6 +27,67 @@ const YouTubePlayer = ({ videoId, width, height }) => {
   return (
     <div>
       <YouTube videoId={videoId} opts={opts} />
+    </div>
+  );
+};
+
+const VideoTextualInterview = () => {
+  return (
+    <div>
+      <SectionTitle title="Featured Interviews" />
+      <Row className="mt-3">
+        <Col lg={6}>
+          <div className={styles.videoTextual}>
+            <div>
+              <div className={styles.videoTextualContainer}>
+                <div className={styles.YouTubeVideo}>
+                  <YouTubePlayer
+                    videoId="meT67QQqrIw"
+                    width="100%"
+                    height="250px"
+                  />
+                </div>
+              </div>
+              <div className={styles.videoTextualContainer}>
+                <h3>Exclusive Video: Red Hat at MWC 2024</h3>
+                <h6>Digital Transformation</h6>
+                <p>
+                  We speak with Ben Panic, Vice President of Red Hat’s Global
+                  Telco Centre of Excellence, about the company’s MWC 2024
+                  announcements and future telco trends
+                </p>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col lg={6}>
+          <div className={styles.videoTextualCard}>
+            <Row>
+              <Col lg={6} md={6}>
+                <div className={styles.videoTextualImg}>
+                  <Image src={cardImg2} alt="card" />
+                </div>
+              </Col>
+              <Col lg={6} md={6}>
+                <div className={styles.videoTextualContent}>
+                  <h1>Garrett Olson</h1>
+                  <h4>Head of IT & Compliance at GFS</h4>
+                  <p>
+                    Remi Lavergne, Head of IT Compliance at Global Freight
+                    Services Reflects on a 25 Year Career in Logistics With
+                    demand only set to grow, Serverfarm continues to pioneer
+                    sustainable, innovative and efficient data centre solutions
+                    as part of its long...
+                  </p>
+                  <MgButton>
+                    Read Full Interview <MdKeyboardArrowRight />
+                  </MgButton>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };
@@ -258,16 +319,12 @@ export const FirstRowCard = () => {
               <Image src={cardImg1} alt="card" />
             </div>
             <div className={styles.textualContent}>
-              <h4>Pandemic Agreement</h4>
               <h1>Greg Wilson</h1>
-              <h2>
-                Microsoft worldwide Public Sector&quot;s Chief Technology
-                Officer for Government
-              </h2>
+              <h4>CEO at Serverfarm</h4>
               <p>
-                Microsoft Government CTO on the company&apos;s expansive role in
-                AI adoption, Cloud migration, ethical governance, and
-                cybersecurity within the public sector
+                With demand only set to grow, Serverfarm continues to pioneer
+                sustainable, innovative and efficient data centre solutions as
+                part of its long-term strategy
               </p>
               <MgButton>
                 Read More <MdKeyboardArrowRight />
@@ -430,12 +487,12 @@ const Interview = () => {
         <Container>
           <div className={styles.hero}>
             <div className={styles.heroContent}>
-              <h1>Care for one</h1>
-              <h1>Outcomes for all</h1>
+              <h1>Leaders Unfiltered: Share Your Story, Shape the Future.</h1>
+              <h1>Exclusive Interviews with Top Performers.</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                bibendum pellentesque rutrum. Vestibulum at tellus ultrices,
-                sollicitudin
+                Get featured in exclusive interviews alongside industry
+                heavyweights. Exploring leadership across industries. Showcase
+                your expertise. Contact us today.
               </p>
             </div>
             <div className={styles.heroImage}>
@@ -444,25 +501,18 @@ const Interview = () => {
                   className={styles.ellipseImg}
                   src={ellipseImg}
                   alt="ellipse"
-                />
-                <Image
-                  className={styles.heroImage1}
-                  src={heroImg1}
-                  alt="image"
-                />
-                <Image
-                  className={styles.heroImage2}
-                  src={heroImg2}
-                  alt="image"
-                />
-                <Image
-                  className={styles.heroImage3}
-                  src={heroImg3}
-                  alt="image"
+                  width={400}
+                  height={400}
+                  layout="responsive"
                 />
               </div>
             </div>
           </div>
+        </Container>
+      </div>
+      <div className={styles.videoTextualWrapper}>
+        <Container>
+          <VideoTextualInterview />
         </Container>
       </div>
       <div className={styles.interview}>
