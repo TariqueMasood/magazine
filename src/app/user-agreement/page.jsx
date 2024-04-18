@@ -6,7 +6,7 @@ const UserAgreement = () => {
     <div className={styles.wrapper}>
       <Container>
         <h1 className={styles.heading}>User Agreement</h1>
-        <div className={styles.wrapperContainer}>
+        <div className={styles.containerWrapper}>
           <p>
             <strong>
               This site is operated by &apos;BizLink Media Group&apos;{" "}
