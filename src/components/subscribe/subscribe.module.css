@@ -10,11 +10,22 @@
 
 .buttonContainer {
   border-radius: 8px;
-  background-color: var(--black);
-  border: 1px solid var(--black);
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.subscribeBtn button {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  transition: all 0.5s ease-out;
+}
+
+.subscribeBtn button:hover {
+  transform: scale(1.1);
+  background-color: var(--themeColor);
+  color: var(--white);
+  border: 1px solid var(--themeColor);
 }
 
 .buttonContainer svg {
