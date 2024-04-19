@@ -41,7 +41,7 @@ const TrendingSlider = async () => {
   return (
     <>
       {isTrending().length > 0 && (
-        <div className={styles.aside}>
+        <div className={`${styles.aside} trending-slider`}>
           <div className={styles.asideHeading}>TRENDING</div>
           <MgSlider settings={settings}>
             {data?.results?.map((data) => {

@@ -13,14 +13,14 @@
   gap: 1em;
 }
 
-.heroMagazine {
+.hero .hero-magazine {
   flex: 2;
-  order: 2;
+  order: 1;
 }
 
-.heroTrending {
+.hero .trending-slider {
   flex: 1;
-  order: 1;
+  order: 2;
 }
 
 .ad {
@@ -44,13 +44,20 @@
   .hero {
     flex-direction: row;
   }
-  .heroMagazine {
+
+  .hero .hero-magazine {
     order: 1;
   }
-  .heroTrending {
+  
+  .hero .trending-slider {
     order: 2;
   }
+  
   .ad {
     order: 3;
+    max-width: 300px;
+    width: 100% !important;
+    height: auto;
+    background-color: var(--themeColor);
   }
 }

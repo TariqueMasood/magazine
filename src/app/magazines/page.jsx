@@ -17,12 +17,12 @@ const Magazines = () => {
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.hero}>
-          <div className={styles.heroMagazine}>
-            <HeroMagazine />
-          </div>
-          <div className={styles.heroTrending}>
-            <TrendingSlider />
-          </div>
+          {/* <div className={styles.heroMagazine}> */}
+          <HeroMagazine />
+          {/* </div> */}
+          {/* <div className={styles.heroTrending}> */}
+          <TrendingSlider />
+          {/* </div> */}
           <div className={styles.ad}></div>
         </div>
         <div className={styles.header}>

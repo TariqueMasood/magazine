@@ -31,7 +31,7 @@ const HeroMagazineCard = (props) => {
   });
 
   return (
-    <div className={styles.heroMagazine} id={id}>
+    <div className={`${styles.heroMagazine} hero-magazine`} id={id}>
       <div className={styles.heroMagazineImage}>
         <Image src={thumbImage} alt={name} width={340} height={500} />
       </div>
