@@ -7,17 +7,21 @@ import styles from "./pagination.module.css";
 
 const MgPagination = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 6;
+  const [page, sePage] = useState(1);
+  const [offset, setOffset] = useState(0);
+  const pageSize = 3;
+  // const offset = 1;
 
-  const pagesCount = Math.ceil(props.data.count / pageSize);
+  const pagesCount = Math.ceil(props.items / pageSize);
 
   if (pagesCount === 1) return null;
   const pages = Array.from({ length: pagesCount }, (_, i) => i + 1);
   console.log(pages);
-  console.log("Data count", props.data.count);
+  // console.log("Data count", props.data.count);
 
   const onPageChange = (page) => {
     setCurrentPage(page);
+    setOffset(pageSize * offset);
   };
 
   return (

@@ -6,31 +6,32 @@ import { useEffect, useState } from "react";
 import styles from "./pagination.module.css";
 
 const MgPagination = (props) => {
-  const [nextPrev, setNextPrev] = useState({ next: null, prev: null });
+  // const [nextPrev, setNextPrev] = useState({ next: null, prev: null });
+  // const [offset, setOffset] = useState(3);
+  const [page, setPage] = useState(1);
+  const pageSize = 3;
 
-  useEffect(() => {
-    if (props.data.previous || props.data.next) {
-      setNextPrev({ next: props.data.next, prev: props.data.previous });
-    }
-  }, [props.data]);
+  function handleNext(prev) {
+    return props.offset * (prev + 1);
+  }
 
   return (
     <div className="d-flex gap-3 justify-content-center">
       <Button
-        disabled={nextPrev.prev === null}
+        disabled={props.data.previous === null}
         onClick={() => {
           // props.data.previous;
-          console.log("Prev clicked", props.data.previous);
+          console.log("Prev clicked");
         }}
       >
         Prev
       </Button>
       <Button
-        disabled={nextPrev.next === null}
+        // disabled={nextPrev.next === null}
         onClick={() => {
           // debugger;
-          props.handleNext;
-          console.log("Next clicked", props.data.next);
+          handleNext();
+          console.log("Next clicked");
         }}
       >
         Next

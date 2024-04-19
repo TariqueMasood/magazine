@@ -9,8 +9,8 @@ const MgPagination = dynamic(() => import("../pagination/pagination"), {
   ssr: false,
 });
 
-const TechnologyBlog = async () => {
-  let data = await fetchData("blogs/?limit=12");
+const TechnologyBlog = async (props) => {
+  let data = await fetchData(`blogs/?limit=9`);
 
   function fetchCategory(category) {
     return data.results?.filter((data) => data.category.slug === category);
@@ -25,7 +25,7 @@ const TechnologyBlog = async () => {
           covering a variety of health topics and perspectives on medical news.
         </p>
         <BlogTabs data={data} />
-        {/* <MgPagination data={data} /> */}
+        {/* <MgPagination data={data} offset={offset} /> */}
       </Container>
     </div>
   );
