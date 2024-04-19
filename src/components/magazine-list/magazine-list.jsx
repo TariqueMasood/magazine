@@ -23,7 +23,7 @@ const MagazineList = async () => {
     <div className={styles.container}>
       <Row>
         {magazines?.results?.map((magazine) => (
-          <Col lg={3} key={magazine.id}>
+          <Col xs={6} sm={6} md={6} lg={3} key={magazine.id}>
             <MagazineCard data={magazine} />
           </Col>
         ))}
