@@ -11,13 +11,13 @@ const PrivacyPolicy = () => {
             This Privacy Policy explains how Project Leaders Magazine operated
             by BizLink Media Group, a division of Denkoit Softech Pvt. Ltd. (a
             company registered in India under number U93030TG2017PTC119844),
-            collects and uses your personal data. Throughout this policy, "we,"
-            "us," and "our" refer to Project Leaders Magazine, BizLink Media
-            Group and Denkoit Softech Pvt. Ltd. We may also include other
-            affiliated entities within our group. At Denkoit, we value your
-            privacy and take data protection seriously. We strive to earn your
-            trust by upholding strict standards for handling your personal
-            information.
+            collects and uses your personal data. Throughout this policy,
+            &quot;we,&quot; &quot;us,&quot; and &quot;our&quot; refer to Project
+            Leaders Magazine, BizLink Media Group and Denkoit Softech Pvt. Ltd.
+            We may also include other affiliated entities within our group. At
+            Denkoit, we value your privacy and take data protection seriously.
+            We strive to earn your trust by upholding strict standards for
+            handling your personal information.
           </p>
           <p>
             This policy explains how we collect, use, disclose, and handle your
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
             This Privacy Policy outlines how we handle your personal
             information.
           </p>
-          <h5>Here's a breakdown of key topics:</h5>
+          <h5>Here&apos;s a breakdown of key topics:</h5>
           <ol>
             <li>
               <strong>Important Information:</strong> This section provides
@@ -74,8 +74,8 @@ const PrivacyPolicy = () => {
             </li>
             <li>
               <strong>Glossary:</strong> A reference section defining key terms
-              used in this policy, such as "personal data" and "personal
-              information."
+              used in this policy, such as &quot;personal data&quot; and
+              &quot;personal information.&quot;
             </li>
           </ol>
           <ol>
@@ -137,29 +137,31 @@ const PrivacyPolicy = () => {
           </p>
           <ul>
             <li>
-              <strong>Used fairly, lawfully, and transparently:</strong> We'll
-              always be upfront about how we collect and use your data.
+              <strong>Used fairly, lawfully, and transparently:</strong>{" "}
+              We&apos;ll always be upfront about how we collect and use your
+              data.
             </li>
             <li>
-              <strong>Collected for specific purposes only:</strong> We won't
-              collect your data unless we have a clear and legitimate reason.
+              <strong>Collected for specific purposes only:</strong> We
+              won&apos;t collect your data unless we have a clear and legitimate
+              reason.
             </li>
             <li>
-              <strong>Minimal and relevant:</strong> We'll only collect the data
-              we need for the specific purpose.
+              <strong>Minimal and relevant:</strong> We&apos;ll only collect the
+              data we need for the specific purpose.
             </li>
             <li>
-              <strong>Accurate and kept up to date:</strong> We'll take steps to
-              ensure your data is accurate and reflects any changes.
+              <strong>Accurate and kept up to date:</strong> We&apos;ll take
+              steps to ensure your data is accurate and reflects any changes.
             </li>
             <li>
-              <strong>Securely stored:</strong> We'll implement appropriate
+              <strong>Securely stored:</strong> We&apos;ll implement appropriate
               safeguards to protect your data from unauthorized access, loss, or
               damage.
             </li>
             <li>
               <strong>Not transferred without safeguards:</strong> If we
-              transfer your data internationally, we'll ensure adequate
+              transfer your data internationally, we&apos;ll ensure adequate
               protection measures are in place.
             </li>
             <li>
@@ -204,10 +206,10 @@ const PrivacyPolicy = () => {
           </ul>
           <p>
             In some cases, we need your personal data to fulfill legal
-            requirements or deliver the services you've requested through a
+            requirements or deliver the services you&apos;ve requested through a
             contract. If this information is missing, we might be unable to
-            provide those services. We'll always notify you beforehand if this
-            situation arises and could lead to us terminating the contract.
+            provide those services. We&apos;ll always notify you beforehand if
+            this situation arises and could lead to us terminating the contract.
           </p>
           <h5>
             <strong>What Information We Collect</strong>
@@ -234,7 +236,7 @@ const PrivacyPolicy = () => {
             </li>
             <li>
               <strong>Subscription history:</strong> Information about
-              newsletters or publications you've subscribed to.
+              newsletters or publications you&apos;ve subscribed to.
             </li>
             <li>
               <strong>Profile information:</strong> Photos you upload during
@@ -252,11 +254,11 @@ const PrivacyPolicy = () => {
           </ul>
           <p>
             We also use anonymized data for statistical and analytical purposes.
-            This "aggregated data" doesn't identify you directly and helps us
-            understand how people use our website (e.g., percentage of users
-            accessing a specific feature). If we combine anonymized data with
-            your personal data in a way that identifies you, we'll treat it as
-            personal data subject to this privacy policy.
+            This &quot;aggregated data&quot; doesn&apos;t identify you directly
+            and helps us understand how people use our website (e.g., percentage
+            of users accessing a specific feature). If we combine anonymized
+            data with your personal data in a way that identifies you,
+            we&apos;ll treat it as personal data subject to this privacy policy.
           </p>
           <p>
             <strong>
@@ -329,21 +331,23 @@ const PrivacyPolicy = () => {
           </p>
           <ul>
             <li>
-              Your Consent: In some cases, you'll give us your explicit consent
-              to use your information for a specific purpose, like subscribing
-              to a newsletter.
+              Your Consent: In some cases, you&apos;ll give us your explicit
+              consent to use your information for a specific purpose, like
+              subscribing to a newsletter.
             </li>
             <li>
               Fulfilling a Contract: We may use your data to deliver services
-              you've requested, like providing reports you've purchased.
+              you&apos;ve requested, like providing reports you&apos;ve
+              purchased.
             </li>
             <li>
               Legitimate Interests: We may also use your information for our
-              legitimate business interests, but only when these interests don't
-              conflict with your privacy rights. This could include using your
-              data to improve our website or services, prevent fraud, or provide
-              you with relevant offers. We balance these interests carefully and
-              won't use your data if the impact on your privacy is too great.
+              legitimate business interests, but only when these interests
+              don&apos;t conflict with your privacy rights. This could include
+              using your data to improve our website or services, prevent fraud,
+              or provide you with relevant offers. We balance these interests
+              carefully and won&apos;t use your data if the impact on your
+              privacy is too great.
             </li>
           </ul>
           <h5>
@@ -351,15 +355,16 @@ const PrivacyPolicy = () => {
           </h5>
           <p>
             We use your contact details to send marketing messages only when
-            you've explicitly agreed to receive them (consumers) or haven't
-            opted out (businesses and others who have requested information,
-            subscribed, or provided contact details through a third party).{" "}
+            you&apos;ve explicitly agreed to receive them (consumers) or
+            haven&apos;t opted out (businesses and others who have requested
+            information, subscribed, or provided contact details through a third
+            party).{" "}
           </p>
           <p>
             You can easily unsubscribe from marketing messages at any time by
-            contacting us or clicking the "unsubscribe" button in an email.
-            Please note that opting out won't affect information related to
-            existing service agreements.
+            contacting us or clicking the &quot;unsubscribe&quot; button in an
+            email. Please note that opting out won&apos;t affect information
+            related to existing service agreements.
           </p>
           <h5>
             <strong>Change of Purpose</strong>
@@ -372,14 +377,14 @@ const PrivacyPolicy = () => {
             our services, even if you initially signed up for a newsletter.
           </p>
           <p>
-            If the new purpose is unrelated to the original reason, we'll
+            If the new purpose is unrelated to the original reason, we&apos;ll
             clearly explain this to you and outline the legal justification that
             allows us to do so.
           </p>
           <p>
             In some rare cases, the law may permit us to use your data without
-            your knowledge or consent. We'll only do this in strict accordance
-            with legal requirements.
+            your knowledge or consent. We&apos;ll only do this in strict
+            accordance with legal requirements.
           </p>
           <h5>
             <strong>Disclosures of your personal data</strong>
@@ -455,7 +460,7 @@ const PrivacyPolicy = () => {
             operate outside India, your personal data may be transferred
             internationally during processing. Whenever this happens, we ensure
             a similar level of protection as mandated by the Indian data
-            protection laws. Here's how we achieve this:
+            protection laws. Here&apos;s how we achieve this:
           </p>
           <ul>
             <li>
@@ -513,8 +518,8 @@ const PrivacyPolicy = () => {
             <strong>Data retention</strong>
           </h5>
           <p>
-            We will only keep your personal data for as long as it's needed to
-            fulfill the reason, we collected it. This includes any legal,
+            We will only keep your personal data for as long as it&apos;s needed
+            to fulfill the reason, we collected it. This includes any legal,
             accounting, or reporting requirements.
           </p>
           <p>
@@ -527,8 +532,8 @@ const PrivacyPolicy = () => {
             <li>The risk of unauthorized access or misuse</li>
           </ul>
           <p>
-            If you'd like to know more about how long we store specific types of
-            data, please contact us.
+            If you&apos;d like to know more about how long we store specific
+            types of data, please contact us.
           </p>
           <h5>
             <strong>Your Rights</strong>
@@ -560,7 +565,7 @@ const PrivacyPolicy = () => {
           </p>
           <ul>
             <li>Clearly unfounded (meaning it has no basis)</li>
-            <li>Repetitive (you've made similar requests recently)</li>
+            <li>Repetitive (you&apos;ve made similar requests recently)</li>
             <li>
               Excessive (demands a large amount of data or requires significant
               effort)
@@ -580,7 +585,7 @@ const PrivacyPolicy = () => {
           </h5>
           <p>
             We strive to respond to all valid requests within one month. Complex
-            requests or multiple requests may take longer. We'll keep you
+            requests or multiple requests may take longer. We&apos;ll keep you
             informed in such cases.
           </p>
           <h5>
@@ -706,7 +711,7 @@ const PrivacyPolicy = () => {
             </strong>
             This enables you to ask us to suspend the processing of your
             personal data in the following scenarios: (a) if you want us to
-            establish the data's accuracy; (b) where our use of the data is
+            establish the data&apos;s accuracy; (b) where our use of the data is
             unlawful but you do not want us to erase it; (c) where you need us
             to hold the data even if we no longer require it as you need it to
             establish, exercise or defend legal claims; or (d) you have objected

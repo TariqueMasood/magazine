@@ -54,9 +54,9 @@ const CookiePolicy = () => {
           <p>
             You have control over cookies placed on your device. Most web
             browsers allow you to control or disable cookies in your settings.
-            Refer to your browser's settings for instructions. Here are some
-            general links, but you may need to search for specific guidance for
-            your browser:
+            Refer to your browser&apos;s settings for instructions. Here are
+            some general links, but you may need to search for specific guidance
+            for your browser:
           </p>
           <ul>
             <li>
