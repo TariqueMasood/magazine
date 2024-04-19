@@ -1,11 +1,14 @@
 .wrapper {
   padding: 30px 7px;
 }
-.wrapperContainer {
+.containerWrapper {
   padding-top: 0px;
 }
 
 .heading {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
   padding-bottom: 0.7em;
   border-bottom: 2px solid var(--greyLight);
 }
@@ -32,12 +35,12 @@
   .wrapper {
     padding: 30px 0;
   }
-  .wrapperContainer {
+  .containerWrapper {
     padding-top: 12px;
   }
+
   .heading {
-    padding-bottom: 0.7em;
-    border-bottom: 2px solid var(--greyLight);
+    text-align: left;
   }
 
   .wrapper p {

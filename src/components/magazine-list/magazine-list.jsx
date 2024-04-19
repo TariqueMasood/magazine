@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import styles from "./magazine-list.module.css";
 import { fetchData } from "@/utils/api";
+import { Col, Row } from "react-bootstrap";
 
 const MagazineCard = dynamic(() => import("../magazine-card/magazine-card"), {
   ssr: false,
@@ -20,9 +21,13 @@ const MagazineList = async () => {
 
   return (
     <div className={styles.container}>
-      {magazines?.results?.map((magazine) => (
-        <MagazineCard key={magazine.id} data={magazine} />
-      ))}
+      <Row>
+        {magazines?.results?.map((magazine) => (
+          <Col lg={3}>
+            <MagazineCard key={magazine.id} data={magazine} />
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 };
