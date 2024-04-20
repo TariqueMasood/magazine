@@ -36,8 +36,14 @@ const SingleBlog = async (props) => {
   const { blogSlug } = props.params;
   const blog = await getSingleData(blogSlug);
 
+  // function createMarkup(markup) {
+  //   return { __html: DOMPurifyServer.sanitize(markup) };
+  // }
+
   function createMarkup(markup) {
-    return { __html: DOMPurifyServer.sanitize(markup) };
+    const baseURL = "http://api.projectleadersmagazine.com:8000";
+    const modifiedHTML = markup.replace(/src="([^"]+)"/g, `src="${baseURL}$1"`);
+    return modifiedHTML;
   }
 
   return (
@@ -58,7 +64,7 @@ const SingleBlog = async (props) => {
         </div>
         <div
           className={styles.cardContent}
-          dangerouslySetInnerHTML={createMarkup(blog?.content)}
+          dangerouslySetInnerHTML={{ __html: createMarkup(blog?.content) }}
         />
         <div className={styles.blogBorder}></div>
         <div className={styles.sliderWrapper}>
