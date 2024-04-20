@@ -9,8 +9,17 @@ const MgPagination = dynamic(() => import("../pagination/pagination"), {
   ssr: false,
 });
 
-const TechnologyBlog = async (props) => {
-  let data = await fetchData(`blogs/?limit=9`);
+const TechnologyBlog = async () => {
+  let offset = 0;
+  let data = await fetchData(`blogs/?limit=3&offset=${offset}`);
+
+  async function handleOffsetNext(offset) {
+    return offset + 1;
+  }
+
+  function handleOffsetPrev(offset) {
+    return offset * 3;
+  }
 
   function fetchCategory(category) {
     return data.results?.filter((data) => data.category.slug === category);
@@ -25,7 +34,7 @@ const TechnologyBlog = async (props) => {
           covering a variety of health topics and perspectives on medical news.
         </p>
         <BlogTabs data={data} />
-        {/* <MgPagination data={data} offset={offset} /> */}
+        {/* <MgPagination handleOffsetNext={handleOffsetNext()} /> */}
       </Container>
     </div>
   );
