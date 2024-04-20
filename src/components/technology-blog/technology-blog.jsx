@@ -11,7 +11,7 @@ const MgPagination = dynamic(() => import("../pagination/pagination"), {
 
 const TechnologyBlog = async () => {
   let offset = 0;
-  let data = await fetchData(`blogs/?limit=3&offset=${offset}`);
+  let data = await fetchData(`blogs/?limit=9&offset=${offset}`);
 
   function fetchCategory(category) {
     return data.results?.filter((data) => data.category.slug === category);
