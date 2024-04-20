@@ -8,14 +8,6 @@ import Subscribe from "@/components/subscribe/subscribe";
 const BlogPage = async () => {
   return (
     <div className={styles.wrapper}>
-      <div className="text-center pt-5">
-        <SectionHeader
-          title="News Letter"
-          subTitle="Subscribe to monthly creative magazine"
-          desc="Get notified to our exclusive releases & events."
-        />
-        <Subscribe />
-      </div>
       <RecentBlog />
       <TechnologyBlog />
     </div>

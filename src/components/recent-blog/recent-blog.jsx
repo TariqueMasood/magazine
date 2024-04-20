@@ -39,7 +39,7 @@ const RecentCard = (props) => {
 const RecentBlog = async () => {
   const magazines = await fetchData("blogs/?limit=4");
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Container>
         <div className="pb-3">
           <SectionTitle title="RECENT BLOGS" />

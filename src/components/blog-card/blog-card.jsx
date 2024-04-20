@@ -5,7 +5,7 @@ import Link from "next/link";
 import shareIcon from "../../../public/images/share-icon.png";
 
 const BlogCard = (props) => {
-  const { id, title, subtitle, image } = props?.data;
+  const { id, title, subtitle, image, category } = props?.data;
 
   return (
     <Link href={`/blogs/${id}`} className={styles.cardContainer}>
@@ -25,7 +25,7 @@ const BlogCard = (props) => {
             <div className={styles.categoryWrapper}>
               {/* <Image src={calendarIcon} alt="calendar" />
               <span>{new Date(published_date).toGMTString()}</span> */}
-              <div className={styles.category}>Diseases & Conditions</div>
+              <div className={styles.category}>{category.slug}</div>
               <div className={styles.shareIcon}>
                 <Image src={shareIcon} alt="icon" />
               </div>

@@ -23,8 +23,8 @@ const MgPagination = (props) => {
       <Button
         disabled={false}
         onClick={() => {
-          props.handleOffsetNext;
-          console.log("Next clicked", props.handleOffsetNext(offset));
+          // props.handleOffsetNext;
+          console.log("Next clicked");
         }}
       >
         Next

@@ -13,14 +13,6 @@ const TechnologyBlog = async () => {
   let offset = 0;
   let data = await fetchData(`blogs/?limit=3&offset=${offset}`);
 
-  async function handleOffsetNext(offset) {
-    return offset + 1;
-  }
-
-  function handleOffsetPrev(offset) {
-    return offset * 3;
-  }
-
   function fetchCategory(category) {
     return data.results?.filter((data) => data.category.slug === category);
   }
@@ -34,7 +26,7 @@ const TechnologyBlog = async () => {
           covering a variety of health topics and perspectives on medical news.
         </p>
         <BlogTabs data={data} />
-        {/* <MgPagination handleOffsetNext={handleOffsetNext()} /> */}
+        {/* <MgPagination /> */}
       </Container>
     </div>
   );
