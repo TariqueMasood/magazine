@@ -6,7 +6,7 @@ import heroImg2 from "../../../public/images/wb-img2.png";
 import heroImg3 from "../../../public/images/wb-img3.png";
 import ellipseImg from "../../../public/images/wb-ellipse.png";
 import styles from "./interview.module.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import SectionTitle from "@/components/section-title/section-title";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -18,6 +18,8 @@ import cardImg5 from "../../../public/images/textual-interview-img5.png";
 import cardImg6 from "../../../public/images/textual-interview-img6.png";
 import YouTube from "react-youtube";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { fetchData } from "@/utils/api";
 
 const YouTubePlayer = ({ videoId, width, height }) => {
   const opts = {
@@ -239,6 +241,26 @@ const MostViewed = () => {
 };
 
 export const FirstRowCard = () => {
+
+  let [textualInterviews, setTextualInterviews] = useState(null);
+
+  let getTextualInterviewsData = async (url) => {
+    let textualInterviewsData = await fetchData(url);
+    let list = textualInterviewsData.results.filter((items) => items.is_feature === true && items.is_trending === true)
+    if (list.length !== 0) {
+      setTextualInterviews(list)
+    }
+    else {
+      setTextualInterviews(null)
+
+    }
+
+  }
+
+  useEffect(() => {
+    getTextualInterviewsData("interviews")
+  }, [])
+
   return (
     <div>
       <div className={styles.textualViewAll}>
@@ -253,27 +275,36 @@ export const FirstRowCard = () => {
       </p>
       <Row>
         <Col lg={9}>
-          <div className={styles.textualCard}>
-            <div className={styles.textualImg}>
-              <Image src={cardImg1} alt="card" />
+
+          <Row>
+            <div className={styles.textualCard}>
+              <div className={styles.textualImg}>
+
+                {textualInterviews && <Image src={textualInterviews.results[0].profile_pic} alt="card" width={130} height={100} />}
+              </div>
+              <div className={styles.textualContent}>
+                <h4>{textualInterviews && textualInterviews.results[0].title}</h4>
+                <h1>{textualInterviews && textualInterviews.results[0].interviewee} ({textualInterviews && textualInterviews.results[0].position})</h1>
+                <h2>
+                  {
+                    textualInterviews && textualInterviews.results[0].subtitle
+                  }
+                </h2>
+                {/* <p>
+                  Microsoft Government CTO on the company&apos;s expansive role in
+                  AI adoption, Cloud migration, ethical governance, and
+                  cybersecurity within the public sector
+                </p> */}
+                {
+
+                  textualInterviews && <div dangerouslySetInnerHTML={{ __html: textualInterviews.results[0].description }} />
+                }
+                <MgButton>
+                  Read More <MdKeyboardArrowRight />
+                </MgButton>
+              </div>
             </div>
-            <div className={styles.textualContent}>
-              <h4>Pandemic Agreement</h4>
-              <h1>Greg Wilson</h1>
-              <h2>
-                Microsoft worldwide Public Sector&quot;s Chief Technology
-                Officer for Government
-              </h2>
-              <p>
-                Microsoft Government CTO on the company&apos;s expansive role in
-                AI adoption, Cloud migration, ethical governance, and
-                cybersecurity within the public sector
-              </p>
-              <MgButton>
-                Read More <MdKeyboardArrowRight />
-              </MgButton>
-            </div>
-          </div>
+          </Row>
         </Col>
         <Col lg={3}>
           <div className={styles.textualAd}>Ad</div>
@@ -343,34 +374,92 @@ export const SecondRowCard = () => {
 };
 
 const ThirdRowCard = () => {
+  let [prevValue, setPrevValue] = useState(null);
+  let [nextValue, setNextValue] = useState(null);
+  let [textualInterviews, setTextualInterviews] = useState([]);
+
+  let getTextualInterviewsData = async (url) => {
+    let textualInterviewsData = await fetchData(url);
+    let list = textualInterviewsData.results.filter((items) => items.is_feature === false && items.is_trending === false)
+    textualInterviewsData.results = list
+    if (list.length !== 0) {
+      setTextualInterviews(textualInterviewsData)
+      setPrevValue(textualInterviewsData.previous)
+      setNextValue(textualInterviewsData.next)
+    }
+    else {
+      setTextualInterviews([])
+      setPrevValue(null)
+      setNextValue(null)
+    }
+
+  }
+  let handlePrev = async (url) => {
+    const parsedUrl = new URL(url);
+    let pathname = parsedUrl.pathname;
+    pathname = pathname.slice(4).substring(1);
+    const newurl = parsedUrl.search;
+    getMagazineData(pathname + newurl)
+  }
+
+  let handleNext = (url) => {
+    console.log("url", url)
+    const parsedUrl = new URL(url);
+    let pathname = parsedUrl.pathname;
+    pathname = pathname.slice(4).substring(1);
+    const newurl = parsedUrl.search;
+    getMagazineData(pathname + newurl)
+
+  }
+  useEffect(() => {
+    getTextualInterviewsData("interviews")
+  }, [])
   return (
     <div className={styles.textualCardThird}>
-      <Row>
-        <Col lg={4}>
-          <div className={styles.textualCard3}>
-            <Row>
-              <Col lg={5}>
-                <div className={styles.textualImg3}>
-                  <Image src={cardImg4} alt="card" />
-                </div>
-              </Col>
-              <Col lg={7}>
-                <div className={styles.textualContent3}>
-                  <h3>Cindy Perettie</h3>
-                  <p>Executive Vice President and Global Head of Kite</p>
-                  <h5>
-                    Bringing Business and Global Health, Cindy Perettie,
-                    Executive VP of Kite, Shares a Journey of...
-                  </h5>
-                  <MgButton>
-                    Read More <MdKeyboardArrowRight />
-                  </MgButton>
-                </div>
-              </Col>
-            </Row>
-          </div>
+      <Row className="justify-content-center mb-4">
+        <Col md={2}>
+          <Button variant="primary" onClick={() => handlePrev(textualInterviews.previous)} disabled={prevValue === null}>
+            &lt; Prev
+          </Button>
         </Col>
-        <Col lg={4}>
+        <Col md={8}>
+
+        </Col>
+        <Col md={2}>
+          <Button variant="primary ms-md-5" onClick={() => handleNext(textualInterviews.next)} disabled={nextValue === null}>
+            Next &gt;
+          </Button>
+        </Col>
+      </Row>
+      <Row>
+        {textualInterviews?.results?.map((val, ind) => (
+          <Col key={val.id} lg={4}>
+            <div className={styles.textualCard3}>
+              <Row>
+                <Col lg={5}>
+                  <div className={styles.textualImg3}>
+                    <Image src={val.profile_pic} alt="card" width={150} height={150} />
+                  </div>
+                </Col>
+                <Col lg={7}>
+                  <div className={styles.textualContent3}>
+                    <h3>{val.title}</h3>
+                    <p>{val.position}</p>
+                    <h5>
+                      {val.subtitle}...
+                    </h5>
+                    
+                    <Link className="border border-2 rounded p-2 " href={`/interview/textual-interviews/${val.id}`}>
+                      Read More <MdKeyboardArrowRight />
+                    </Link>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        ))}
+
+        {/* <Col lg={4}>
           <div className={styles.textualCard3}>
             <Row>
               <Col lg={5}>
@@ -417,7 +506,7 @@ const ThirdRowCard = () => {
               </Col>
             </Row>
           </div>
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );

@@ -25,7 +25,8 @@ const TechnologyBlog = async () => {
             <BlogCard key={item.id} data={item} />
           ))}
         </div> */}
-        <BlogTabs data={data} />
+        {/* <BlogTabs data={data} /> */}
+        <BlogTabs />
       </Container>
     </div>
   );
