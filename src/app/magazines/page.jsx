@@ -13,6 +13,9 @@ const MgLoader = dynamic(() => import("@/components/loader/loader"), {
 });
 
 const Magazines = () => {
+
+ 
+
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -34,6 +37,7 @@ const Magazines = () => {
           </div>
         </div>
         <Suspense fallback={<MgLoader />}>
+         
           <MagazineList />
         </Suspense>
       </Container>

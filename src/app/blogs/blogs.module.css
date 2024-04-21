@@ -1,6 +1,7 @@
 .SigleBlogWrapper {
   padding: 50px 0;
 }
+
 .singleBlogHeading {
   font-size: 1.25rem;
   font-weight: 600;
@@ -163,21 +164,115 @@
 .reletedBlog {
   padding: 40px 0;
 }
+
 .reletedBlogTitle {
   display: flex;
   justify-content: space-between;
 }
 
+.containerRight {
+  /* background-color: hsl(120, 100%, 25%); */
+  max-height: 80vh;
+  /* position: fixed; */
+  max-width: 370px;
+  margin-left: 25px;
+  /* overflow-y: auto; */
+
+}
+
+.newLabelHeading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+
+}
+
+.newsDate {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  text-align: left;
+
+}
+
+.recentContentLabel {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: left;
+
+
+}
+
+.autherLabel {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+
+}
+
+.shareIcon {
+  width: 100px;
+}
+
+.shareLabel {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  text-align: left;
+  color: #38B6FF;
+
+}
+
+.cardContent img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.authorTop {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.82px;
+  text-align: left;
+}
+
+.authorMiddle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.authorBottom {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.82px;
+  letter-spacing: 0.04em;
+  text-align: left;
+
+}
+.arrowAuthor{
+  fill: #38B6FF;
+  stroke-width: 600px;
+}
+.bi-arrow-right path {
+  stroke-width: 160px; /* Adjust the thickness of the lines */
+}
 @media (max-width: 768px) {
   .singleBlogTitle {
     font-size: 1.5rem;
   }
+
   .singleBlogSubTitle {
     font-size: 1rem;
   }
+
   .blogWriter {
     font-size: 1rem;
   }
+
   .blogDate {
     padding: 10px 0;
     font-size: 1rem;
@@ -210,6 +305,7 @@
   .authorName span {
     font-size: 16px !important;
   }
+
   .authorDetail {
     font-size: 14px;
   }

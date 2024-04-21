@@ -9,6 +9,24 @@ import "../../../public/build/js/flipbook.min.js";
 const MagazineCard = (props) => {
   const { id, name, thumbImage, pdf, published_date } = props.data;
 
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    const monthNames = [
+      "JAN", "FEB", "MAR",
+      "APR", "MAY", "JUN", "JUL",
+      "AUG", "SEP", "OOT",
+      "NOV", "DEC"
+    ];
+
+    const year = date.getFullYear();
+    const monthIndex = date.getMonth();
+    const monthName = monthNames[monthIndex];
+
+    return [monthName, year];
+  }
+
+
+
   useEffect(() => {
     function createFlipBook(containerId, pdfPath) {
       const container = document.getElementById(containerId);
@@ -25,12 +43,11 @@ const MagazineCard = (props) => {
     }
 
     window.createFlipBook = createFlipBook;
-
     window.createFlipBook(id, pdf);
-  });
+  }, []);
 
   return (
-    <div className={styles.cardContainer} id={id}>
+    <div className={styles.cardContainer} id={id} >
       <div className={styles.imgContainer}>
         {/* Wrapping the Image component with the bookCover div */}
         <div className={styles.bookCover}>
@@ -49,8 +66,8 @@ const MagazineCard = (props) => {
       </div>
       <div className={styles.content}>
         <div className={styles.dateCss}>
-          <span>April </span>
-          <span className={styles.yearCss}> 2024</span>
+          <span>{formatDate(published_date.split("T")[0])[0]} </span>
+          <span className={styles.yearCss}> {formatDate(published_date.split("T")[0])[1]}</span>
         </div>
       </div>
     </div>
