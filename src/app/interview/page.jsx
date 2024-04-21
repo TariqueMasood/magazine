@@ -449,7 +449,8 @@ const ThirdRowCard = () => {
                       {val.subtitle}...
                     </h5>
                     
-                    <Link className="border border-2 rounded p-2 " href={`/interview/textual-interviews/${val.id}`}>
+                    {/* <Link className="border border-2 rounded p-2 " href={`/interview/textual-interviews/${val.id}`}> */}
+                    <Link className="border border-2 rounded p-2 " href={`#`}>
                       Read More <MdKeyboardArrowRight />
                     </Link>
                   </div>
