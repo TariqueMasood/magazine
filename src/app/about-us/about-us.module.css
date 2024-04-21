@@ -1,10 +1,258 @@
-.hero {
-  position: relative;
+.heroWrapper {
+  padding: 30px 7px;
 }
 
-.imgCss {
+.hero h6 {
+  font-size: 26px;
+  color: var(--themeColor);
+  line-height: 1.5;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--greyDark);
+  line-height: 1.7;
+}
+
+.heroImage {
+  margin-top: 2em;
+}
+
+.heroImage img {
+  display: inline-block;
   width: 100%;
   height: auto;
+}
+
+.mission {
+  padding: 30px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.missionFirstContainer {
+  flex: 1;
+}
+
+.missionSecondContainer {
+  flex: 1;
+}
+
+.arrowImg h6 {
+  font-size: 36px;
+  color: var(--themeColor);
+  line-height: 1.5;
+}
+
+.arrowImg h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.missionFirstContainer p {
+  margin-top: 12px;
+  color: var(--greyDark);
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.missionSecondContainer p {
+  margin-top: 12px;
+  color: var(--greyDark);
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.arrowImg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.missionIcon1 img {
+  width: 100px;
+  height: auto;
+}
+
+.missionIcon2 img {
+  width: 70px;
+  height: auto;
+}
+
+.motto {
+  padding: 30px 7px;
+  background-color: var(--greyExtraLight);
+}
+
+.mottoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mottoTitle {
+  flex: 1;
+}
+.mottoContent {
+  flex: 1;
+}
+
+.mottoImage {
+  display: flex;
+  gap: 110px;
+  border-top: 2px solid var(--greyLight);
+  padding-top: 30px;
+}
+
+.mottoImage h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mottoImage img {
+  width: 40px;
+  height: auto;
+}
+
+.mottoContent p {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.spark {
+  padding: 30px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sparkContent {
+  flex: 1;
+}
+
+.sparkImage {
+  flex: 1;
+}
+
+.sparkImage img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.sparkContent h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.sparkContent p {
+  font-size: 16px;
+  color: var(--greyDark);
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.vision {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.visionContent {
+  flex: 2;
+}
+
+.visionContent h1 {
+  font-size: 32px;
+  color: var(--themeColor);
+  font-weight: 500;
+}
+
+.visionContent h6 {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.visionContent p {
+  font-size: 16px;
+  color: var(--greyDark);
+  line-height: 28px;
+}
+
+.visionImg {
+  flex: 1;
+}
+
+.visionImg img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.bluePrint {
+  padding: 30px 7px;
+  background-color: var(--themeColor);
+  color: var(--white);
+}
+
+.bluePrintWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bluePrintImg {
+  flex: 1;
+}
+
+.bluePrintImg img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.qouteImage {
+  max-width: 16px;
+  width: 100%;
+  height: auto;
+  padding: 7px 0;
+}
+
+.bluePrintContent h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.bluePrintContent h6 {
+  padding: 7px 0;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.bluePrintContent p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.bluePrintContent {
+  flex: 2;
 }
 
 .titleBorder {
@@ -12,14 +260,6 @@
   height: 2px;
   background: var(--themeColor);
   margin: 12px 0;
-}
-
-.content {
-  text-align: center;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .content h2 {
@@ -32,85 +272,6 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: #fff;
-}
-
-.ourStory {
-  padding: 30px 0;
-}
-
-.ourStory h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-}
-
-.storyContent p {
-  margin-top: 1em;
-  font-size: 0.875rem;
-}
-.storyWrapper {
-  flex-direction: column;
-}
-
-.storyImg img {
-  width: 100%;
-  height: auto;
-}
-
-.motto {
-  padding: 30px 0;
-  background-color: var(--black);
-  color: #fff;
-}
-
-.motto p:nth-child(1) {
-  font-size: 0.875rem;
-  background: linear-gradient(104.94deg, #38b6ff -0.05%, #38ffdb 99.95%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.motto p:nth-child(2) {
-  font-size: 0.875rem;
-}
-
-.ourMotto {
-  padding: 30px 0;
-}
-
-.ourMottoWrapper {
-  flex-direction: column;
-}
-
-.mottoContent p {
-  font-size: 0.875rem;
-}
-
-.mottoImage img {
-  width: 100%;
-  height: auto;
-}
-
-.mottoContent h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.ourMissionWrapper {
-  flex-direction: column;
-}
-
-.missionImage img {
-  width: 100%;
-  height: auto;
-}
-
-.missionContent h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.ourMission {
-  padding: 30px 0;
 }
 
 .faq {
@@ -286,6 +447,158 @@
 }
 
 @media (min-width: 768px) {
+  .heroWrapper {
+    padding: 30px 0;
+  }
+
+  .hero h6 {
+    font-size: 36px;
+    color: var(--themeColor);
+    line-height: 1.5;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .mission {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 120px;
+  }
+
+  .mottoWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .motto {
+    padding: 50px 0;
+    background-color: var(--greyExtraLight);
+  }
+
+  .mottoImage {
+    display: flex;
+    gap: 260px;
+    border-top: 2px solid var(--greyLight);
+    padding-top: 30px;
+  }
+
+  .mottoImage h6 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .mottoTitle p {
+    font-size: 30px;
+    font-style: italic;
+    color: var(--themeColor);
+  }
+
+  .mottoContent p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 36px;
+    font-weight: 500;
+  }
+
+  .mottoImage img {
+    width: 70px;
+    height: auto;
+  }
+
+  .spark {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .sparkContent h1 {
+    font-size: 60px;
+    font-weight: 500;
+  }
+
+  .sparkContent p {
+    font-size: 20px;
+    color: var(--greyDark);
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .vision {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .visionContent h1 {
+    font-size: 60px;
+    color: var(--themeColor);
+    font-weight: 500;
+  }
+
+  .visionContent h6 {
+    padding: 12px 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .visionContent p {
+    font-size: 20px;
+    color: var(--greyDark);
+    line-height: 32px;
+  }
+
+  .bluePrint {
+    padding: 50px 0px;
+    background-color: var(--themeColor);
+    color: var(--white);
+  }
+
+  .bluePrintWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .bluePrintContent h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .qouteImage {
+    max-width: 25px;
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .bluePrintContent h6 {
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .bluePrintContent p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
   .content {
     text-align: center;
     position: absolute;
@@ -302,77 +615,6 @@
     font-weight: 500;
     color: #fff;
     margin-top: 1em;
-  }
-
-  .ourStory h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-  }
-  .storyWrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    padding: 20px 0;
-  }
-  .storyContent {
-    flex: 2;
-  }
-
-  .storyImg {
-    flex: 1;
-  }
-  .storyContent p {
-    font-size: 1rem;
-  }
-  .storyContent {
-    margin-top: 0px;
-  }
-  .motto p:nth-child(1) {
-    font-size: 1.125rem;
-    background: linear-gradient(104.94deg, #38b6ff -0.05%, #38ffdb 99.95%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  .motto p:nth-child(2) {
-    font-size: 1rem;
-  }
-  .ourMottoWrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .mottoImage {
-    flex: 1;
-  }
-
-  .mottoContent {
-    flex: 2;
-  }
-
-  .mottoContent h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .mottoContent p {
-    font-size: 1rem !important;
-  }
-  .ourMissionWrapper {
-    display: flex;
-    flex-direction: row !important;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .missionContent {
-    flex: 1;
-  }
-
-  .missionImage {
-    flex: 1;
   }
 
   .faqWrapper {
