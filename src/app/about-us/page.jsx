@@ -1,11 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./about-us.module.css";
 import Image from "next/image";
-import heroImg from "../../../public/images/about-hero-img.png";
-import storyImg1 from "../../../public/images/about-story-img1.png";
-import storyImg2 from "../../../public/images/about-story-img2.png";
-import mottoImg1 from "../../../public/images/about-motto-img1.png";
-import missionImg1 from "../../../public/images/about-mission-img1.png";
+import heroImg from "../../../public/images/about-hero-img1.png";
 import faqImg1 from "../../../public/images/faq-img1.png";
 import faqImg2 from "../../../public/images/faq-img2.png";
 import enevtImg1 from "../../../public/images/about-event-img1.png";
@@ -14,7 +10,14 @@ import enevtImg3 from "../../../public/images/about-event-img3.png";
 import enevtImg4 from "../../../public/images/about-event-img4.png";
 import enevtImg5 from "../../../public/images/about-event-img5.png";
 import enevtImg6 from "../../../public/images/about-event-img6.png";
+import mottoIcon from "../../../public/images/motto-icon.png";
+import missionIconImg1 from "../../../public/images/about-us-arrow-img.png";
+import missionIconImg2 from "../../../public/images/mission-icon-img3.png";
 import mapImg from "../../../public/images/map-img.png";
+import sparkImage from "../../../public/images/spark-img.png";
+import visionImage from "../../../public/images/vision-img.png";
+import bluePrintImage from "../../../public/images/blueprint-img.png";
+import qouteIcon from "../../../public/images/qoute-icon.png";
 import SectionHeader from "@/components/section-header/section-header";
 import TeamSlider from "@/components/team-slider/team-slider";
 
@@ -62,147 +65,149 @@ const EventContent = (props) => {
 const AboutPage = () => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.hero}>
-        <Image src={heroImg} alt="img" className={styles.imgCss} />
-      </div>
-      <div className={styles.content}>
-        <h2>We are Project Leader.</h2>
-        <h2>This is our story.</h2>
-        <p>
-          In the 1990s, in a small apartment located in the suburbs of Chennai
-          in southern India, a simple, yet revolutionary idea was born: Build
-          smart technology to help businesses work better. This idea evolved to
-          become the world-class technology company we&quot;re known as today.
-        </p>
-      </div>
-      <div className={styles.ourStory}>
+      <section className={styles.heroWrapper}>
         <Container>
-          <h2>Our Story</h2>
-          <div className={styles.storyWrapper}>
-            <div className={styles.storyImg}>
-              <Image src={storyImg1} alt="img" />
+          <div className={styles.hero}>
+            <h6>Born from the</h6>
+            <h1>fertile ground of project leadership.</h1>
+            <p>
+              Our founders, veterans with a war chest of industry experience,
+              dreamt of a platform where the sagas of project leaders could be
+              chronicled, their triumphs heralded, and their wisdom
+              disseminated. This audacious vision birthed this very magazine.
+            </p>
+            <div className={styles.heroImage}>
+              <Image src={heroImg} alt="pic" />
             </div>
-            <div className={styles.storyContent}>
+          </div>
+          <div className={styles.mission}>
+            <div className={styles.missionFirstContainer}>
+              <div className={styles.arrowImg}>
+                <div>
+                  <h6>Our</h6>
+                  <h1>Mission</h1>
+                </div>
+                <div className={styles.missionIcon1}>
+                  <Image src={missionIconImg1} alt="ArrowImage" />
+                </div>
+              </div>
               <p>
-                Our roots are firmly planted in project leadership. Our
-                founders, with their extensive industry experience, envisioned a
-                platform where the stories of project leaders could be told,
-                their successes celebrated, and their wisdom shared. This vision
-                led to the creation of our magazine.
+                To empower a global community of project leaders by sharing
+                inspiring stories, fostering knowledge exchange, and celebrating
+                the architects of success
               </p>
+            </div>
+            <div className={styles.missionSecondContainer}>
+              <div className={styles.arrowImg}>
+                <div>
+                  <h6>Our</h6>
+                  <h1>Vision</h1>
+                </div>
+                <div className={styles.missionIcon2}>
+                  <Image src={missionIconImg2} alt="ArrowImage" />
+                </div>
+              </div>
               <p>
-                We believe that everyone has the potential to lead, to innovate,
-                and to inspire. Whether you&quot;re an individual leading a
-                small team or an organization driving industry-wide change, your
-                story matters. And we&quot;re here to tell it.
-              </p>
-              <p>
-                Our journey into project leadership and industry excellence
-                began many years ago.
-              </p>
-              <p>
-                We started my career as a project leader in MNCs with
-                challenging roles, which were incredibly rewarding. We were
-                responsible for leading a team of talented individuals, managing
-                resources, and ensuring that our projects were completed on time
-                and within budget.
+                We envision a world where project leadership is a beacon of
+                innovation, collaboration, and impact.
               </p>
             </div>
           </div>
-          <div className={styles.storyWrapper}>
-            <div className={styles.storyContent}>
-              <p>
-                Over the years, we have worked in various industries, from
-                construction to technology to banking to healthcare, and
-                we&quot;ve led projects of all sizes delivering success. Each
-                project was a learning experience, and each success (and
-                failure) taught us valuable lessons about leadership, teamwork,
-                and perseverance.
-              </p>
-              <p>
-                But throughout our career, we noticed something. There were
-                countless stories of project leaders who were doing amazing
-                things, but these stories were often overlooked. These leaders
-                were innovating, inspiring their teams, and making a real impact
-                in their industries. But their stories were not being told.
-              </p>
-              <p>
-                That&quot;s when we had the idea for this magazine. We wanted to
-                create a platform where these stories could be shared. A place
-                where project leaders could be recognized for their hard work
-                and dedication. A place where others could learn from their
-                experiences and be inspired to become leaders themselves.
-              </p>
-            </div>
-            <div className={styles.storyImg}>
-              <Image src={storyImg2} alt="img" />
-            </div>
-          </div>
-        </Container>
-      </div>
-      <section className={styles.motto}>
-        <Container>
-          <p>
-            Our motto, “Shining a Light on Project Leaders”, reflects this
-            vision. We believe that everyone has the potential to lead, to
-            innovate, and to inspire. And we&quot;re here to shine a light on
-            those who are doing just that.
-          </p>
-          <p>
-            So, whether you&quot;re a project leader with a story to tell, an
-            aspiring leader looking for inspiration, or simply someone
-            interested in learning about project leadership and industry trends,
-            we welcome you. Let&quot;s learn, grow, and lead together. This is
-            our story. What&quot;s yours?
-          </p>
         </Container>
       </section>
-      <div className={styles.ourMotto}>
+      <section className={styles.motto}>
         <Container>
-          <div className={styles.ourMottoWrapper}>
-            <div className={styles.mottoContent}>
-              <h2>Our Motto</h2>
-              <div>
-                <TitleBorder />
+          <div className={styles.mottoWrapper}>
+            <div className={styles.mottoTitle}>
+              <div className={styles.mottoImage}>
+                <h6>Our Motto</h6>
+                <Image src={mottoIcon} alt="mottoIcon" />
               </div>
               <p>
-                Our motto, “Shining a Light on Project Leaders”, reflects our
-                commitment to recognizing and promoting leadership in all its
-                forms. We believe that by highlighting the achievements of
-                project leaders, we can inspire our readers to reach new
-                heights, to strive for excellence, and to become leaders in
-                their own right.
+                Beyond the Blueprint: <br /> Inspiring Leaders Who Shape Our
+                World.
               </p>
             </div>
-            <div className={styles.mottoImage}>
-              <Image src={mottoImg1} alt="img" />
-            </div>
-          </div>
-        </Container>
-      </div>
-      <div className={styles.ourMission}>
-        <Container>
-          <div className={styles.ourMissionWrapper}>
-            <div className={styles.missionImage}>
-              <Image src={missionImg1} alt="img" />
-            </div>
             <div className={styles.mottoContent}>
-              <h2>Our Mission</h2>
-              <div>
-                <TitleBorder />
-              </div>
               <p>
-                Our motto, “Shining a Light on Project Leaders”, reflects our
-                commitment to recognizing and promoting leadership in all its
-                forms. We believe that by highlighting the achievements of
-                project leaders, we can inspire our readers to reach new
-                heights, to strive for excellence, and to become leaders in
-                their own right.
+                The remarkable narratives of project leaders, the architects of
+                progress, were often relegated to the shadows. Their unwavering
+                dedication, their innovative spirit, their ability to ignite
+                teams - these tales deserved to be illuminated.
               </p>
             </div>
           </div>
         </Container>
-      </div>
+      </section>
+      <section>
+        <Container>
+          <div className={styles.spark}>
+            <div className={styles.sparkContent}>
+              <h1>The Spark of Inspiration</h1>
+              <p>
+                Decades ago, our founders embarked on a journey across diverse
+                industries – construction, technology, banking, healthcare. Each
+                project, from the colossal to the nimble, was a crucible of
+                learning. We tasted the thrill of victories and the sting of
+                setbacks, each experience forging invaluable lessons in
+                leadership, teamwork, and resilience. But amidst the triumphs
+                and challenges, a profound realization emerged.
+              </p>
+            </div>
+            <div className={styles.sparkImage}>
+              <Image src={sparkImage} alt="pic" />
+            </div>
+          </div>
+          <div className={styles.vision}>
+            <div className={styles.visionContent}>
+              <h1>
+                From Vision to <br /> Platform
+              </h1>
+              <h6>
+                This conviction ignited the spark for our magazine. We
+                envisioned a platform that would become a vibrant tapestry woven
+                with the stories of project leaders.
+              </h6>
+              <p>
+                A space where their achievements would be celebrated, their
+                wisdom disseminated, and their journeys serve as a source of
+                inspiration for aspiring leaders.
+              </p>
+            </div>
+            <div className={styles.visionImg}>
+              <Image src={visionImage} alt="pic" />
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className={styles.bluePrint}>
+        <Container>
+          <div className={styles.bluePrintWrapper}>
+            <div className={styles.bluePrintImg}>
+              <Image src={bluePrintImage} alt="pic" />
+            </div>
+            <div className={styles.bluePrintContent}>
+              <h1>
+                Beyond the <br /> Blueprint
+              </h1>
+              <Image className={styles.qouteImage} src={qouteIcon} alt="pic" />
+              <h6>
+                Inspiring Leaders <br /> Who Shape Our World <br /> is more than
+                just a motto;
+              </h6>
+              <p>
+                it's the cornerstone of our philosophy. We go beyond the
+                blueprints, delving into the human narratives that drive
+                successful projects. By amplifying the voices of those who shape
+                our world, we hope to equip our readers with the knowledge,
+                strategies, and motivation to rise to the challenge and become
+                leaders.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       <section className={styles.faq}>
         <Container>
           <div className={styles.faqWrapper}>
