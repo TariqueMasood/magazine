@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./gallery-card.module.css";
 import { useEffect } from "react";
+import "../../../public/build/js/flipbook.min.js";
 
 const GalleryCard = (props) => {
   const { id, thumbImage, pdf, frontBack } = props.data;

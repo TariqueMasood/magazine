@@ -4,6 +4,7 @@ import Image from "next/image";
 import magazineImg from "../../../public/images/center-card-img1.png";
 import styles from "./magazine-card.module.css";
 import { useEffect } from "react";
+import "../../../public/build/js/flipbook.min.js";
 
 const MagazineCard = (props) => {
   const { id, name, thumbImage, pdf, published_date } = props.data;
@@ -41,7 +42,7 @@ const MagazineCard = (props) => {
             height={390}
           />
         </div>
-      <div className={styles.bookInside}></div>
+        <div className={styles.bookInside}></div>
         {/* Rest of your content */}
         <div className={styles.effect}></div>
         <div className={styles.light}></div>

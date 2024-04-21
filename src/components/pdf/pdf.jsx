@@ -2,6 +2,7 @@
 import { Container } from "react-bootstrap";
 import { useEffect } from "react";
 import styles from "./pdf.module.css";
+import "../../../public/build/js/flipbook.min.js";
 
 const Pdf = (props) => {
   useEffect(() => {
