@@ -99,6 +99,7 @@
 
 .mottoTitle {
   flex: 1;
+  padding-top: 12px;
 }
 .mottoContent {
   flex: 1;
