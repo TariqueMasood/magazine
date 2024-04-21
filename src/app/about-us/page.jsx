@@ -196,7 +196,7 @@ const AboutPage = () => {
                 just a motto;
               </h6>
               <p>
-                it's the cornerstone of our philosophy. We go beyond the
+                it&apos;s the cornerstone of our philosophy. We go beyond the
                 blueprints, delving into the human narratives that drive
                 successful projects. By amplifying the voices of those who shape
                 our world, we hope to equip our readers with the knowledge,
@@ -285,10 +285,10 @@ const AboutPage = () => {
           </div>
           <p className={styles.faqDesc}>
             We believe that everyone has the potential to lead and inspire, and
-            we aim to reach out to anyone who shares this belief. Whether you’re
-            an experienced leader, a budding professional, or simply someone
-            with a keen interest in project leadership, our magazine is for you.
-            Ready to position for success? Let’s do it!
+            we aim to reach out to anyone who shares this belief. Whether
+            you&apos;re an experienced leader, a budding professional, or simply
+            someone with a keen interest in project leadership, our magazine is
+            for you. Ready to position for success? Let&apos;s do it!
           </p>
         </Container>
       </section>
