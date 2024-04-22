@@ -6,7 +6,6 @@ import { montserrat } from "./fonts";
 import Script from "next/script";
 import NewsLetter from "@/components/news-letter/news-letter";
 import dynamic from "next/dynamic";
-// import GallerySlider from "@/components/gallery-slider/gallery-slider";
 
 const GallerySlider = dynamic(
   () => import("@/components/gallery-slider/gallery-slider"),
@@ -28,7 +27,7 @@ export default function RootLayout({ children }) {
           src="https://code.jquery.com/jquery-3.6.0.min.js"
           strategy="beforeInteractive"
         />
-        <Script src="build/js/flipbook.min.js" strategy="afterInteractive" />
+        <Script src="../../build/js/flipbook.min.js" strategy="afterInteractive" />
 
         <MgNavbar />
         <Header />

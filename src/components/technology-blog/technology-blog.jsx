@@ -3,11 +3,6 @@ import styles from "./technology-blog.module.css";
 import SectionTitle from "../section-title/section-title";
 import { fetchData } from "@/utils/api";
 import BlogTabs from "../blog-tabs/blog-tabs";
-import dynamic from "next/dynamic";
-
-const MgPagination = dynamic(() => import("../pagination/pagination"), {
-  ssr: false,
-});
 
 const TechnologyBlog = async () => {
   let offset = 0;

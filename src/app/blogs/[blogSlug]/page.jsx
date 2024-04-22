@@ -55,12 +55,6 @@ const SingleBlog = async (props) => {
     const modifiedHTML = markup.replace(/src="([^"]+)"/g, `src="${baseURL}$1"`);
     return modifiedHTML;
   }
-  // const prependBaseURL = (htmlString) => {
-  //   console.log("errror0", htmlString)
-  //   const baseURL = 'http://api.projectleadersmagazine.com:8000';
-  //   const modifiedHTML = htmlString.replace(/src="([^"]+)"/g, `src="${baseURL}$1"`);
-  //   return modifiedHTML;
-  // };
 
   return (
     <div className={styles.SigleBlogWrapper}>
@@ -256,11 +250,13 @@ const SingleBlog = async (props) => {
             <div className="card mb-3">
               <div className="row g-0">
                 <div className="col-md-4">
-                  <img
-                    className="img-fluid rounded-start"
+                  <Image
+                    // className="img-fluid rounded-start"
                     alt="card"
-                    style={{ width: "auto", height: "200pautox" }}
+                    // style={{ width: "auto", height: "200pautox" }}
                     src={blog?.image !== null ? blog?.image : blogImage}
+                    width={500}
+                    height={300}
                   />
                 </div>
                 <div className="col-md-8">
