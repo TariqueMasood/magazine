@@ -3,9 +3,10 @@
 import Image from "next/image";
 import styles from "./gallery-card.module.css";
 import { useEffect } from "react";
+import formatDate from "@/utils/format-date";
 
 const GalleryCard = (props) => {
-  const { id, thumbImage, pdf, frontBack } = props.data;
+  const { id, thumbImage, pdf, frontBack, published_date } = props.data;
 
   useEffect(() => {
     function createFlipBook(containerId, pdfPath) {
@@ -45,8 +46,13 @@ const GalleryCard = (props) => {
       </div>
       <div className={styles.content}>
         <div className={styles.dateCss}>
-          <span>April </span>
-          <span className={styles.yearCss}> 2024</span>
+          <span className={styles.monthCss}>
+            {formatDate(published_date.split("T")[0])[0]}{" "}
+          </span>
+          <span className={styles.yearCss}>
+            {" "}
+            {formatDate(published_date.split("T")[0])[1]}
+          </span>
         </div>
       </div>
     </div>

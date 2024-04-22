@@ -4,33 +4,10 @@ import Image from "next/image";
 import magazineImg from "../../../public/images/center-card-img1.png";
 import styles from "./magazine-card.module.css";
 import { useEffect } from "react";
+import formatDate from "@/utils/format-date";
 
 const MagazineCard = (props) => {
   const { id, thumbImage, pdf, published_date } = props.data;
-
-  function formatDate(dateString) {
-    const date = new Date(dateString);
-    const monthNames = [
-      "JAN",
-      "FEB",
-      "MAR",
-      "APR",
-      "MAY",
-      "JUN",
-      "JUL",
-      "AUG",
-      "SEP",
-      "OOT",
-      "NOV",
-      "DEC",
-    ];
-
-    const year = date.getFullYear();
-    const monthIndex = date.getMonth();
-    const monthName = monthNames[monthIndex];
-
-    return [monthName, year];
-  }
 
   useEffect(() => {
     function createFlipBook(containerId, pdfPath) {

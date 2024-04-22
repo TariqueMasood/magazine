@@ -41,6 +41,16 @@ a {
   padding: 1.5rem 0;
 }
 
+.slick-dots li.slick-active button:before {
+  color: var(--themeColor) !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li button:before {
+  color: var(--themeColor) !important;
+  opacity: 0.3 !important;
+}
+
 @media(min-width: 768px) {
   .slick-slide > div {
     margin: 0 10px;

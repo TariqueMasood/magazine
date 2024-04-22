@@ -114,6 +114,10 @@
   font-weight: 700;
 }
 
+.monthCss {
+  color: var(--themeColor);
+}
+
 .yearCss {
-  color: var(--greyDark);
+  color: var(--greyExtraLight);
 }

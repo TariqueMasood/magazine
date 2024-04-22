@@ -106,10 +106,10 @@
 .dateCss {
   font-size: 20px;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--themeColor);
   font-weight: 700;
 }
 
 .yearCss {
-  color: var(--greyDark);
+  color: var(--greyExtraDark);
 }
