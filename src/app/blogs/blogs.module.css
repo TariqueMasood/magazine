@@ -171,12 +171,9 @@
 }
 
 .containerRight {
-  /* background-color: hsl(120, 100%, 25%); */
   max-height: 80vh;
-  /* position: fixed; */
   max-width: 370px;
   margin-left: 25px;
-  /* overflow-y: auto; */
 
 }
 
@@ -185,15 +182,6 @@
   font-weight: 600;
   line-height: 19.5px;
   text-align: left;
-
-}
-
-.newsDate {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14.63px;
-  text-align: left;
-
 }
 
 .recentContentLabel {
@@ -201,8 +189,6 @@
   font-weight: 700;
   line-height: 19.5px;
   text-align: left;
-
-
 }
 
 .autherLabel {
@@ -215,15 +201,6 @@
 
 .shareIcon {
   width: 100px;
-}
-
-.shareLabel {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17.07px;
-  text-align: left;
-  color: #38B6FF;
-
 }
 
 .cardContent img {
