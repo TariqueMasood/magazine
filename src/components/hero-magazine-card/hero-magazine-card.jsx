@@ -5,7 +5,7 @@ import styles from "./hero-magazine-card.module.css";
 import MgButton from "../button/button";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useEffect } from "react";
-import "../../../public/build/js/flipbook.min.js";
+// import "../../../public/build/js/flipbook.min.js";
 
 const HeroMagazineCard = (props) => {
   const { id, thumbImage, name, published_date, shortcontent, pdf } =
