@@ -14,10 +14,10 @@ const Subscribe = () => {
             aria-describedby="basic-addon2"
           />
           <div className={styles.subscribeBtn}>
-            <MgButton className={styles.buttonContainer}>
+            <button className={styles.buttonContainer}>
               <FaHandPointer />
               Subscribe Now!
-            </MgButton>
+            </button>
           </div>
         </InputGroup>
       </div>
