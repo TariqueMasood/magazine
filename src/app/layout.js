@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <Script
           src="https://code.jquery.com/jquery-3.6.0.min.js"
-          strategy="beforeInteractive"
+          // strategy="beforeInteractive"
         />
         <Script src="../../build/js/flipbook.min.js" strategy="beforeInteractive" />
 
