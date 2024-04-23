@@ -5,6 +5,7 @@ import magazineImg from "../../../public/images/center-card-img1.png";
 import styles from "./magazine-card.module.css";
 import { useEffect } from "react";
 import formatDate from "@/utils/format-date";
+import "../../../public/build/js/flipbook.min.js";
 
 const MagazineCard = (props) => {
   const { id, thumbImage, pdf, published_date } = props.data;
