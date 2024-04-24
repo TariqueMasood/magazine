@@ -35,12 +35,11 @@ const GalleryCard = (props) => {
             src={frontBack !== null ? frontBack : thumbImage}
             alt="gallery"
             className={styles.galleryImg}
-            width={300}
-            height={390}
+            style={{ width: "100%", height: "100%" }}
+            fill
           />
         </div>
         <div className={styles.bookInside}></div>
-
         <div className={styles.effect}></div>
         <div className={styles.light}></div>
       </div>
