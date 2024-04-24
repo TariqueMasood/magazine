@@ -37,8 +37,8 @@ const Disclaimer = () => {
             </strong>
             &nbsp; &quot;us&quot;, &quot;our&quot; or &quot;we&quot;. You can
             find out more about us by visiting&nbsp;
-            <Link href="http://www.theceomagazine.com/about." target="_blank">
-              http://www.theceomagazine.com/about.
+            <Link href="http://www.theceomagazine.com/about" target="_blank">
+              http://www.theceomagazine.com/about
             </Link>
           </p>
           <p>
