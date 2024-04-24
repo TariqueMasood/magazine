@@ -3,8 +3,10 @@ import { Button, Col, Row, Tab, Tabs } from "react-bootstrap";
 import BlogCard from "../blog-card/blog-card";
 import { useEffect, useState } from "react";
 import { fetchData } from "@/utils/api";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
+import styles from "../magazine-list/magazine-list.module.css";
 
-const BlogTabs = (props) => {
+const BlogTabs = () => {
   let [tabsData, setTabsData] = useState([]);
   let [activeTab, setActiveTab] = useState("");
   let [blogsData, setBlogsData] = useState([]);
@@ -103,27 +105,6 @@ const BlogTabs = (props) => {
               title={capitalizeFirstLetter(tab.name)}
             >
               <Row>
-                <Row className="justify-content-center mb-4">
-                  <Col md={1}>
-                    <Button
-                      variant="primary"
-                      onClick={() => handlePrev(blogsData.previous)}
-                      disabled={prevValue === null}
-                    >
-                      &lt; Prev
-                    </Button>
-                  </Col>
-                  <Col md={10}></Col>
-                  <Col md={1}>
-                    <Button
-                      variant="primary"
-                      onClick={() => handleNext(blogsData.next)}
-                      disabled={nextValue === null}
-                    >
-                      Next &gt;
-                    </Button>
-                  </Col>
-                </Row>
                 {blogsTempData.results &&
                   blogsTempData.results.map((data) => (
                     <Col key={data.id} md={6} lg={4}>
@@ -134,23 +115,25 @@ const BlogTabs = (props) => {
             </Tab>
           ))}
       </Tabs>
+      <div className={styles.paginationBtnContainer}>
+        <Button
+          variant="primary"
+          onClick={() => handlePrev(blogsData.previous)}
+          disabled={prevValue === null}
+          className={styles.paginationBtn}
+        >
+          <FaChevronLeft /> <span>Previous</span>
+        </Button>
+        <Button
+          variant="primary"
+          onClick={() => handleNext(blogsData.next)}
+          disabled={nextValue === null}
+          className={styles.paginationBtn}
+        >
+          <span>Next</span> <FaChevronRight />
+        </Button>
+      </div>
     </>
-    // <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-    //   <div className={styles.tabContainer}>
-    //     <Nav variant="pills">
-    //       <Nav.Item>
-    //         <Nav.Link eventKey="all">All content</Nav.Link>
-    //       </Nav.Item>
-    //       <Nav.Item>
-    //         <Nav.Link eventKey="general">General content</Nav.Link>
-    //       </Nav.Item>
-    //     </Nav>
-    //   </div>
-    //   <Tab.Content>
-    //     <Tab.Pane eventKey="all">All tab content</Tab.Pane>
-    //     <Tab.Pane eventKey="general">General tab content</Tab.Pane>
-    //   </Tab.Content>
-    // </Tab.Container>
   );
 };
 
