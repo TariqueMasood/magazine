@@ -9,13 +9,14 @@ const Disclaimer = () => {
         <div className={styles.disclaimer}>
           <h1 className={styles.heading}>Disclaimer</h1>
           <p>
-            By making any use of our services (“Services”), for example
-            accessing, contributing to or disclosing any content on {""}
+            By making any use of our services (&quot;Services&quot;), for
+            example accessing, contributing to or disclosing any content
+            on&nbsp;
             <Link href="www.projectleadersmagazine.com" target="_blank">
               www.projectleadersmagazine.com
-            </Link>{" "}
-            or on other of our publications, you accept and agree to be bound by
-            these terms.
+            </Link>
+            &nbsp;or on other of our publications, you accept and agree to be
+            bound by these terms.
           </p>
           <p className="text-uppercase">
             ANY USE YOU MAKE OF THE SERVICES WILL CONSTITUTE ACCEPTANCE OF THESE
@@ -30,11 +31,12 @@ const Disclaimer = () => {
           <p>
             Denkoit Softech Pvt Ltd. and its subsidiaries and related group
             entities are separately and together referred to as “The Project
-            Leaders Magazine,{" "}
+            Leaders Magazine,&nbsp;
             <strong className="fst-italic">
-              its publishing media group or associated entities”,
-            </strong>{" "}
-            “us”, “our” or “we”. You can find out more about us by visiting{" "}
+              its publishing media group or associated entities&quot;,
+            </strong>
+            &nbsp; &quot;us&quot;, &quot;our&quot; or &quot;we&quot;. You can
+            find out more about us by visiting&nbsp;
             <Link href="http://www.theceomagazine.com/about." target="_blank">
               http://www.theceomagazine.com/about.
             </Link>
@@ -42,24 +44,26 @@ const Disclaimer = () => {
           <p>
             The Project Leaders Magazine,{" "}
             <span className="fst-italic">
-              "its publishing media group or associated entities"&nbsp;
-            </span>{" "}
-            Services (including{" "}
+              &quot;its publishing media group or associated entities&quot;
+              &nbsp;
+            </span>
+            &nbsp; Services (including&nbsp;
             <Link href="www.projectleadersmagazine.com" target="_blank">
-              www.projectleadersmagazine.com
-            </Link>{" "}
-            and all other publications) serve as an informational service only.
+              projectleadersmagazine.com
+            </Link>
+            &nbsp; and all other publications) serve as an informational service
+            only.
           </p>
           <p>
             The inclusion of a link to another or another&nbsp;s goods or
             services
-            <strong>(“linked site”)</strong> as part of any Services does not
-            imply{" "}
+            <strong> (&quot;linked site&quot;)</strong> as part of any Services
+            does not imply&nbsp;
             <span className="fst-italic">
               The Project Leaders Magazine, it&nbsp;s publishing media group or
-              associated entities'&nbsp;
-            </span>{" "}
-            endorsement of the linked site nor does{" "}
+              associated entities&apos;
+            </span>
+            &nbsp; endorsement of the linked site nor does&nbsp;
             <span className="fst-italic">
               The Project Leaders Magazine, it&nbsp;s publishing media group or
               associated entities
@@ -82,70 +86,73 @@ const Disclaimer = () => {
             <span className="fst-italic">
               The Project Leaders Magazine, its publishing media group or
               associated entities
-            </span>{" "}
-            is not responsible for the offers or goods supplied by vendors. The
-            Project Leaders Magazine, it&nbsp;s publishing media group or
-            associated entities has no control over the legality of any coupons
-            or other offers made by vendors, the ability of any of the vendors
-            to complete the sales or transactions in accordance with the offers,
-            or the quality of the goods offered by the vendors.
+            </span>
+            &nbsp; is not responsible for the offers or goods supplied by
+            vendors. The Project Leaders Magazine, it&nbsp;s publishing media
+            group or associated entities has no control over the legality of any
+            coupons or other offers made by vendors, the ability of any of the
+            vendors to complete the sales or transactions in accordance with the
+            offers, or the quality of the goods offered by the vendors.
           </p>
           <p>
             In the event you have a dispute with a vendor in any way relating to
             the Services or the use of information from the Services, you agree
-            to waive and release{" "}
+            to waive and release&nbsp;
             <span className="fst-italic">
-              The Project Leaders Magazine, it'&nbsp;s publishing media group or
+              The Project Leaders Magazine, it&apos;s publishing media group or
               associated entities, including the parent company Denkoit Softect
               Private Limited
-            </span>{" "}
-            from any and all claims, demands, actions, damages, losses, costs
-            and expenses of every kind and nature, known and unknown, disclosed
-            and undisclosed relating to that dispute (including loss of profits
-            and including any loss which may be referred to as consequential).
-            It is your responsibility to verify independently that any merchant
-            you are doing business with is legitimate and reputable. Before
-            participating in any specific offers and/or promotions, please
-            analyse the details and conditions of the offer including the fine
-            print.
+            </span>
+            &nbsp; from any and all claims, demands, actions, damages, losses,
+            costs and expenses of every kind and nature, known and unknown,
+            disclosed and undisclosed relating to that dispute (including loss
+            of profits and including any loss which may be referred to as
+            consequential). It is your responsibility to verify independently
+            that any merchant you are doing business with is legitimate and
+            reputable. Before participating in any specific offers and/or
+            promotions, please analyse the details and conditions of the offer
+            including the fine print.
           </p>
           <p>
             <span className="fst-italic">
-              The Project Leaders Magazine, it'&nbsp;s publishing media group or
+              The Project Leaders Magazine, it&apos;s publishing media group or
               associated entities
-            </span>{" "}
-            and{" "}
+            </span>
+            &nbsp; and&nbsp;
             <span className="fst-italic">
-              The Project Leaders Magazine, it'&nbsp;s publishing media group or
+              The Project Leaders Magazine, it&apos;s publishing media group or
               associated entities
-            </span>{" "}
-            service, and all materials and information contained on it, and any
-            services or products provided through it are provided “AS IS”
-            without guarantees, conditions or warranties of any kind, express or
-            implied,{" "}
+            </span>
+            &nbsp; service, and all materials and information contained on it,
+            and any services or products provided through it are provided “AS
+            IS” without guarantees, conditions or warranties of any kind,
+            express or implied,&nbsp;
             <span className="text-uppercase">
               INCLUDING WITHOUT LIMITATION A GUARANTEE, CONDITION OR WARRANTY
               (EXPRESS, IMPLIED OR OTHERWISE) OF MERCHANTABILITY,
-            </span>{" "}
-            fitness for a particular purpose, expectation of privacy or
+            </span>
+            &nbsp; fitness for a particular purpose, expectation of privacy or
             non-infringement or of any guarantee, condition or warranty
             regarding information.
           </p>
           <p>
             <span className="fst-italic">
-              The Project Leaders Magazine, it'&nbsp;s publishing media group or
+              The Project Leaders Magazine, it&apos;s publishing media group or
               associated entities,
-            </span>{" "}
-            BizLink Media Group - Denkoit Softech Pvt Ltd,
-            projectleadersmagazine.com and any associated or related entity
-            (including company employees, affiliates, staff, and directors) are
-            not responsible for any damages, including without limitation, any
-            special, indirect, incidental or consequential damages, that may
-            arise from any use of, inability to use, or reliance on the Services
-            and/or the materials contained on the site whether the materials
-            contained on the Services are provided by{" "}
+            </span>
+            &nbsp; BizLink Media Group - Denkoit Softech Pvt Ltd,&nbsp;
+            <Link href="www.projectleadersmagazine.com" target="_blank">
+              projectleadersmagazine.com
+            </Link>
+            &nbsp; and any associated or related entity (including company
+            employees, affiliates, staff, and directors) are not responsible for
+            any damages, including without limitation, any special, indirect,
+            incidental or consequential damages, that may arise from any use of,
+            inability to use, or reliance on the Services and/or the materials
+            contained on the site whether the materials contained on the
+            Services are provided by&nbsp;
             <span className="fst-italic">
-              The Project Leaders Magazine, it'&nbsp;s publishing media group or
+              The Project Leaders Magazine, it&apos;s publishing media group or
               associated entities, or a third party.
             </span>
           </p>
@@ -160,13 +167,13 @@ const Disclaimer = () => {
           </p>
           <p>
             Information on the Services may contain technical inaccuracies or
-            typographical errors.{" "}
+            typographical errors.&nbsp;
             <span className="fst-italic">
-              The Project Leaders Magazine, it'&nbsp;s publishing media group or
+              The Project Leaders Magazine, it&apos;s publishing media group or
               associated entities
-            </span>{" "}
-            may make updates, improvements and/or changes in the products and/or
-            information described at any time without notice.{" "}
+            </span>
+            &nbsp; may make updates, improvements and/or changes in the products
+            and/or information described at any time without notice.&nbsp;
             <span className="fst-italic">
               The Project Leaders Magazine, its publishing media group or
               associated entities
@@ -209,21 +216,19 @@ const Disclaimer = () => {
             </li>
           </ul>
           <p>
-            <strong>Privacy Policy and Cookies:</strong>{" "}
-            <span className="fst-italic">The Project Leaders Magazine</span>{" "}
-            respects your privacy. The information that you provide about
-            yourself to{" "}
-            <span className="fst-italic">The Project Leaders Magazine</span>{" "}
-            will be used in accordance with&nbsp;
-            <span className="fst-italic">
-              The Project Leaders Magazine
-            </span>{" "}
-            privacy policy notice. This is at&nbsp;
+            <strong>Privacy Policy and Cookies:</strong>&nbsp;
+            <span className="fst-italic">The Project Leaders Magazine</span>
+            &nbsp; respects your privacy. The information that you provide about
+            yourself to&nbsp;
+            <span className="fst-italic">The Project Leaders Magazine</span>
+            &nbsp; will be used in accordance with&nbsp;
+            <span className="fst-italic">The Project Leaders Magazine</span>
+            &nbsp; privacy policy notice. This is at&nbsp;
             <Link href="www.projectleadersmagazine.com/privacy" target="_blank">
               www.projectleadersmagazine.com/privacy
             </Link>
             . Cookies are used as part of our Services. Please see our Cookies
-            Policy at{" "}
+            Policy at&nbsp;
             <Link
               href="www.projectleadersmagazine.com/cookie-policy"
               target="_blank"
@@ -233,7 +238,7 @@ const Disclaimer = () => {
           </p>
           <p>
             <strong>Updates:</strong> These terms are current at the date below.
-            We may change them periodically without any prior notice on{" "}
+            We may change them periodically without any prior notice on
             <Link href="www.projectleadersmagazine.com" target="_blank">
               www.projectleadersmagazine.com
             </Link>
@@ -245,7 +250,7 @@ const Disclaimer = () => {
               <Link href="mailto:info@denkoit.com"> info@denkoit</Link>.
               <br />
               <strong>Postal:</strong> BizLink Media Group - Denkoit Softech Pvt
-              Ltd, Office 101, Level 1, 7 Tomb'&nbsp;s Road, HYD 500008, INDIA
+              Ltd, Office 101, Level 1, 7 Tomb&apos;s Road, HYD 500008, INDIA
             </p>
           </address>
         </div>
