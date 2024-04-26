@@ -39,7 +39,7 @@ const VideoTextualInterview = () => {
       <SectionTitle title="Featured Interviews" />
       <Row className="mt-3">
         <Col lg={6}>
-          <div className={styles.videoTextual}>
+          {/* <div className={styles.videoTextual}>
             <div>
               <div className={styles.videoTextualContainer}>
                 <div className={styles.YouTubeVideo}>
@@ -60,6 +60,31 @@ const VideoTextualInterview = () => {
                 </p>
               </div>
             </div>
+          </div> */}
+          <div className={styles.videoTextualCard}>
+            <Row>
+              <Col lg={6} md={6}>
+                <div className={styles.videoTextualImg}>
+                  <Image src={cardImg2} alt="card" />
+                </div>
+              </Col>
+              <Col lg={6} md={6}>
+                <div className={styles.videoTextualContent}>
+                  <h1>Garrett Olson</h1>
+                  <h4>Head of IT & Compliance at GFS</h4>
+                  <p>
+                    Remi Lavergne, Head of IT Compliance at Global Freight
+                    Services Reflects on a 25 Year Career in Logistics With
+                    demand only set to grow, Serverfarm continues to pioneer
+                    sustainable, innovative and efficient data centre solutions
+                    as part of its long...
+                  </p>
+                  <MgButton>
+                    Read Full Interview <MdKeyboardArrowRight />
+                  </MgButton>
+                </div>
+              </Col>
+            </Row>
           </div>
         </Col>
         <Col lg={6}>
@@ -628,7 +653,7 @@ const Interview = () => {
           <VideoTextualInterview />
         </Container>
       </div>
-      <div className={styles.interview}>
+      {/* <div className={styles.interview}>
         <Container>
           <FirstRowInterview />
           <SecondRowInterview />
@@ -640,7 +665,7 @@ const Interview = () => {
             <MostViewed />
           </div>
         </Container>
-      </div>
+      </div> */}
       <div className={styles.textualInterview}>
         <Container>
           <div>

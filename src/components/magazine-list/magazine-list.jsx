@@ -59,7 +59,7 @@ const MagazineList = () => {
           </Col>
         ))}
       </Row>
-      <div className={styles.paginationBtnContainer}>
+      {/* <div className={styles.paginationBtnContainer}>
         <Button
           variant="primary"
           onClick={() => handlePrev(magazines.previous)}
@@ -76,7 +76,7 @@ const MagazineList = () => {
         >
           <span>Next</span> <FaChevronRight />
         </Button>
-      </div>
+      </div> */}
     </>
   );
 };

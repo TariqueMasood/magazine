@@ -22,12 +22,7 @@ const Magazines = () => {
           <div className={styles.ad}></div>
         </div>
         <div className={styles.header}>
-          <SectionTitle title="Latest edition" />
-          <div>
-            Read the latest posts from experts at Knowmed Health Publishing
-            covering a variety of health topics and perspectives on medical
-            news.
-          </div>
+          <SectionTitle title="Magazines" />
         </div>
         <Suspense fallback={<MgLoader />}>
           <MagazineList />

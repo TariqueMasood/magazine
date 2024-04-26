@@ -9,8 +9,8 @@ const TechnologyBlog = async () => {
       <Container>
         <SectionTitle title="News & Articles" />
         <p>
-          Read the latest posts from experts at Knowmed Health Publishing
-          covering a variety of health topics and perspectives on medical news.
+          Your one-stop shop for the latest project leadership news, insightful
+          articles & practical strategies.
         </p>
         <BlogTabs />
       </Container>
