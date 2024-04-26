@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./about-magazine.module.css";
 import Image from "next/image";
-import aboutImg from "../../../public/images/about-img2.png";
+import aboutImg from "../../../public/images/persons-img-1.png";
 import icon1 from "../../../public/images/book-open-icon.png";
 import icon2 from "../../../public/images/book-close-icon.png";
 import icon3 from "../../../public/images/man-sitting-icon.png";

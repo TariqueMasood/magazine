@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./about-us.module.css";
 import Image from "next/image";
-import heroImg from "../../../public/images/about-hero-img1.png";
+import heroImg from "../../../public/images/persons-img-1.png";
 import faqImg1 from "../../../public/images/faq-img1.png";
 import faqImg2 from "../../../public/images/faq-img2.png";
 import enevtImg1 from "../../../public/images/about-event-img1.png";
@@ -14,10 +14,10 @@ import mottoIcon from "../../../public/images/motto-icon.png";
 import missionIconImg1 from "../../../public/images/about-us-arrow-img.png";
 import missionIconImg2 from "../../../public/images/mission-icon-img3.png";
 import mapImg from "../../../public/images/map-img.png";
-import sparkImage from "../../../public/images/spark-img.png";
+import sparkImage from "../../../public/images/spark-img-2.png";
 import visionImage from "../../../public/images/vision-img.png";
-import bluePrintImage from "../../../public/images/blueprint-img.png";
-import qouteIcon from "../../../public/images/qoute-icon.png";
+import bluePrintImage from "../../../public/images/blueprint-img-2.png";
+import qouteIcon from "../../../public/images/qoute-icon-2.png";
 import SectionHeader from "@/components/section-header/section-header";
 import TeamSlider from "@/components/team-slider/team-slider";
 
@@ -142,6 +142,9 @@ const AboutPage = () => {
       <section>
         <Container>
           <div className={styles.spark}>
+            <div className={styles.sparkImage}>
+              <Image src={sparkImage} alt="pic" />
+            </div>
             <div className={styles.sparkContent}>
               <h1>The Spark of Inspiration</h1>
               <p>
@@ -153,9 +156,6 @@ const AboutPage = () => {
                 leadership, teamwork, and resilience. But amidst the triumphs
                 and challenges, a profound realization emerged.
               </p>
-            </div>
-            <div className={styles.sparkImage}>
-              <Image src={sparkImage} alt="pic" />
             </div>
           </div>
           <div className={styles.vision}>
@@ -190,11 +190,18 @@ const AboutPage = () => {
               <h1>
                 Beyond the <br /> Blueprint
               </h1>
-              <Image className={styles.qouteImage} src={qouteIcon} alt="pic" />
-              <h6>
-                Inspiring Leaders <br /> Who Shape Our World <br /> is more than
-                just a motto;
-              </h6>
+
+              <div className={styles.bluePrintIcon}>
+                <h6>
+                  Inspiring Leaders <br /> Who Shape Our World <br /> is more
+                  than just a motto;
+                </h6>
+                <Image
+                  className={styles.qouteImage}
+                  src={qouteIcon}
+                  alt="pic"
+                />
+              </div>
               <p>
                 it&apos;s the cornerstone of our philosophy. We go beyond the
                 blueprints, delving into the human narratives that drive
