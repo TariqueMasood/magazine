@@ -64,7 +64,7 @@ const TeamSlider = () => {
         <div className={styles.borderCotainer}>
           <SectionHeader
             subTitle="Our Team"
-            desc="Ready variety of layouts for blog posts and other pages."
+            desc="The engine driving innovation. Meet the passionate minds behind Project Leaders Magazine dedicated to your success."
           />
           <SectionBorder />
         </div>
