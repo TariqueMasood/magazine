@@ -76,7 +76,6 @@ const TeamSlider = () => {
                 teamImg={data.teamImg}
                 title={data.title}
                 subTitle={data.subTitle}
-                desc={data.desc}
               />
             );
           })}

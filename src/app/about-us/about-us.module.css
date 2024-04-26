@@ -22,7 +22,7 @@
 }
 
 .heroImage {
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 .heroImage img {
@@ -145,7 +145,7 @@
 }
 
 .sparkImage img {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   height: auto;
 }
@@ -153,6 +153,7 @@
 .sparkContent h1 {
   font-size: 30px;
   font-weight: 500;
+  color: var(--themeColor);
 }
 
 .sparkContent p {
@@ -204,8 +205,6 @@
 
 .bluePrint {
   padding: 30px 7px;
-  background-color: var(--themeColor);
-  color: var(--white);
 }
 
 .bluePrintWrapper {
@@ -220,16 +219,23 @@
 }
 
 .bluePrintImg img {
-  max-width: 350px;
+  max-width: 500px;
   width: 100%;
   height: auto;
 }
 
+.bluePrintIcon {
+  display: flex;
+  gap: 5px;
+}
+
 .qouteImage {
-  max-width: 16px;
-  width: 100%;
-  height: auto;
-  padding: 7px 0;
+  width: 30px;
+  height: 20px;
+}
+
+.bluePrintContent svg {
+  color: var(--themeColor);
 }
 
 .bluePrintContent h1 {
@@ -253,7 +259,7 @@
 }
 
 .bluePrintContent {
-  flex: 2;
+  flex: 1;
 }
 
 .titleBorder {
@@ -481,7 +487,8 @@
 
   .motto {
     padding: 50px 0;
-    background-color: var(--greyExtraLight);
+    background-color: var(--black800);
+    color: var(--white);
   }
 
   .mottoImage {
@@ -519,7 +526,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 60px;
+    gap: 20px;
   }
   .sparkContent h1 {
     font-size: 60px;
@@ -538,7 +545,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 60px;
+    gap: 40px;
   }
 
   .visionContent h1 {
@@ -562,15 +569,14 @@
 
   .bluePrint {
     padding: 50px 0px;
-    background-color: var(--themeColor);
-    color: var(--white);
   }
 
   .bluePrintWrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 60px;
+    align-items: center;
+    gap: 20px;
   }
 
   .bluePrintContent h1 {
@@ -580,10 +586,13 @@
   }
 
   .qouteImage {
-    max-width: 25px;
-    width: 100%;
-    height: auto;
-    padding: 16px 0;
+    width: 70px;
+    height: 60px;
+  }
+
+  .bluePrintIcon {
+    display: flex;
+    gap: 35px;
   }
 
   .bluePrintContent h6 {
