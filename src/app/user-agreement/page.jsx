@@ -14,9 +14,7 @@ const UserAgreement = () => {
             which is the arm of Denkoit Softech Pvt. Ltd., a private limited
             company (referred to as &quot;we,&quot; &quot;us,&quot; or
             &quot;our&quot; throughout) registered in India under company number
-            U93030TG2017PTC119844 [Pursuant to sub-section (2) of section 7 of
-            the Companies Act, 2013 (18 of 2013) and rule 18 of the Companies
-            (Incorporation) Rules, 2014]. <br />
+            U93030TG2017PTC119844. <br />
             <strong>We publish a variety of content:</strong> news, information,
             interviews, videos, analysis, opinions, and commentary. This
             includes both reported and edited content, as well as unmoderated

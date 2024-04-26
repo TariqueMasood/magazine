@@ -14,22 +14,28 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 768,
       settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 2,
         arrows: false,
       },
     },
@@ -44,9 +50,7 @@ const GallerySlider = async () => {
         <div className={styles.borderContainer}>
           <SectionHeader
             style={{ color: "#fff" }}
-            // title="100% READY TO US"
             subTitle="Previous Editions Gallery"
-            // desc="Ready variety of layouts for blog posts and other pages."
           />
           <SectionBorder />
         </div>

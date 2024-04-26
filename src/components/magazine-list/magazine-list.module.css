@@ -1,0 +1,33 @@
+.paginationBtnContainer {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5em auto;
+}
+
+.paginationBtn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 4px;
+    font-weight: 700;
+    background-color: var(--white);
+    border: 1px solid var(--greyDark);
+    color: var(--black);
+    border-radius: 3px;
+}
+
+.paginationBtn:hover {
+    color: var(--white);
+    background-color: var(--themeColor);
+    border-color: var(--themeColor);
+}
+
+.paginationBtn:disabled {
+    background-color: var(--themeColor);
+    border-color: var(--themeColor);
+}
+
+.paginationBtn svg {
+    font-size: 12px;
+}

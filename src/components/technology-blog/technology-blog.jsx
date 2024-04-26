@@ -1,17 +1,9 @@
 import { Container } from "react-bootstrap";
 import styles from "./technology-blog.module.css";
 import SectionTitle from "../section-title/section-title";
-import { fetchData } from "@/utils/api";
 import BlogTabs from "../blog-tabs/blog-tabs";
 
 const TechnologyBlog = async () => {
-  let offset = 0;
-  let data = await fetchData(`blogs/?limit=9&offset=${offset}`);
-
-  function fetchCategory(category) {
-    return data.results?.filter((data) => data.category.slug === category);
-  }
-
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -20,12 +12,6 @@ const TechnologyBlog = async () => {
           Read the latest posts from experts at Knowmed Health Publishing
           covering a variety of health topics and perspectives on medical news.
         </p>
-        {/* <div className={styles.blogCardContainer}>
-          {data.results.map((item) => (
-            <BlogCard key={item.id} data={item} />
-          ))}
-        </div> */}
-        {/* <BlogTabs data={data} /> */}
         <BlogTabs />
       </Container>
     </div>
