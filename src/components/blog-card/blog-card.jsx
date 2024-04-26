@@ -2,10 +2,12 @@ import Image from "next/image";
 import blogImage from "../../../public/images/spotlight-img-3.png";
 import styles from "./blog-card.module.css";
 import Link from "next/link";
-import shareIcon from "../../../public/images/share-icon.png";
 
 const BlogCard = (props) => {
-  const { id, title, subtitle, image, category } = props?.data;
+  const { id, title, subtitle, image, category, is_trending } = props?.data;
+
+  const limitTitle = title.slice(0, 60);
+  const limitSubTitle = subtitle.slice(0, 130);
 
   return (
     <Link href={`/blogs/${id}`} className={styles.cardContainer}>
@@ -18,21 +20,18 @@ const BlogCard = (props) => {
             width={300}
             height={250}
           />
-          {/* <div className={styles.badge}>AI & Machine Learning</div> */}
+          {is_trending && <div className={styles.badge}>Featured</div>}
         </div>
         <div className={styles.contentContainer}>
           <div className={styles.info}>
-            <div className={styles.categoryWrapper}>
-              {/* <Image src={calendarIcon} alt="calendar" />
-              <span>{new Date(published_date).toGMTString()}</span> */}
-              <div className={styles.category}>{category.slug}</div>
-              <div className={styles.shareIcon}>
-                <Image src={shareIcon} alt="icon" />
-              </div>
-            </div>
+            <div className={styles.category}>{category.name}</div>
+            <h4>{limitTitle.length >= 60 ? `${limitTitle}...` : limitTitle}</h4>
           </div>
-          <h4>{title}...</h4>
-          <p className={styles.cardContent}>{subtitle}...</p>
+          <p className={styles.cardContent}>
+            {limitSubTitle.length >= 130
+              ? `${limitSubTitle}...`
+              : limitSubTitle}
+          </p>
         </div>
       </div>
     </Link>

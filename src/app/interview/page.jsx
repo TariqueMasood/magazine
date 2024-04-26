@@ -329,8 +329,9 @@ export const FirstRowCard = () => {
         </Link>
       </div>
       <p>
-        Read the latest posts from experts at Knowmed Health Publishing covering
-        a variety of health topics and perspectives on medical news.
+        Exclusive interviews with leaders across industries driving
+        transformational initiatives, showcasing expertise and stories that
+        inspire.
       </p>
       <Row>
         <Col lg={9}>

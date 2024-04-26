@@ -9,6 +9,9 @@ import Link from "next/link";
 
 const RecentCard = (props) => {
   const { id, title, subtitle, image, category } = props?.data;
+
+  const limitTitle = title.slice(0, 60);
+  const limitSubTitle = subtitle.slice(0, 130);
   return (
     <div className={styles.recentCard}>
       <div className={styles.cardImg}>
@@ -21,16 +24,15 @@ const RecentCard = (props) => {
         />
       </div>
       <div className={styles.cardContent}>
-        <div className={styles.cardName}>
-          <div className={styles.category}>{category.name}</div>
-          <div className={styles.shareIcon}>
-            <Image src={shareIcon} alt="icon" />
-          </div>
-        </div>
+        <div className={styles.category}>{category.name}</div>
         <Link href={`/blogs/${id}`}>
-          <h4 className={styles.cardTitle}>{title}</h4>
+          <h4 className={styles.cardTitle}>
+            {limitTitle.length >= 60 ? `${limitTitle}...` : limitTitle}
+          </h4>
         </Link>
-        <p className={styles.cardDesc}>{subtitle}</p>
+        <p className={styles.cardDesc}>
+          {limitSubTitle.length >= 130 ? `${limitSubTitle}...` : limitSubTitle}
+        </p>
       </div>
     </div>
   );

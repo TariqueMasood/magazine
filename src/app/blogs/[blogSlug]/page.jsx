@@ -87,7 +87,7 @@ const SingleBlog = async (props) => {
                 <Image
                   src={blog?.image !== null ? blog?.image : blogImage}
                   alt="card"
-                  width={400}
+                  width={500}
                   height={250}
                   className={styles.adsCss}
                 />
@@ -97,7 +97,7 @@ const SingleBlog = async (props) => {
                 <Image
                   src={blog?.image !== null ? blog?.image : blogImage}
                   alt="card"
-                  width={400}
+                  width={500}
                   height={600}
                   className={styles.adsCss}
                 />

@@ -107,7 +107,7 @@ const BlogTabs = () => {
               <Row>
                 {blogsTempData.results &&
                   blogsTempData.results.map((data) => (
-                    <Col key={data.id} md={6} lg={4}>
+                    <Col key={data.id} md={6} lg={3}>
                       <BlogCard data={data} />
                     </Col>
                   ))}

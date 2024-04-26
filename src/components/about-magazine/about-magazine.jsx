@@ -20,7 +20,6 @@ function ServiceStep(props) {
         <h5 className={styles.stepHeader}>{props.title}</h5>
         <p className={styles.stepText}>{props.desc}</p>
       </div>
-      {/* {props.connector ? <div className={styles.dottedConnector} /> : null} */}
     </div>
   );
 }

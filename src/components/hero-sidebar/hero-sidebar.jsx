@@ -46,6 +46,12 @@ const HeroSidebar = () => {
         date="september"
         page="10"
       />
+      <FeatureCard
+        image={sidebarImage3}
+        title="California Highspeed Railway"
+        date="september"
+        page="10"
+      />
     </div>
   );
 };

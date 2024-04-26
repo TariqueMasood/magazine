@@ -6,7 +6,7 @@ import SectionTitle from "@/components/section-title/section-title";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import HeroMagazine from "@/components/hero-magazine/hero-magazine";
-import TrendingSlider from "@/components/trending-slider/trending-slider";
+import HeroSidebar from "@/components/hero-sidebar/hero-sidebar";
 
 const MgLoader = dynamic(() => import("@/components/loader/loader"), {
   ssr: false,
@@ -18,7 +18,7 @@ const Magazines = () => {
       <Container>
         <div className={styles.hero}>
           <HeroMagazine />
-          <TrendingSlider />
+          <HeroSidebar />
           <div className={styles.ad}></div>
         </div>
         <div className={styles.header}>
