@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import styles from "../blogs.module.css";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -50,18 +50,18 @@ const SingleBlog = async (props) => {
 
   return (
     <div className={styles.SigleBlogWrapper}>
-      <div className="ms-5 me-5 ps-4 pe-4">
-        <h1 className={styles.singleBlogTitle}>{blog?.title}</h1>
-        <p className={styles.singleBlogSubTitle}>{blog?.subtitle}</p>
-      </div>
-      <div className="row mt-2 ms-5 me-5 ps-4 pe-4">
-        <div className="col-12 col-md-8">
-          <Container className="">
+      <Container>
+        <div>
+          <h1 className={styles.singleBlogTitle}>{blog?.title}</h1>
+          <p className={styles.singleBlogSubTitle}>{blog?.subtitle}</p>
+        </div>
+        <Row>
+          <Col md={8}>
             <div className={styles.singlgeBlogImg}>
               <Image
                 src={blog?.image !== null ? blog?.image : blogImage}
                 alt="card"
-                width={500}
+                width={600}
                 height={400}
               />
             </div>
@@ -70,45 +70,45 @@ const SingleBlog = async (props) => {
             </div>
             <div
               className={styles.cardContent}
-              dangerouslySetInnerHTML={{ __html: createMarkup(blog?.content) }}
+              dangerouslySetInnerHTML={{
+                __html: createMarkup(blog?.content),
+              }}
             />
-          </Container>
-        </div>
-        <div className={`col-12 col-md-4`}>
-          <Container className={styles.containerRight}>
-            <div>
+          </Col>
+          <Col md={4}>
+            <div className={styles.containerRight}>
               <SocialShare />
               <hr />
-              <div className="d-flex-column gap-5" style={{ height: "" }}>
+              <div>
                 <label className={styles.shareLabel}>AUTHOR</label>
                 <div className={`mt-2 ${styles.autherLabel}`}>Marcus Law</div>
               </div>
-            </div>
-            <div className="mt-5">
-              <Image
-                src={blog?.image !== null ? blog?.image : blogImage}
-                alt="card"
-                width={330}
-                height={250}
-              />
-            </div>
-            <div className="mt-5 pt-3">
+              <div className="pt-4 pb-4">
+                <Image
+                  src={blog?.image !== null ? blog?.image : blogImage}
+                  alt="card"
+                  width={400}
+                  height={250}
+                  className={styles.adsCss}
+                />
+              </div>
               <Featured blog={blog} />
+              <div className="pt-4">
+                <Image
+                  src={blog?.image !== null ? blog?.image : blogImage}
+                  alt="card"
+                  width={400}
+                  height={600}
+                  className={styles.adsCss}
+                />
+              </div>
             </div>
-            <div className="mt-5 pt-3">
-              <Image
-                src={blog?.image !== null ? blog?.image : blogImage}
-                alt="card"
-                width={330}
-                height={600}
-              />
-            </div>
-          </Container>
+          </Col>
+        </Row>
+        <div className={styles.sliderWrapper}>
+          <SpotLightSlider />
         </div>
-      </div>
-      <div className={styles.sliderWrapper}>
-        <SpotLightSlider />
-      </div>
+      </Container>
     </div>
   );
 };

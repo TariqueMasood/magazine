@@ -22,7 +22,7 @@ const RecentCard = (props) => {
       </div>
       <div className={styles.cardContent}>
         <div className={styles.cardName}>
-          <div className={styles.category}>{category.slug}</div>
+          <div className={styles.category}>{category.name}</div>
           <div className={styles.shareIcon}>
             <Image src={shareIcon} alt="icon" />
           </div>

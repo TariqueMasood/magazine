@@ -23,7 +23,7 @@
 }
 
 .singlgeBlogImg img {
-  max-width: 60%;
+  max-width: 70%;
   width: 100%;
   height: auto;
   border-radius: 20px;
@@ -170,13 +170,6 @@
   justify-content: space-between;
 }
 
-.containerRight {
-  max-height: 80vh;
-  max-width: 370px;
-  margin-left: 25px;
-
-}
-
 .newLabelHeading {
   font-size: 16px;
   font-weight: 600;
@@ -187,16 +180,17 @@
 .recentContentLabel {
   font-size: 16px;
   font-weight: 700;
-  line-height: 19.5px;
-  text-align: left;
 }
 
 .autherLabel {
   font-size: 16px;
   font-weight: 600;
-  line-height: 19.5px;
-  text-align: left;
+}
 
+.shareLabel {
+  color: var(--themeColor);
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .shareIcon {
@@ -230,13 +224,20 @@
   text-align: left;
 
 }
+
 .arrowAuthor{
   fill: #38B6FF;
   stroke-width: 600px;
 }
+
 .bi-arrow-right path {
   stroke-width: 160px; /* Adjust the thickness of the lines */
 }
+
+.adsCss {
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
   .singleBlogTitle {
     font-size: 1.5rem;
@@ -293,5 +294,9 @@
 
   .singlgeBlogImg img {
     max-width: 100%;
+  }
+
+  .SigleBlogWrapper {
+    padding: 20px 0;
   }
 }
