@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import webinarImg1 from "../../../public/images/center-card-img1.png";
 import MgButton from "@/components/button/button";
+import TowerAds from "@/components/ads/tower-ads";
 
 const FeaturedCard = () => {
   return (
@@ -92,7 +93,9 @@ const Webinar = () => {
               </div>
             </div>
           </div>
-          <div className={styles.webinarAds}>Ads</div>
+          <div className={styles.webinarAds}>
+            <TowerAds />
+          </div>
         </div>
       </Container>
     </div>

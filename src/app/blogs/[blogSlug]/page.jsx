@@ -9,6 +9,8 @@ import DOMPurify from "dompurify";
 import { JSDOM } from "jsdom";
 import Featured from "@/components/featured/featured";
 import SocialShare from "@/components/social-share/social-share";
+import BoxAds from "@/components/ads/box-ads";
+import TowerAds from "@/components/ads/tower-ads";
 
 const window = new JSDOM("").window;
 const DOMPurifyServer = DOMPurify(window);
@@ -84,23 +86,11 @@ const SingleBlog = async (props) => {
                 <div className={`mt-2 ${styles.autherLabel}`}>Marcus Law</div>
               </div>
               <div className="pt-4 pb-4">
-                <Image
-                  src={blog?.image !== null ? blog?.image : blogImage}
-                  alt="card"
-                  width={500}
-                  height={250}
-                  className={styles.adsCss}
-                />
+                <BoxAds />
               </div>
               <Featured blog={blog} />
-              <div className="pt-4">
-                <Image
-                  src={blog?.image !== null ? blog?.image : blogImage}
-                  alt="card"
-                  width={500}
-                  height={600}
-                  className={styles.adsCss}
-                />
+              <div className="pt-4 ml-auto">
+                <TowerAds />
               </div>
             </div>
           </Col>

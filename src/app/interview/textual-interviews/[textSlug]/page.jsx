@@ -7,6 +7,9 @@ import authorImg from "../../../../../public/images/textual-author-img1.png";
 import Link from "next/link";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import BoxAds from "@/components/ads/box-ads";
+import SectionAds from "@/components/ads/section-ads";
+import TowerAds from "@/components/ads/tower-ads";
 
 const AuthorCard = (props) => {
   const { heading, authorImg, title, desc, linkText, viewPost } = props;
@@ -82,7 +85,7 @@ const TextualInterviewsDetails = async ({ params }) => {
                 </Row>
               </Col>
               <Col lg={3}>
-                <div className={styles.cardAd}>Ad</div>
+                <BoxAds />
               </Col>
             </Row>
           </div>
@@ -122,20 +125,10 @@ const TextualInterviewsDetails = async ({ params }) => {
               <div>
                 <HeroSidebar />
               </div>
+              <TowerAds />
             </Col>
           </Row>
           <div className={`my-4 ${styles.border}`}></div>
-          <div className={styles.containerAd}>Ad</div>
-          <div className={styles.author}>
-            <AuthorCard
-              heading="Know Your Host"
-              authorImg={authorImg}
-              title="Claire McCarthy, MD, Senior Faculty Editor, Harvard Health Publishing"
-              desc="Claire McCarthy, MD, is a primary care pediatrician at Boston Children's Hospital, and an assistant professor of pediatrics at Harvard Medical School. In addition to being a senior faculty editor for Harvard Health Publishing, Dr. McCarthy…"
-              linkText="See Full Bio"
-              viewPost="View all posts by Claire McCarthy, MD"
-            />
-          </div>
         </div>
         <div className={styles.related}>
           <div>

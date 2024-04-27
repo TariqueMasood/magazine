@@ -20,6 +20,7 @@ import YouTube from "react-youtube";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { fetchData } from "@/utils/api";
+import BoxAds from "@/components/ads/box-ads";
 
 const YouTubePlayer = ({ videoId, width, height }) => {
   const opts = {
@@ -384,11 +385,6 @@ export const FirstRowCard = () => {
                 <h2>
                   {textualInterviews && textualInterviews.results[0].subtitle}
                 </h2>
-                {/* <p>
-                  Microsoft Government CTO on the company&apos;s expansive role in
-                  AI adoption, Cloud migration, ethical governance, and
-                  cybersecurity within the public sector
-                </p> */}
                 {textualInterviews && (
                   <div
                     dangerouslySetInnerHTML={{
@@ -404,14 +400,15 @@ export const FirstRowCard = () => {
           </Row>
         </Col>
         <Col lg={3}>
-          <div className={styles.textualAd}>Ad</div>
+          <BoxAds />
         </Col>
       </Row>
     </div>
   );
 };
 
-export const SecondRowCard = () => {
+export const SecondRowCard = async () => {
+  const interviews = await fetchData("interviews");
   return (
     <div className={styles.textualCardSecond}>
       <Row>

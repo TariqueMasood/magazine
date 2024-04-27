@@ -26,10 +26,11 @@
 .ad {
   flex: 1;
   order: 3;
-  max-width: 300px;
-  width: 100% !important;
-  height: auto;
-  background-color: var(--themeColor);
+}
+
+.ad a {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .iFrameContainer iframe {
@@ -55,9 +56,5 @@
   
   .ad {
     order: 3;
-    max-width: 300px;
-    width: 100% !important;
-    height: auto;
-    background-color: var(--themeColor);
   }
 }

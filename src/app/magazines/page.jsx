@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import HeroMagazine from "@/components/hero-magazine/hero-magazine";
 import HeroSidebar from "@/components/hero-sidebar/hero-sidebar";
+import TowerAds from "@/components/ads/tower-ads";
 
 const MgLoader = dynamic(() => import("@/components/loader/loader"), {
   ssr: false,
@@ -19,7 +20,9 @@ const Magazines = () => {
         <div className={styles.hero}>
           <HeroMagazine />
           <HeroSidebar />
-          <div className={styles.ad}></div>
+          <div className={styles.ad}>
+            <TowerAds />
+          </div>
         </div>
         <div className={styles.header}>
           <SectionTitle title="Magazines" />

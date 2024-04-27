@@ -7,6 +7,7 @@ import MgSlider from "../slider/slider";
 import teamImg1 from "../../../public/images/team-img1.png";
 import teamImg2 from "../../../public/images/team-img2.png";
 import teamImg3 from "../../../public/images/team-img3.png";
+import { fetchData } from "@/utils/api";
 
 const data = [
   {
@@ -32,53 +33,55 @@ const data = [
   },
 ];
 
-const TeamSlider = () => {
+const TeamSlider = async () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
         },
       },
     ],
   };
+
+  const teams = await fetchData("teams");
   return (
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.borderCotainer}>
           <SectionHeader
             subTitle="Our Team"
-            desc="The engine driving innovation. Meet the passionate minds behind Project Leaders Magazine dedicated to your success."
+            desc="Meet the passionate minds behind Project Leaders Magazine dedicated to your success."
           />
           <SectionBorder />
         </div>
         <MgSlider settings={settings}>
-          {data.map((data, index) => {
-            return (
-              <TeamCard
-                key={index}
-                teamImg={data.teamImg}
-                title={data.title}
-                subTitle={data.subTitle}
-              />
-            );
-          })}
+          {teams?.results &&
+            teams?.results?.map((team) => {
+              return <TeamCard key={team.id} team={team} />;
+            })}
         </MgSlider>
       </Container>
     </div>
