@@ -4,6 +4,7 @@ import MgButton from "../button/button";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { fetchData } from "@/utils/api";
 import styles from "./interview-card.module.css";
+import Link from "next/link";
 
 const InterviewCard2 = async () => {
   const interviews = await fetchData("interviews/?limit=2");
@@ -30,9 +31,11 @@ const InterviewCard2 = async () => {
                       <h1>{interview.title}</h1>
                       <h4>{interview.position}</h4>
                       <h2>{interview.subtitle}</h2>
-                      <MgButton>
+                      <Link
+                        href={`/interview/textual-interviews/${interview.id}`}
+                      >
                         Read More <MdKeyboardArrowRight />
-                      </MgButton>
+                      </Link>
                     </div>
                   </Col>
                 </Row>

@@ -42,9 +42,11 @@ const InterviewCard = async () => {
                 <h4>{interviews.results && interviews.results[0].title}</h4>
                 <h1>{interviews.results && interviews.results[0].position}</h1>
                 <h2>{interviews.results && interviews.results[0].subtitle}</h2>
-                <MgButton>
+                <Link
+                  href={`/interview/textual-interviews/${interviews.results[0].id}`}
+                >
                   Read More <MdKeyboardArrowRight />
-                </MgButton>
+                </Link>
               </div>
             </div>
           </Row>

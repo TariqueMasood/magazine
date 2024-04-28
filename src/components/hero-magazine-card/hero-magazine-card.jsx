@@ -5,6 +5,7 @@ import styles from "./hero-magazine-card.module.css";
 import MgButton from "../button/button";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useEffect } from "react";
+import { formatDate2 } from "@/utils/format-date";
 
 const HeroMagazineCard = (props) => {
   const { id, thumbImage, name, published_date, shortcontent, pdf } =
@@ -38,9 +39,7 @@ const HeroMagazineCard = (props) => {
       <div className={styles.magazine}>
         <div>
           <div className={styles.magazineHeading}>
-            <div className={styles.date}>
-              {new Date(published_date).toDateString()}
-            </div>
+            <div className={styles.date}>{formatDate2(published_date)}</div>
             <div className={styles.edition}>LATEST EDITION</div>
           </div>
           <p className={styles.magazineContent}>{shortcontent}</p>

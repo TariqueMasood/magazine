@@ -21,3 +21,12 @@ export default function formatDate(dateString) {
 
   return [monthName, year];
 }
+
+export  function formatDate2(dateString) {
+  const currentDate = new Date(dateString);
+  const dateTimeFormatter = new Intl.DateTimeFormat("en-US", {
+    dateStyle: "long",
+  });
+  const formattedDate = dateTimeFormatter.format(currentDate);
+  return formattedDate;
+}

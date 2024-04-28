@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    border-bottom: 1px solid var(--greyExtraLight);
+    padding: 1em 0;
+}
+
+.cardContent h4 {
+    font-size: 14px;
+}
+
+.cardContent h5 {
+    font-size: 14px;
+    color: var(--themeColor);
+}
+
+.imgCss {
+    border-radius: 8px;
+}
+
+.cardContent p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.cardList {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}

@@ -5,12 +5,13 @@ import MgButton from "../button/button";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { fetchData } from "@/utils/api";
 import styles from "./featured-interview.module.css";
+import Link from "next/link";
 
 const FeaturedInterview = async () => {
   const interviews = await fetchData("interviews/?limit=2");
   return (
     <>
-      {interviews?.results && interviews?.results.is_feature && (
+      {interviews?.results.is_feature && (
         <div>
           <SectionTitle title="Featured Interviews" />
           <Row className="mt-3">
@@ -34,9 +35,11 @@ const FeaturedInterview = async () => {
                           <h1>{interview.title}</h1>
                           <h4>{interview.position}</h4>
                           <p>{interview.subtitle}</p>
-                          <MgButton>
-                            Read Full Interview <MdKeyboardArrowRight />
-                          </MgButton>
+                          <Link
+                            href={`/interview/textual-interviews/${interview.id}`}
+                          >
+                            Read More <MdKeyboardArrowRight />
+                          </Link>
                         </div>
                       </Col>
                     </Row>
