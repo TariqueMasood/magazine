@@ -62,34 +62,7 @@ const MagazineList = () => {
           </Col>
         ))}
       </Row>
-      <Row className="d-flex flex-column flex-md-row">
-        <Row className="justify-content-center mb-4">
-          <Col md={1}>
-            <Button
-              variant="primary"
-              onClick={() => handlePrev(magazines.previous)}
-              disabled={prevValue === null}
-            >
-              &lt; Prev
-            </Button>
-          </Col>
-          <Col
-            md={10}
-            className="d-flex flex-row justify-content-center align-items-center fs-6 fw-bold"
-          >
-            Page No. {pageNo}
-          </Col>
-          <Col md={1}>
-            <Button
-              variant="primary"
-              onClick={() => handleNext(magazines.next)}
-              disabled={nextValue === null}
-            >
-              Next &gt;
-            </Button>
-          </Col>
-        </Row>
-        {/* <div className={styles.paginationBtnContainer}>
+      <div className={styles.paginationBtnContainer}>
         <Button
           variant="primary"
           onClick={() => handlePrev(magazines.previous)}
@@ -98,6 +71,12 @@ const MagazineList = () => {
         >
           <FaChevronLeft /> <span>Previous</span>
         </Button>
+        <div
+          md={10}
+          className="d-flex flex-row justify-content-center align-items-center fs-6 fw-bold"
+        >
+          Page No. {pageNo}
+        </div>
         <Button
           variant="primary"
           onClick={() => handleNext(magazines.next)}
@@ -106,8 +85,7 @@ const MagazineList = () => {
         >
           <span>Next</span> <FaChevronRight />
         </Button>
-      </div> */}
-      </Row>
+      </div>
     </>
   );
 };

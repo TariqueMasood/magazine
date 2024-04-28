@@ -9,30 +9,6 @@ import teamImg2 from "../../../public/images/team-img2.png";
 import teamImg3 from "../../../public/images/team-img3.png";
 import { fetchData } from "@/utils/api";
 
-const data = [
-  {
-    id: 1,
-    teamImg: teamImg1,
-    title: "ant eksiler",
-    subTitle: "Assistant Fashion Editor",
-    desc: "Ant is a reporter for the Project Leaders Magazine, specializing in celebrities, fashion, & entertainment.",
-  },
-  {
-    id: 2,
-    teamImg: teamImg2,
-    title: "Darlene Robertson",
-    subTitle: "Assistant Tech Editor",
-    desc: "Ant is a reporter for the Project Leaders Magazine, specializing in celebrities, fashion, & entertainment.",
-  },
-  {
-    id: 3,
-    teamImg: teamImg3,
-    title: "Jenny Wilson",
-    subTitle: "Assistant Kitchen Editor",
-    desc: "Ant is a reporter for the Project Leaders Magazine, specializing in celebrities, fashion, & entertainment.",
-  },
-];
-
 const TeamSlider = async () => {
   const settings = {
     dots: true,
