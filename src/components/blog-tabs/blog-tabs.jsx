@@ -104,32 +104,6 @@ const BlogTabs = () => {
               title={capitalizeFirstLetter(tab.name)}
             >
               <Row>
-                <Row className="justify-content-center mb-4">
-                  <Col md={1}>
-                    <Button
-                      variant="primary"
-                      onClick={() => handlePrev(blogsData.previous)}
-                      disabled={prevValue === null}
-                    >
-                      &lt; Prev
-                    </Button>
-                  </Col>
-                  <Col
-                    md={10}
-                    className="d-flex flex-row justify-content-center align-items-center fs-6 fw-bold"
-                  >
-                    Page No. {pageNo}
-                  </Col>
-                  <Col md={1}>
-                    <Button
-                      variant="primary"
-                      onClick={() => handleNext(blogsData.next)}
-                      disabled={nextValue === null}
-                    >
-                      Next &gt;
-                    </Button>
-                  </Col>
-                </Row>
                 {blogsTempData.results &&
                   blogsTempData.results.map((data) => (
                     <Col key={data.id} md={6} lg={3}>
@@ -149,6 +123,12 @@ const BlogTabs = () => {
         >
           <FaChevronLeft /> <span>Previous</span>
         </Button>
+        <div
+          md={10}
+          className="d-flex flex-row justify-content-center align-items-center fs-6 fw-bold"
+        >
+          Page No. {pageNo}
+        </div>
         <Button
           variant="primary"
           onClick={() => handleNext(blogsData.next)}
