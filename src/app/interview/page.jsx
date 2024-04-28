@@ -309,12 +309,26 @@ export const FirstRowCard = () => {
     let list = textualInterviewsData.results.filter(
       (items) => items.is_feature === true && items.is_trending === true
     );
+    console.log("Data", list)
     if (list.length !== 0) {
       setTextualInterviews(list);
     } else {
       setTextualInterviews(null);
     }
   };
+
+  let TruncatedHTML = (html, maxLength) => {
+    // Extract text content from HTML
+    const tempElement = document.createElement('div');
+    tempElement.innerHTML = html;
+    const textContent = tempElement.textContent.trim();
+
+    // Truncate text if it exceeds the maximum length
+    const truncatedText = textContent.length > maxLength ?
+      textContent.substring(0, maxLength) + '...' :
+      textContent;
+    return truncatedText;
+  }
 
   useEffect(() => {
     getTextualInterviewsData("interviews");
@@ -339,7 +353,7 @@ export const FirstRowCard = () => {
               <div className={styles.textualImg}>
                 {textualInterviews && (
                   <Image
-                    src={textualInterviews.results[0].profile_pic}
+                    src={textualInterviews[0].profile_pic}
                     alt="card"
                     width={130}
                     height={100}
@@ -348,15 +362,16 @@ export const FirstRowCard = () => {
               </div>
               <div className={styles.textualContent}>
                 <h4>
-                  {textualInterviews && textualInterviews.results[0].title}
+                  {textualInterviews && textualInterviews[0].title}
                 </h4>
                 <h1>
                   {textualInterviews &&
-                    textualInterviews.results[0].interviewee}{" "}
-                  ({textualInterviews && textualInterviews.results[0].position})
+                    textualInterviews[0].interviewee}{" "}
+                  ({textualInterviews && textualInterviews[0].position})
                 </h1>
+                <h6>{textualInterviews && textualInterviews[0].interview_date.split("T")[0]}</h6>
                 <h2>
-                  {textualInterviews && textualInterviews.results[0].subtitle}
+                  {textualInterviews && textualInterviews[0].subtitle}
                 </h2>
                 {/* <p>
                   Microsoft Government CTO on the company&apos;s expansive role in
@@ -366,9 +381,10 @@ export const FirstRowCard = () => {
                 {textualInterviews && (
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: textualInterviews.results[0].description,
+                      __html: TruncatedHTML(textualInterviews[0].description, 100),
                     }}
                   />
+
                 )}
                 <MgButton>
                   Read More <MdKeyboardArrowRight />
@@ -386,6 +402,37 @@ export const FirstRowCard = () => {
 };
 
 export const SecondRowCard = () => {
+  let [textualInterviews, setTextualInterviews] = useState(null);
+
+  let getTextualInterviewsData = async (url) => {
+    let textualInterviewsData = await fetchData(url);
+    let list = textualInterviewsData.results.filter(
+      (items) => items.is_feature === false && items.is_trending === true
+    );
+    console.log("Data", list)
+    if (list.length !== 0) {
+      setTextualInterviews(list);
+    } else {
+      setTextualInterviews(null);
+    }
+  };
+
+  let TruncatedHTML = (html, maxLength) => {
+    // Extract text content from HTML
+    const tempElement = document.createElement('div');
+    tempElement.innerHTML = html;
+    const textContent = tempElement.textContent.trim();
+
+    // Truncate text if it exceeds the maximum length
+    const truncatedText = textContent.length > maxLength ?
+      textContent.substring(0, maxLength) + '...' :
+      textContent;
+    return truncatedText;
+  }
+
+  useEffect(() => {
+    getTextualInterviewsData("interviews");
+  }, []);
   return (
     <div className={styles.textualCardSecond}>
       <Row>
@@ -653,3 +700,7 @@ const Interview = () => {
   );
 };
 export default Interview;
+
+
+
+

@@ -1,3 +1,4 @@
+// "use client";
 import Image from "next/image";
 import blogImage from "../../../public/images/spotlight-img-3.png";
 import styles from "./blog-card.module.css";
@@ -6,7 +7,6 @@ import shareIcon from "../../../public/images/share-icon.png";
 
 const BlogCard = (props) => {
   const { id, title, subtitle, image, category } = props?.data;
-
   return (
     <Link href={`/blogs/${id}`} className={styles.cardContainer}>
       <div className={styles.card}>

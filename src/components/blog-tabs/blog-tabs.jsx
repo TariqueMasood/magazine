@@ -11,54 +11,54 @@ const BlogTabs = (props) => {
   let [blogsTempData, setBlogsTempData] = useState([]);
   let [prevValue, setPrevValue] = useState(null);
   let [nextValue, setNextValue] = useState(null);
+  let [pageNo, setPageNo] = useState(1)
 
   const capitalizeFirstLetter = (string) =>
     string.charAt(0).toUpperCase() + string.slice(1);
 
   let getTabData = async () => {
     const tabsData = await fetchData("categories");
+    tabsData.results.unshift({
+      id: 0,
+      name: "All",
+      slug: "all"
+    })
+    // console.log("tabs", tabsData.results)
     setTabsData(tabsData.results);
-    getBlogsData("blogs", tabsData.results);
+    getBlogsData("blogs", 0);
   };
 
   let getBlogsData = async (url, tab) => {
     let blogsDatas = null;
-    blogsDatas = await fetchData(url);
-    console.log("data come", blogsDatas);
+    if (tab === 0) {
+      blogsDatas = await fetchData(url);
+    } else {
+      blogsDatas = await fetchData(url + "?category=" + tab);
+    }
     setPrevValue(blogsDatas.previous);
     setNextValue(blogsDatas.next);
 
     setBlogsData(blogsDatas);
-    setBlogsTempData(blogsData);
-    if (activeTab === "") {
-      handleTabChange(tab[0].name, blogsDatas);
-    } else {
-      handleTabChange(activeTab, blogsDatas);
-    }
+    setBlogsTempData(blogsDatas);
+
   };
 
-  let handleTabChange = (key, data = []) => {
-    let filteredData = [];
-    setActiveTab(key);
-    if (data.length === 0) {
-      filteredData = blogsData.results.filter(
-        (item) =>
-          item.category.name.toLowerCase().trim() === key.toLowerCase().trim()
-      );
-    } else {
-      filteredData = data.results.filter(
-        (item) =>
-          item.category.name.toLowerCase().trim() === key.toLowerCase().trim()
-      );
+  let handleTabChange = (key) => {
+    setBlogsTempData([])
+    if(key !== "all")
+    {
+      let tabNumber = parseInt(tabsData.filter(value=>value.name.toLowerCase() === key)[0].id)
+      getBlogsData("blogs", tabNumber)
+      setActiveTab(tabNumber)
     }
-    let temp = { ...blogsData };
+    else{
+      getBlogsData("blogs", 0)
+      setActiveTab(0)
 
-    temp.results = filteredData;
-    if (filteredData.length !== 0) {
-      setBlogsTempData(temp);
-    } else {
-      setBlogsTempData([]);
+
     }
+   
+
   };
 
   let handlePrev = async (url) => {
@@ -68,7 +68,9 @@ const BlogTabs = (props) => {
     let pathname = parsedUrl.pathname;
     pathname = pathname.slice(4).substring(1);
     const newurl = parsedUrl.search;
-    getBlogsData(pathname + newurl, "");
+    getBlogsData(pathname + newurl, activeTab);
+    setPageNo(pageNo - 1)
+
   };
 
   let handleNext = (url) => {
@@ -76,7 +78,11 @@ const BlogTabs = (props) => {
     let pathname = parsedUrl.pathname;
     pathname = pathname.slice(4).substring(1);
     const newurl = parsedUrl.search;
-    getBlogsData(pathname + newurl, "");
+    console.log("rddg ", pathname,newurl )
+    getBlogsData(pathname + newurl, activeTab);
+    // console.log("data come", blogsDatas);
+    setPageNo(pageNo + 1)
+
   };
 
   useEffect(() => {
@@ -89,11 +95,11 @@ const BlogTabs = (props) => {
         defaultActiveKey={
           tabsData && tabsData.length > 0
             ? tabsData[0].name.toLowerCase()
-            : "news"
+            : "all"
         }
         id="uncontrolled-tab-example"
         className="mb-3"
-        onSelect={(key) => handleTabChange(key, [])}
+        onSelect={(key) => handleTabChange(key)}
       >
         {tabsData &&
           tabsData.map((tab) => (
@@ -113,7 +119,7 @@ const BlogTabs = (props) => {
                       &lt; Prev
                     </Button>
                   </Col>
-                  <Col md={10}></Col>
+                  <Col md={10} className="d-flex flex-row justify-content-center align-items-center fs-6 fw-bold">Page No. {pageNo}</Col>
                   <Col md={1}>
                     <Button
                       variant="primary"

@@ -22,6 +22,8 @@ const MagazineList = () => {
   let [prevValue, setPrevValue] = useState(null);
   let [nextValue, setNextValue] = useState(null);
   let [magazines, setMagazines] = useState(null);
+  let [pageNo, setPageNo] = useState(1)
+
 
   let getMagazineData = async (url) => {
     let magazineData = await fetchData(url);
@@ -35,6 +37,7 @@ const MagazineList = () => {
     pathname = pathname.slice(4).substring(1);
     const newurl = parsedUrl.search;
     getMagazineData(pathname + newurl);
+    setPageNo(pageNo - 1)
   };
 
   let handleNext = (url) => {
@@ -43,6 +46,8 @@ const MagazineList = () => {
     pathname = pathname.slice(4).substring(1);
     const newurl = parsedUrl.search;
     getMagazineData(pathname + newurl);
+    setPageNo(pageNo + 1)
+
   };
 
   useEffect(() => {
@@ -61,7 +66,7 @@ const MagazineList = () => {
             &lt; Prev
           </Button>
         </Col>
-        <Col md={10}></Col>
+        <Col md={10}  className="d-flex flex-row justify-content-center align-items-center fs-6 fw-bold">Page No. {pageNo}</Col>
         <Col md={1}>
           <Button
             variant="primary"
