@@ -1,3 +1,4 @@
+// "use client";
 import Image from "next/image";
 import blogImage from "../../../public/images/spotlight-img-3.png";
 import styles from "./blog-card.module.css";
