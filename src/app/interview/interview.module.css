@@ -173,12 +173,6 @@
   align-items: center;
 }
 
-.textualImg img {
-  width: 100%;
-  min-width: 180px;
-  height: auto;
-}
-
 .textualContent h4 {
   font-size: 1rem;
   color: var(--themeColor);
@@ -222,10 +216,6 @@
   background-color: var(--white);
   color: var(--black);
   transform: scale(1.1);
-}
-
-.textualCardSecond {
-  padding: 40px 0;
 }
 
 .textualImg2 img {

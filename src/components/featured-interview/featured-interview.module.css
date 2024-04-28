@@ -1,0 +1,53 @@
+.videoTextualCard {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--greyExtraLight);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+  margin-top: 14px;
+}
+
+.videoTextualImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.videoTextualContent h1 {
+    padding-top: 9px;
+    font-size: 1.5rem;
+  }
+  
+  .videoTextualContent h4 {
+    font-size: 1.1rem;
+    color: var(--themeColor);
+  }
+  
+  .videoTextualContent p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .videoTextualContent button {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    transition: all 0.5s ease-out;
+  }
+  
+  .videoTextualContent button:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transform: scale(1.1);
+  }
+
+@media (min-width: 768px) {
+  .videoTextualCard {
+    margin-top: 0px;
+  }
+
+  .videoTextualContent h1 {
+    padding-top: 0px;
+  }
+}

@@ -1,0 +1,166 @@
+.textualViewAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textualViewAll a {
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 12px;
+  margin: auto 0;
+  border: 1.5px solid #8585854d;
+  transition: all 0.5s ease-out;
+}
+
+.textualViewAll a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.textualViewAll svg {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--black);
+}
+
+.textualCardSecond {
+  padding: 40px 0;
+}
+
+.textualCard {
+  display: flex;
+  gap: 20px;
+}
+
+.textualCard {
+  background-color: var(--black);
+  color: #fff;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+}
+
+.textualImg img {
+  width: 100%;
+  min-width: 180px;
+  height: auto;
+}
+
+.textualContent h4 {
+  font-size: 1rem;
+  color: var(--themeColor);
+}
+
+.textualContent h1 {
+  font-weight: 600;
+  padding: 7px 0;
+  font-size: 1.1rem;
+}
+
+.textualContent h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.textualContent p {
+  font-size: 1rem;
+  padding: 1em 0;
+}
+
+.textualContent {
+  padding-top: 12px;
+}
+
+.textualContent button {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: all 0.5s ease-out;
+}
+
+.textualContent button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transform: scale(1.1);
+}
+
+.textualContent {
+  padding-top: 0px;
+}
+
+.textualContent h1 {
+  font-size: 1.8rem;
+}
+
+.textualContent h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.textualContent p {
+  font-size: 1.125rem;
+}
+
+.textualCard2 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+  background-color: #f0f6f8;
+  border-radius: 10px;
+}
+
+.textualImg2 img {
+  width: 100%;
+  height: auto;
+}
+
+.textualContent2 h1 {
+  margin-top: 12px;
+  font-size: 1.25rem;
+}
+
+.textualContent2 h4 {
+  font-size: 1rem;
+  color: var(--themeColor);
+}
+
+.textualContent2 h2 {
+  font-size: 0.8rem;
+}
+
+.textualContent2 {
+  margin-bottom: 12px;
+}
+
+.textualContent2 button {
+  border: 1px solid var(--black);
+  background-color: #f0f6f8;
+  color: var(--black);
+  transition: all 0.5s ease-out;
+}
+
+.textualContent2 button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .textualContent2 h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+
+  .textualContent2 h4 {
+    font-size: 1.1rem;
+  }
+
+  .textualContent2 h2 {
+    font-size: 1rem;
+    margin: 0.5em 0 1em;
+  }
+
+  .textualContent2 {
+    margin-bottom: 0;
+  }
+}
